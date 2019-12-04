@@ -103,7 +103,7 @@ public class Driver {
 			teamList.add(team);
 		}
 		allData.put("standings", teamList);
-		try(FileWriter file = new FileWriter("C:\\Users\\maxnb\\OneDrive\\Documents\\WebstormProjects\\E-Sports_HTML\\data.js"))
+		try(FileWriter file = new FileWriter("C:\\Users\\maxnb\\OneDrive\\Documents\\GitHub\\E-Sports-Leagues\\E-Sports_HTML\\info.js"))
 		{
 			file.write("var list = " + allData.toString().substring(13, allData.toString().length()-1) + ";");
 			file.flush();
