@@ -15,7 +15,7 @@ public class Driver {
 	public static void main(String[] args) throws IOException
 	{
 		Scanner scan = new Scanner (new File ("games.txt"));
-		final int NUM_TEAMS = 4;
+		final int NUM_TEAMS = 10;
 
 		// creates a list of NUM_TEAMS teams with no information (consider making a Standings class)
 		Team[] teams = new Team[NUM_TEAMS];
