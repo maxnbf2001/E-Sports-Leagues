@@ -1,3 +1,4 @@
+Blue League
 Team 1
 Team 2
 Team 3
@@ -8,145 +9,268 @@ Team 7
 Team 8
 Team 9
 Team 10
-Team 11
 
 Week 1
-Team 11 vs Team 1
-Team 10 vs Team 2
-Team 9 vs Team 3
-Team 8 vs Team 4
-Team 7 vs Team 5
+Team 10 vs Team 1
+Team 9 vs Team 2
+Team 8 vs Team 3
+Team 7 vs Team 4
+Team 6 vs Team 5
 
 Week 2
-Team 1 vs Team 10
-Team 11 vs Team 9
-Team 2 vs Team 8
-Team 3 vs Team 7
-Team 4 vs Team 6
+Team 1 vs Team 9
+Team 10 vs Team 8
+Team 2 vs Team 7
+Team 3 vs Team 6
+Team 4 vs Team 5
 
 Week 3
-Team 9 vs Team 1
-Team 8 vs Team 10
-Team 7 vs Team 11
-Team 6 vs Team 2
-Team 5 vs Team 3
+Team 8 vs Team 1
+Team 7 vs Team 9
+Team 6 vs Team 10
+Team 5 vs Team 2
+Team 4 vs Team 3
 
 Week 4
-Team 1 vs Team 8
-Team 9 vs Team 7
-Team 10 vs Team 6
-Team 11 vs Team 5
-Team 2 vs Team 4
+Team 1 vs Team 7
+Team 8 vs Team 6
+Team 9 vs Team 5
+Team 10 vs Team 4
+Team 2 vs Team 3
 
 Week 5
-Team 7 vs Team 1
-Team 6 vs Team 8
-Team 5 vs Team 9
-Team 4 vs Team 10
-Team 3 vs Team 11
+Team 6 vs Team 1
+Team 5 vs Team 7
+Team 4 vs Team 8
+Team 3 vs Team 9
+Team 2 vs Team 10
 
 Week 6
-Team 1 vs Team 6
-Team 7 vs Team 5
-Team 8 vs Team 4
-Team 9 vs Team 3
-Team 10 vs Team 2
+Team 1 vs Team 5
+Team 6 vs Team 4
+Team 7 vs Team 3
+Team 8 vs Team 2
+Team 9 vs Team 10
 
 Week 7
-Team 5 vs Team 1
-Team 4 vs Team 6
-Team 3 vs Team 7
-Team 2 vs Team 8
-Team 11 vs Team 9
+Team 4 vs Team 1
+Team 3 vs Team 5
+Team 2 vs Team 6
+Team 10 vs Team 7
+Team 9 vs Team 8
 
 Week 8
-Team 1 vs Team 4
-Team 5 vs Team 3
-Team 6 vs Team 2
-Team 7 vs Team 11
-Team 8 vs Team 10
+Team 1 vs Team 3
+Team 4 vs Team 2
+Team 5 vs Team 10
+Team 6 vs Team 9
+Team 7 vs Team 8
 
 Week 9
-Team 3 vs Team 1
-Team 2 vs Team 4
-Team 11 vs Team 5
-Team 10 vs Team 6
-Team 9 vs Team 7
+Team 2 vs Team 1
+Team 10 vs Team 3
+Team 9 vs Team 4
+Team 8 vs Team 5
+Team 7 vs Team 6
 
 Week 10
-Team 1 vs Team 2
-Team 3 vs Team 11
-Team 4 vs Team 10
-Team 5 vs Team 9
-Team 6 vs Team 8
+Team 1 vs Team 10
+Team 2 vs Team 9
+Team 3 vs Team 8
+Team 4 vs Team 7
+Team 5 vs Team 6
 
 Week 11
-Team 11 vs Team 1
-Team 10 vs Team 2
-Team 9 vs Team 3
-Team 8 vs Team 4
-Team 7 vs Team 5
-
-Week 12
-Team 1 vs Team 10
-Team 11 vs Team 9
-Team 2 vs Team 8
-Team 3 vs Team 7
-Team 4 vs Team 6
-
-Week 13
 Team 9 vs Team 1
 Team 8 vs Team 10
-Team 7 vs Team 11
-Team 6 vs Team 2
-Team 5 vs Team 3
+Team 7 vs Team 2
+Team 6 vs Team 3
+Team 5 vs Team 4
 
-Week 14
+Week 12
 Team 1 vs Team 8
 Team 9 vs Team 7
 Team 10 vs Team 6
-Team 11 vs Team 5
-Team 2 vs Team 4
+Team 2 vs Team 5
+Team 3 vs Team 4
 
-Week 15
+Week 13
 Team 7 vs Team 1
 Team 6 vs Team 8
 Team 5 vs Team 9
 Team 4 vs Team 10
-Team 3 vs Team 11
+Team 3 vs Team 2
 
-Week 16
+Week 14
 Team 1 vs Team 6
 Team 7 vs Team 5
 Team 8 vs Team 4
 Team 9 vs Team 3
 Team 10 vs Team 2
 
-Week 17
+Week 15
 Team 5 vs Team 1
 Team 4 vs Team 6
 Team 3 vs Team 7
 Team 2 vs Team 8
-Team 11 vs Team 9
+Team 10 vs Team 9
 
-Week 18
+Week 16
 Team 1 vs Team 4
 Team 5 vs Team 3
 Team 6 vs Team 2
-Team 7 vs Team 11
-Team 8 vs Team 10
+Team 7 vs Team 10
+Team 8 vs Team 9
 
-Week 19
+Week 17
 Team 3 vs Team 1
 Team 2 vs Team 4
-Team 11 vs Team 5
-Team 10 vs Team 6
-Team 9 vs Team 7
+Team 10 vs Team 5
+Team 9 vs Team 6
+Team 8 vs Team 7
 
-Week 20
+Week 18
 Team 1 vs Team 2
-Team 3 vs Team 11
-Team 4 vs Team 10
-Team 5 vs Team 9
-Team 6 vs Team 8
+Team 3 vs Team 10
+Team 4 vs Team 9
+Team 5 vs Team 8
+Team 6 vs Team 7
+
+Gold League
+Team 11
+Team 12
+Team 13
+Team 14
+Team 15
+Team 16
+Team 17
+Team 18
+Team 19
+Team 20
+
+Week 1
+Team 20 vs Team 11
+Team 19 vs Team 12
+Team 18 vs Team 13
+Team 17 vs Team 14
+Team 16 vs Team 15
+
+Week 2
+Team 11 vs Team 19
+Team 20 vs Team 18
+Team 12 vs Team 17
+Team 13 vs Team 16
+Team 14 vs Team 15
+
+Week 3
+Team 18 vs Team 11
+Team 17 vs Team 19
+Team 16 vs Team 20
+Team 15 vs Team 12
+Team 14 vs Team 13
+
+Week 4
+Team 11 vs Team 17
+Team 18 vs Team 16
+Team 19 vs Team 15
+Team 20 vs Team 14
+Team 12 vs Team 13
+
+Week 5
+Team 16 vs Team 11
+Team 15 vs Team 17
+Team 14 vs Team 18
+Team 13 vs Team 19
+Team 12 vs Team 20
+
+Week 6
+Team 11 vs Team 15
+Team 16 vs Team 14
+Team 17 vs Team 13
+Team 18 vs Team 12
+Team 19 vs Team 20
+
+Week 7
+Team 14 vs Team 11
+Team 13 vs Team 15
+Team 12 vs Team 16
+Team 20 vs Team 17
+Team 19 vs Team 18
+
+Week 8
+Team 11 vs Team 13
+Team 14 vs Team 12
+Team 15 vs Team 20
+Team 16 vs Team 19
+Team 17 vs Team 18
+
+Week 9
+Team 12 vs Team 11
+Team 20 vs Team 13
+Team 19 vs Team 14
+Team 18 vs Team 15
+Team 17 vs Team 16
+
+Week 10
+Team 11 vs Team 20
+Team 12 vs Team 19
+Team 13 vs Team 18
+Team 14 vs Team 17
+Team 15 vs Team 16
+
+Week 11
+Team 19 vs Team 11
+Team 18 vs Team 20
+Team 17 vs Team 12
+Team 16 vs Team 13
+Team 15 vs Team 14
+
+Week 12
+Team 11 vs Team 18
+Team 19 vs Team 17
+Team 20 vs Team 16
+Team 12 vs Team 15
+Team 13 vs Team 14
+
+Week 13
+Team 17 vs Team 11
+Team 16 vs Team 18
+Team 15 vs Team 19
+Team 14 vs Team 20
+Team 13 vs Team 12
+
+Week 14
+Team 11 vs Team 16
+Team 17 vs Team 15
+Team 18 vs Team 14
+Team 19 vs Team 13
+Team 20 vs Team 12
+
+Week 15
+Team 15 vs Team 11
+Team 14 vs Team 16
+Team 13 vs Team 17
+Team 12 vs Team 18
+Team 20 vs Team 19
+
+Week 16
+Team 11 vs Team 14
+Team 15 vs Team 13
+Team 16 vs Team 12
+Team 17 vs Team 20
+Team 18 vs Team 19
+
+Week 17
+Team 13 vs Team 11
+Team 12 vs Team 14
+Team 20 vs Team 15
+Team 19 vs Team 16
+Team 18 vs Team 17
+
+Week 18
+Team 11 vs Team 12
+Team 13 vs Team 20
+Team 14 vs Team 19
+Team 15 vs Team 18
+Team 16 vs Team 17
 

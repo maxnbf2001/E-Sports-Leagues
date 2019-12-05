@@ -4,8 +4,20 @@ public class Build_Schedule {
 
 	public static void main(String[] args) throws IOException
 	{
-		String[] arr = {"Team 1", "Team 2", "Team 3", "Team 4", "Team 5", "Team 6", "Team 7", "Team 8", "Team 9", "Team 10", "Team 11"};
+		String[] blue = {"Team 1", "Team 2", "Team 3", "Team 4", "Team 5", "Team 6", "Team 7", "Team 8", "Team 9", "Team 10"};
+		String[] gold = {"Team 11", "Team 12", "Team 13", "Team 14", "Team 15", "Team 16", "Team 17", "Team 18", "Team 19", "Team 20"};
 		PrintWriter writer = new PrintWriter ("games.txt", "UTF-8");
+		writer.println("Blue League");
+		makeSched (blue, writer);
+		writer.println("Gold League");
+		makeSched (gold, writer);
+
+		writer.close();
+	}
+
+	public static void makeSched (String[] arr, PrintWriter writer)
+	{
+		
 		for (int i = 0; i < arr.length; i++)
 		{
 			writer.println(arr[i]);
@@ -24,9 +36,7 @@ public class Build_Schedule {
 			rotate (arr, arr.length);
 			writer.println();
 		}
-		writer.close();
 	}
-
 	public static void rotate (String[] arr, int n)
 	{
 		int i = 1;
