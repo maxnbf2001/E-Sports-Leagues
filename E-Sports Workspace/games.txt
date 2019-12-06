@@ -1,4 +1,4 @@
-Blue League
+blue
 Team 1
 Team 2
 Team 3
@@ -136,7 +136,7 @@ Team 4 vs Team 9
 Team 5 vs Team 8
 Team 6 vs Team 7
 
-Gold League
+gold
 Team 11
 Team 12
 Team 13

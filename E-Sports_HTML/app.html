@@ -1,0 +1,17 @@
+<div id = "ButtonRow">
+    <button id="fifa" class = "GameButton Button{{$ctrl.shown=$ctrl.FIFA}}" ng-click="$ctrl.shown=$ctrl.FIFA">
+        FIFA
+    </button>
+    <button id="nba" class = "GameButton Button{{$ctrl.shown=$ctrl.NBA}}" ng-click="$ctrl.shown=$ctrl.NBA">
+        NBA
+    </button>
+</div>
+<p></p>
+
+<div id = 'FIFAContainer' ng-if="$ctrl.shown=$ctrl.FIFA">
+    <league-buttons lg_list = '$ctrl.data.leagues'></league-buttons>
+</div>
+<!--<div id = 'NBAContainer' ng-if="$ctrl.shown===$ctrl.NBA">
+    <conference-buttons conferences = '$ctrl.data'></conference-buttons>
+</div>
+-->

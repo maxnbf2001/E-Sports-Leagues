@@ -17,6 +17,7 @@ public class Driver {
 		Scanner scan = new Scanner (new File ("games.txt"));
 		final int NUM_TEAMS = 10;
 		JSONObject allData = new JSONObject();
+		JSONArray leagues = new JSONArray();
 		for (int l = 0; l < 2; l++)
 		{
 			String league = scan.nextLine();
@@ -88,25 +89,28 @@ public class Driver {
 
 			// creates JSON file
 			JSONArray teamList = new JSONArray();
-
+			JSONObject leagueObj = new JSONObject();
 			for (int i = 0; i < teams.length; i++)
 			{
 				JSONObject team = new JSONObject();
-				team.put("Rank", (i+1));
-				team.put("Games Played", (teams[i].getWins() + teams[i].getDraws() + teams[i].getLosses()));
-				team.put("Name", teams[i].getName());
-				team.put("Wins", teams[i].getWins());
-				team.put("Draws", teams[i].getDraws());
-				team.put("Losses", teams[i].getLosses());
-				team.put("GF", teams[i].getGF());
-				team.put("GA", teams[i].getGA());
-				team.put("GD", teams[i].getGD());
-				team.put("Points", teams[i].getPoints());
+				team.put("rank", (i+1));
+				team.put("played", (teams[i].getWins() + teams[i].getDraws() + teams[i].getLosses()));
+				team.put("name", teams[i].getName());
+				team.put("wins", teams[i].getWins());
+				team.put("draws", teams[i].getDraws());
+				team.put("losses", teams[i].getLosses());
+				team.put("gf", teams[i].getGF());
+				team.put("ga", teams[i].getGA());
+				team.put("gd", teams[i].getGD());
+				team.put("points", teams[i].getPoints());
 				//System.out.println(team.toString());
 				teamList.add(team);
 			}
-			allData.put(league, teamList);
+			leagueObj.put(league, teamList);
+			leagues.add(leagueObj);
+		
 		}
+		allData.put("leagues", leagues);
 		try(FileWriter file = new FileWriter("C:\\Users\\maxnb\\OneDrive\\Documents\\GitHub\\E-Sports-Leagues\\E-Sports_HTML\\info.js"))
 		{
 			file.write("var list = " + allData.toString() + ";");
