@@ -23,6 +23,11 @@
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="settings.editor.selected.configurable" value="vcs.Git" />
   </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\maxnb\OneDrive\Documents\GitHub\E-Sports-Leagues\E-Sports_HTML\HTML_Templates" />
+    </key>
+  </component>
   <component name="ServiceViewManager">
     <option name="viewStates">
       <list>
@@ -46,7 +51,7 @@
       <option name="presentableId" value="Default" />
       <updated>1575437496944</updated>
       <workItem from="1575437498069" duration="182000" />
-      <workItem from="1575437701250" duration="4121000" />
+      <workItem from="1575437701250" duration="4730000" />
     </task>
     <servers />
   </component>
