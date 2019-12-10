@@ -1,16 +1,13 @@
 angular.module('esports').component('leagueButtons', {
-    controller: LBController,
+    controller: WBController,
     bindings: {
         lg_list : "<"
     },
     templateUrl: "leagueButtons.html"
 });
 
-function LBController ()
-{
+function WBController(){
     this.selected = 0;
 
-    this.$onInit = function(){
-        this.lgs = this.lg_list.blue;
-    }
+
 }

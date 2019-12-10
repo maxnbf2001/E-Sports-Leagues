@@ -7,6 +7,9 @@
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="ExportToHTMLSettings">
+    <option name="OUTPUT_DIRECTORY" value="$PROJECT_DIR$/../E-Sports_HTML\exportToHTML" />
+  </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
@@ -29,7 +32,7 @@
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../Senior_Project" />
     <property name="settings.editor.selected.configurable" value="vcs.Git" />
   </component>
   <component name="RecentsManager">
@@ -37,6 +40,20 @@
       <recent name="C:\Users\maxnb\OneDrive\Documents\GitHub\E-Sports-Leagues\E-Sports_HTML" />
       <recent name="C:\Users\maxnb\OneDrive\Documents\GitHub\E-Sports-Leagues\E-Sports_HTML\HTML_Templates" />
     </key>
+  </component>
+  <component name="RunManager" selected="Node.js.table.js">
+    <configuration name="tableView.html" type="JavascriptDebugType" temporary="true" uri="http://localhost:63342/E-Sports_HTML/tableView.html" useBuiltInWebServerPort="true">
+      <method v="2" />
+    </configuration>
+    <configuration name="table.js" type="NodeJSConfigurationType" temporary="true" nameIsGenerated="true" path-to-js-file="$PROJECT_DIR$/table.js" working-dir="$PROJECT_DIR$">
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Node.js.table.js" />
+        <item itemvalue="JavaScript Debug.tableView.html" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="ServiceViewManager">
     <option name="viewStates">
@@ -61,7 +78,7 @@
       <option name="presentableId" value="Default" />
       <updated>1575437496944</updated>
       <workItem from="1575437498069" duration="182000" />
-      <workItem from="1575437701250" duration="10801000" />
+      <workItem from="1575437701250" duration="18827000" />
     </task>
     <servers />
   </component>
@@ -69,14 +86,34 @@
     <option name="version" value="1" />
   </component>
   <component name="WindowStateProjectService">
+    <state x="0" y="70" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1575675033928">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="0" y="70" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1536.824@0.0.1536.824" timestamp="1575675033928" />
+    <state x="411" y="180" key="#com.intellij.ide.fileTemplates.ui.ConfigureTemplatesDialog" timestamp="1575734255501">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="411" y="180" key="#com.intellij.ide.fileTemplates.ui.ConfigureTemplatesDialog/0.0.1536.824@0.0.1536.824" timestamp="1575734255501" />
+    <state x="560" y="92" key="#table.html" timestamp="1575734323678">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="560" y="92" key="#table.html/0.0.1536.824@0.0.1536.824" timestamp="1575734323678" />
+    <state x="560" y="92" key="#tableView.html" timestamp="1575734308234">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="560" y="92" key="#tableView.html/0.0.1536.824@0.0.1536.824" timestamp="1575734308234" />
+    <state x="550" y="154" key="FileChooserDialogImpl" timestamp="1575744848236">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="550" y="154" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1575744848236" />
     <state x="279" y="55" key="SettingsEditor" timestamp="1575508425194">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="279" y="55" key="SettingsEditor/0.0.1536.824@0.0.1536.824" timestamp="1575508425194" />
-    <state x="42" y="188" key="run.anything.popup" timestamp="1575507508034">
+    <state x="48" y="188" key="run.anything.popup" timestamp="1575675052069">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="42" y="188" key="run.anything.popup/0.0.1536.824@0.0.1536.824" timestamp="1575507508034" />
+    <state x="48" y="188" key="run.anything.popup/0.0.1536.824@0.0.1536.824" timestamp="1575675052069" />
     <state x="47" y="145" width="672" height="678" key="search.everywhere.popup" timestamp="1575662298708">
       <screen x="0" y="0" width="1536" height="824" />
     </state>

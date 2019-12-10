@@ -1,7 +1,12 @@
 <div class = 'leagueButtons'>
-    <div class = 'leagueButtonStyle' ng-repeat = 'lg in $ctrl.lgs'>
-        <button>
-            {{lg}}
+    <div>
+        <button ng-repeat="x in lg_list.leagues">
+            {{x.lname}}
         </button>
     </div>
 </div>
+<div>
+    <button> Standings </button>
+    <button> Fixtures  </button>
+</div>
+

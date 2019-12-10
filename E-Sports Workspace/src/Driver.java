@@ -106,7 +106,8 @@ public class Driver {
 				//System.out.println(team.toString());
 				teamList.add(team);
 			}
-			leagueObj.put(league, teamList);
+			leagueObj.put("lname", league);
+			leagueObj.put("teams", teamList);
 			leagues.add(leagueObj);
 		
 		}
