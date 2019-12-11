@@ -8,4 +8,15 @@ angular.module('esports').component('conferenceTable', {
 
 function CTController(){
 
+    this.winStreak = function(streak){
+        if (streak >= 0)
+            return true;
+        else
+            return false;
+    };
+
+    this.getAbs = function (streak){
+        return Math.abs(streak);
+    };
+
 }
