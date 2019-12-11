@@ -5,7 +5,7 @@ public class NBATeam
 	private DecimalFormat fmt = new DecimalFormat("#.###");
 	private String teamName, pct, lastFive;
 	private int wins, losses, strk;
-	private double gb;
+	private String gb;
 
 	public NBATeam ()
 	{
@@ -13,7 +13,7 @@ public class NBATeam
 		wins = 0;
 		losses = 0;
 		pct = "0.000";
-		gb = 0;
+		gb = "";
 		strk = 0;
 		lastFive = "";
 	}
@@ -24,7 +24,7 @@ public class NBATeam
 		wins = 0;
 		losses = 0;
 		pct = "0.000";
-		gb = 0;
+		gb = "";
 		strk = 0;
 		lastFive = "";
 	}
@@ -36,7 +36,7 @@ public class NBATeam
 		wins = w;
 		losses = l;
 		pct = "0.000";
-		gb = 0;
+		gb = "";
 		strk = 0;
 		lastFive = "";
 	}
@@ -77,6 +77,10 @@ public class NBATeam
 			pct = "1.000";
 		else 
 			pct = fmt.format((double)wins/(double)(losses+wins));
+		if (pct.equals("0"))
+			pct = "0.000";
+		while (pct.length() < 5)
+			pct = pct + "0";
 	}
 	
 	public String getName()
@@ -99,7 +103,7 @@ public class NBATeam
 		return pct;
 	}
 	
-	public double getGB()
+	public String getGB()
 	{
 		return gb;
 	}
@@ -114,4 +118,8 @@ public class NBATeam
 		return strk;
 	}
 	
+	public void setGB(String gamesBehind)
+	{
+		gb = gamesBehind;
+	}
 }

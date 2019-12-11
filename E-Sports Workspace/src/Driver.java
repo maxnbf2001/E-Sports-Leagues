@@ -229,7 +229,8 @@ public class Driver {
 		}
 		fixtures.add(splitFixtures);
 		orderNBA (NBAteams);
-
+		gamesBehind (NBAteams);
+		
 		JSONArray teamList = new JSONArray();
 		for (int i = 0; i < NBAteams.length; i++)
 		{
@@ -272,6 +273,12 @@ public class Driver {
 		System.out.println(allData);
 
 
+	}
+	private static void gamesBehind (NBATeam[] arr)
+	{
+		for (int i = 1; i < arr.length; i++)
+			arr[i].setGB(((arr[0].getWins() - arr[0].getLosses()) - (arr[i].getWins() - arr[i].getLosses()))/2.0 +"");
+		
 	}
 	private static void orderFIFA(Team[] array) {
 
