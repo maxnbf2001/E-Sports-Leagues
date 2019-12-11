@@ -11,32 +11,32 @@ Team 9
 Team 10
 
 Week 1
-Team 10 vs Team 1
-Team 9 vs Team 2
-Team 8 vs Team 3
-Team 7 vs Team 4
-Team 6 vs Team 5
+Team 10 5-1 Team 1
+Team 9 4-2 Team 2
+Team 8 0-3 Team 3
+Team 7 6-3 Team 4
+Team 6 0-0 Team 5
 
 Week 2
-Team 1 vs Team 9
-Team 10 vs Team 8
-Team 2 vs Team 7
-Team 3 vs Team 6
-Team 4 vs Team 5
+Team 1 1-0 Team 9
+Team 10 0-2 Team 8
+Team 2 4-5 Team 7
+Team 3 2-8 Team 6
+Team 4 5-3 Team 5
 
 Week 3
-Team 8 vs Team 1
-Team 7 vs Team 9
-Team 6 vs Team 10
-Team 5 vs Team 2
-Team 4 vs Team 3
+Team 8 2-1 Team 1
+Team 7 1-2 Team 9
+Team 6 2-0 Team 10
+Team 5 6-3 Team 2
+Team 4 5-6 Team 3
 
 Week 4
-Team 1 vs Team 7
-Team 8 vs Team 6
-Team 9 vs Team 5
-Team 10 vs Team 4
-Team 2 vs Team 3
+Team 1 1-1 Team 7
+Team 8 0-0 Team 6
+Team 9 3-2 Team 5
+Team 10 2-2 Team 4
+Team 2 2-3 Team 3
 
 Week 5
 Team 6 vs Team 1
