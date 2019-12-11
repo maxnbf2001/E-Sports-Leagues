@@ -242,7 +242,6 @@ public class Driver {
 			team.put("gb", NBAteams[i].getGB());
 			team.put("strk", NBAteams[i].getStrk());
 			team.put("lastFive", NBAteams[i].getLastFive());
-			//System.out.println(team.toString());
 			teamList.add(team);
 		}
 		
