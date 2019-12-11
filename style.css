@@ -1,0 +1,24 @@
+table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 70%;
+}
+td, th {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 6px;
+}
+tr:nth-child(even) {
+    background-color: #dddddd;
+}
+
+.gameButton{
+    font-size: x-large;
+    padding: 12px;
+    justify-content: center;
+}
+
+.gameButtons{
+    display: flex;
+    justify-content: center;
+}

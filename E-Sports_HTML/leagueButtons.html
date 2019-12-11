@@ -1,5 +1,5 @@
-<div ng-repeat = "lg in $ctrl.getLeagueNames()">
-    <button class = 'LeagueButton Button{{$ctrl.selected===$index+1}}}' ng-click = '$ctrl.selected=$index+1'>
+<div class = 'leagueButtons' ng-repeat = "lg in $ctrl.getLeagueNames()">
+    <button class = 'leagueButton Button{{$ctrl.selected===$index+1}}}' ng-click = '$ctrl.selected=$index+1'>
         {{lg}} League
     </button>
 </div>
