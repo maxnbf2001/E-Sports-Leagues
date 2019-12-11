@@ -19,5 +19,11 @@ function LBController(){
         return ["blue", "gold"]
     }
 
+    this.$onInit = function(){
+        this.fixtureArray = this.lgs[this.getLeagueKeys()[this.selected-1]].fixtures;
+    }
+
+
+
 
 }

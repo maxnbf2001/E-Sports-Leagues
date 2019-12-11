@@ -12,13 +12,40 @@ tr:nth-child(even) {
     background-color: #dddddd;
 }
 
+#ButtonRow{
+    display: flex;
+    justify-content: center;
+
+}
+
+#fifa{
+    margin: 10px;
+}
+
+#nba{
+    margin: 10px;
+}
+
 .gameButton{
     font-size: x-large;
     padding: 12px;
     justify-content: center;
 }
 
-.gameButtons{
+.leagueButtons{
     display: flex;
     justify-content: center;
+}
+
+.leagueButton {
+    font-size: larger;
+    margin: 10px;
+}
+
+.weeklyFixtures{
+    display:flex;
+}
+
+.weekNumber{
+    font-size: larger;
 }
