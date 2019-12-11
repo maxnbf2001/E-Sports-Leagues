@@ -28,7 +28,7 @@ public class Driver {
 				String teamName = scan.nextLine();
 				teams[i] = new Team (teamName);
 			}
-
+			JSONArray fixtures = new JSONArray();
 			// creates a list of (NUM_TEAMS-1)*2 gameweeks with no information (consider making a Seasons class)
 			GameWeek[] season = new GameWeek[(NUM_TEAMS-1)*2];
 			scan.nextLine();
@@ -36,10 +36,13 @@ public class Driver {
 			{
 				String week = scan.nextLine();
 				season[i] = new GameWeek(i+1);
-
+				JSONArray weeklyGames = new JSONArray();
+				
 				for (int j = 0; j < NUM_TEAMS/2; j++)
 				{
+					
 					String g = scan.nextLine();
+					weeklyGames.add(g);
 					if (g.indexOf("-") == -1) //if the game has not been played
 					{
 						String homeT = g.substring(0, g.indexOf("vs") -1);
@@ -75,7 +78,9 @@ public class Driver {
 						}
 
 					}
+					
 				}
+				fixtures.add(weeklyGames);
 				scan.nextLine();
 			}
 
@@ -89,7 +94,7 @@ public class Driver {
 
 			// creates JSON file
 			JSONArray teamList = new JSONArray();
-			JSONObject leagueObj = new JSONObject();
+			JSONObject lginfo = new JSONObject ();
 			for (int i = 0; i < teams.length; i++)
 			{
 				JSONObject team = new JSONObject();
@@ -106,15 +111,15 @@ public class Driver {
 				//System.out.println(team.toString());
 				teamList.add(team);
 			}
-			leagueObj.put("lname", league);
-			leagueObj.put("teams", teamList);
-			leagues.add(leagueObj);
-		
+			lginfo.put("teams", teamList);
+			lginfo.put("fixtures", fixtures);
+			allData.put(league, lginfo);
+			
 		}
-		allData.put("leagues", leagues);
+		
 		try(FileWriter file = new FileWriter("C:\\Users\\maxnb\\OneDrive\\Documents\\GitHub\\E-Sports-Leagues\\E-Sports_HTML\\info.js"))
 		{
-			file.write("var list = " + allData.toString() + ";");
+			file.write("var websiteData = " + allData.toString() + ";");
 			file.flush();
 		}
 		catch(IOException e)
@@ -126,6 +131,7 @@ public class Driver {
 
 
 		System.out.println(allData);
+		
 
 	}
 	private static void order(Team[] array) {

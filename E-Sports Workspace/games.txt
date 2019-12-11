@@ -11,16 +11,16 @@ Team 9
 Team 10
 
 Week 1
-Team 10 vs Team 1
-Team 9 vs Team 2
-Team 8 vs Team 3
-Team 7 vs Team 4
-Team 6 vs Team 5
+Team 10 5-1 Team 1
+Team 9 2-2 Team 2
+Team 8 3-1 Team 3
+Team 7 2-0 Team 4
+Team 6 0-0 Team 5
 
 Week 2
-Team 1 vs Team 9
-Team 10 vs Team 8
-Team 2 vs Team 7
+Team 1 6-1 Team 9
+Team 10 3-2 Team 8
+Team 2 4-1 Team 7
 Team 3 vs Team 6
 Team 4 vs Team 5
 
@@ -149,9 +149,9 @@ Team 19
 Team 20
 
 Week 1
-Team 20 vs Team 11
-Team 19 vs Team 12
-Team 18 vs Team 13
+Team 20 0-0 Team 11
+Team 19 1-1 Team 12
+Team 18 5-2 Team 13
 Team 17 vs Team 14
 Team 16 vs Team 15
 

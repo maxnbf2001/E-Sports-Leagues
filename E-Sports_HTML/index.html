@@ -3,7 +3,9 @@
 <head>
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.7.9/angular.min.js"></script>
     <script src="info.js"></script>
+    <script src="teamService.js"></script>
     <script src="app.js"></script>
+    <script src="leagueView.js"></script>
     <script src="leagueButtons.js"></script>
 </head>
 <body>
@@ -14,8 +16,3 @@
     </div>
 </body>
 </html>
-
-- need to make some sort of teamService.js that has functions to access specific information. Consider
-- reconfiguring the way the data is set up, similar to the way the data is set up in NFLForecast. Get rid of
-- lname, and hardcode list of leagues, then use that name, and cycle through the elements in that leauge. In
-- the case of NFL is was the divisons, but for me it will be blue league and gold league.

@@ -7,10 +7,9 @@ app.component('main', {
 
 function MainController()
 {
-    this.info = list;
-
+    this.info = websiteData;
     this.FIFA = 0;
     this.NBA = 1;
 
-    this.shown = this.FIFA;
+    this.shown = 2;
 }

@@ -9,9 +9,8 @@
 <p></p>
 
 <div id = 'FIFAContainer' ng-if="$ctrl.shown===$ctrl.FIFA">
-    <league-buttons lg_list='$ctrl.info'></league-buttons>
+    <league-buttons lgs ='$ctrl.info'></league-buttons>
 </div>
 <div id = 'NBAContainer' ng-if="$ctrl.shown===$ctrl.NBA">
-    <conference-buttons conferences = '$ctrl.data'></conference-buttons>
+    <conference-buttons conferences = '$ctrl.info'></conference-buttons>
 </div>
-
