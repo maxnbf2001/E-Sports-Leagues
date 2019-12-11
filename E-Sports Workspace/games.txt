@@ -11,16 +11,16 @@ Team 9
 Team 10
 
 Week 1
-Team 10 5-1 Team 1
-Team 9 2-2 Team 2
-Team 8 3-1 Team 3
-Team 7 2-0 Team 4
-Team 6 0-0 Team 5
+Team 10 vs Team 1
+Team 9 vs Team 2
+Team 8 vs Team 3
+Team 7 vs Team 4
+Team 6 vs Team 5
 
 Week 2
-Team 1 6-1 Team 9
-Team 10 3-2 Team 8
-Team 2 4-1 Team 7
+Team 1 vs Team 9
+Team 10 vs Team 8
+Team 2 vs Team 7
 Team 3 vs Team 6
 Team 4 vs Team 5
 
@@ -149,9 +149,9 @@ Team 19
 Team 20
 
 Week 1
-Team 20 0-0 Team 11
-Team 19 1-1 Team 12
-Team 18 5-2 Team 13
+Team 20 vs Team 11
+Team 19 vs Team 12
+Team 18 vs Team 13
 Team 17 vs Team 14
 Team 16 vs Team 15
 
@@ -273,4 +273,142 @@ Team 13 vs Team 20
 Team 14 vs Team 19
 Team 15 vs Team 18
 Team 16 vs Team 17
+
+nba
+NBA 1
+NBA 2
+NBA 3
+NBA 4
+NBA 5
+NBA 6
+NBA 7
+NBA 8
+NBA 9
+NBA 10
+
+Week 1
+NBA 10 vs NBA 1
+NBA 9 vs NBA 2
+NBA 8 vs NBA 3
+NBA 7 vs NBA 4
+NBA 6 vs NBA 5
+
+Week 2
+NBA 1 vs NBA 9
+NBA 10 vs NBA 8
+NBA 2 vs NBA 7
+NBA 3 vs NBA 6
+NBA 4 vs NBA 5
+
+Week 3
+NBA 8 vs NBA 1
+NBA 7 vs NBA 9
+NBA 6 vs NBA 10
+NBA 5 vs NBA 2
+NBA 4 vs NBA 3
+
+Week 4
+NBA 1 vs NBA 7
+NBA 8 vs NBA 6
+NBA 9 vs NBA 5
+NBA 10 vs NBA 4
+NBA 2 vs NBA 3
+
+Week 5
+NBA 6 vs NBA 1
+NBA 5 vs NBA 7
+NBA 4 vs NBA 8
+NBA 3 vs NBA 9
+NBA 2 vs NBA 10
+
+Week 6
+NBA 1 vs NBA 5
+NBA 6 vs NBA 4
+NBA 7 vs NBA 3
+NBA 8 vs NBA 2
+NBA 9 vs NBA 10
+
+Week 7
+NBA 4 vs NBA 1
+NBA 3 vs NBA 5
+NBA 2 vs NBA 6
+NBA 10 vs NBA 7
+NBA 9 vs NBA 8
+
+Week 8
+NBA 1 vs NBA 3
+NBA 4 vs NBA 2
+NBA 5 vs NBA 10
+NBA 6 vs NBA 9
+NBA 7 vs NBA 8
+
+Week 9
+NBA 2 vs NBA 1
+NBA 10 vs NBA 3
+NBA 9 vs NBA 4
+NBA 8 vs NBA 5
+NBA 7 vs NBA 6
+
+Week 10
+NBA 1 vs NBA 10
+NBA 2 vs NBA 9
+NBA 3 vs NBA 8
+NBA 4 vs NBA 7
+NBA 5 vs NBA 6
+
+Week 11
+NBA 9 vs NBA 1
+NBA 8 vs NBA 10
+NBA 7 vs NBA 2
+NBA 6 vs NBA 3
+NBA 5 vs NBA 4
+
+Week 12
+NBA 1 vs NBA 8
+NBA 9 vs NBA 7
+NBA 10 vs NBA 6
+NBA 2 vs NBA 5
+NBA 3 vs NBA 4
+
+Week 13
+NBA 7 vs NBA 1
+NBA 6 vs NBA 8
+NBA 5 vs NBA 9
+NBA 4 vs NBA 10
+NBA 3 vs NBA 2
+
+Week 14
+NBA 1 vs NBA 6
+NBA 7 vs NBA 5
+NBA 8 vs NBA 4
+NBA 9 vs NBA 3
+NBA 10 vs NBA 2
+
+Week 15
+NBA 5 vs NBA 1
+NBA 4 vs NBA 6
+NBA 3 vs NBA 7
+NBA 2 vs NBA 8
+NBA 10 vs NBA 9
+
+Week 16
+NBA 1 vs NBA 4
+NBA 5 vs NBA 3
+NBA 6 vs NBA 2
+NBA 7 vs NBA 10
+NBA 8 vs NBA 9
+
+Week 17
+NBA 3 vs NBA 1
+NBA 2 vs NBA 4
+NBA 10 vs NBA 5
+NBA 9 vs NBA 6
+NBA 8 vs NBA 7
+
+Week 18
+NBA 1 vs NBA 2
+NBA 3 vs NBA 10
+NBA 4 vs NBA 9
+NBA 5 vs NBA 8
+NBA 6 vs NBA 7
 

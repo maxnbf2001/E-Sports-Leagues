@@ -6,11 +6,14 @@ public class Build_Schedule {
 	{
 		String[] blue = {"Team 1", "Team 2", "Team 3", "Team 4", "Team 5", "Team 6", "Team 7", "Team 8", "Team 9", "Team 10"};
 		String[] gold = {"Team 11", "Team 12", "Team 13", "Team 14", "Team 15", "Team 16", "Team 17", "Team 18", "Team 19", "Team 20"};
+		String[] nba  = {"NBA 1", "NBA 2", "NBA 3","NBA 4","NBA 5","NBA 6","NBA 7","NBA 8","NBA 9","NBA 10"};
 		PrintWriter writer = new PrintWriter ("games.txt", "UTF-8");
 		writer.println("blue");
 		makeSched (blue, writer);
 		writer.println("gold");
 		makeSched (gold, writer);
+		writer.println("nba");
+		makeSched (nba, writer);
 
 		writer.close();
 	}

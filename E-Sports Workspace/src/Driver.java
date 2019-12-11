@@ -4,6 +4,7 @@ import java.io.IOException;
 import java.nio.file.Files;
 import java.nio.file.Paths;
 import java.text.DateFormat;
+import java.text.DecimalFormat;
 import java.text.SimpleDateFormat;
 import java.util.ArrayList;
 import java.util.Collections;
@@ -19,8 +20,14 @@ public class Driver {
 	{
 		Scanner scan = new Scanner (new File ("games.txt"));
 		final int NUM_TEAMS = 10;
+		JSONObject FIFAData = new JSONObject();
+		JSONObject NBAData = new JSONObject();
 		JSONObject allData = new JSONObject();
 		JSONArray leagues = new JSONArray();
+		
+		// -------------------------------------------------------------------------
+		//  READS IN THE FIFA DATA
+		// -------------------------------------------------------------------------
 		
 		//bulds the data for both the gold and blue league
 		for (int l = 0; l < 2; l++)
@@ -128,12 +135,33 @@ public class Driver {
 			}
 			lginfo.put("teams", teamList);
 			lginfo.put("fixtures", fixtures);
-			allData.put(league, lginfo);
+			FIFAData.put(league, lginfo);
 			
 		}
+		
+		
+		
+		// -------------------------------------------------------------------------
+		//  READS IN THE NBA DATA
+		// -------------------------------------------------------------------------
+		
+		String league = scan.nextLine();
+		final int numNBATeams = 10;
+		// creates a list of NUM_TEAMS teams with no information
+		NBATeam[] NBAteams = new NBATeam[numNBATeams];
+		for (int i = 0; i < NBAteams.length; i++)
+		{
+			String teamName = scan.nextLine();
+			NBAteams[i] = new NBATeam (teamName);
+		}
+		
+		
+		
 		DateFormat dateFormat = new SimpleDateFormat("MM/dd/yyyy HH:mm:ss");
 		Date date = new Date();
 		String lastUpdated = dateFormat.format(date);
+		allData.put("fifaData", FIFAData);
+		allData.put("nbaData", NBAData);
 		allData.put("date", lastUpdated);
 		
 		try(FileWriter file = new FileWriter("C:\\Users\\maxnb\\OneDrive\\Documents\\GitHub\\E-Sports-Leagues\\E-Sports_HTML\\info.js"))
@@ -150,7 +178,7 @@ public class Driver {
 
 
 		System.out.println(allData);
-		
+
 
 	}
 	private static void order(Team[] array) {

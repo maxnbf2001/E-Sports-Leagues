@@ -9,10 +9,10 @@
 <p></p>
 
 <div id = 'FIFAContainer' ng-if="$ctrl.shown===$ctrl.FIFA">
-    <league-buttons lgs ='$ctrl.info'></league-buttons>
+    <league-buttons lgs ='$ctrl.info.fifaData'></league-buttons>
 </div>
 <div id = 'NBAContainer' ng-if="$ctrl.shown===$ctrl.NBA">
-    <conference-buttons conferences = '$ctrl.info'></conference-buttons>
+    <conference-buttons conferences = '$ctrl.info.nbaData'></conference-buttons>
 </div>
 
 <p class = "lastUpdated"> Data last updated on {{$ctrl.info.date}}</p>
