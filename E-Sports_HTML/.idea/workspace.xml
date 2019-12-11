@@ -32,7 +32,7 @@
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../Senior_Project" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/.." />
     <property name="settings.editor.selected.configurable" value="vcs.Git" />
   </component>
   <component name="RecentsManager">
@@ -78,7 +78,7 @@
       <option name="presentableId" value="Default" />
       <updated>1575437496944</updated>
       <workItem from="1575437498069" duration="182000" />
-      <workItem from="1575437701250" duration="28321000" />
+      <workItem from="1575437701250" duration="28574000" />
     </task>
     <servers />
   </component>
@@ -106,10 +106,10 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="560" y="92" key="#tableView.html/0.0.1536.824@0.0.1536.824" timestamp="1575734308234" />
-    <state x="550" y="154" key="FileChooserDialogImpl" timestamp="1575744848236">
+    <state x="550" y="154" key="FileChooserDialogImpl" timestamp="1576029046064">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="550" y="154" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1575744848236" />
+    <state x="550" y="154" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1576029046064" />
     <state x="279" y="55" key="SettingsEditor" timestamp="1575508425194">
       <screen x="0" y="0" width="1536" height="824" />
     </state>

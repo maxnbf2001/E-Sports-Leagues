@@ -2,7 +2,7 @@ var app = angular.module('esports', [])
 
 app.component('main', {
     controller: MainController,
-    templateUrl: "app.html"
+    templateUrl: "E-Sports_HTML/app.html"
 });
 
 function MainController()

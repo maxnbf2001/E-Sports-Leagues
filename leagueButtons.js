@@ -3,7 +3,7 @@ angular.module('esports').component('leagueButtons', {
     bindings: {
         lgs : "<"
     },
-    templateUrl: "leagueButtons.html"
+    templateUrl: "E-Sports_HTML/leagueButtons.html"
 });
 
 function LBController(){
