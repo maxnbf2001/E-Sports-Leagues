@@ -1,0 +1,34 @@
+<p class = "standingsHeader"> Standings</p>
+<table class = "standingsTable">
+    <tr class = "standingsHeaderRow">
+        <th> Rank </th>
+        <th> Team </th>
+        <th> Wins </th>
+        <th> Losses </th>
+        <th> PCT </th>
+        <th> GB </th>
+        <th> Streak </th>
+        <th> Last Five </th>
+    </tr>
+
+    <tr ng-repeat = "team in $ctrl.cnfs.teams">
+        <td> {{team.rank}}</td>
+        <td> {{team.name}}</td>
+        <td> {{team.wins}} </td>
+        <td> {{team.losses}} </td>
+        <td> {{team.pct}} </td>
+        <td> {{team.gb}} </td>
+        <td> {{team.strk}} </td>
+        <td> {{team.lastFive}} </td>
+    </tr>
+</table>
+<p class = "fixtureHeader"> Fixtures and Results </p>
+<div class = "rowFixture" ng-repeat = 'split in $ctrl.cnfs.fixtures' ng-init = "rowIndex = $index">
+    <div class = "weekFixture" ng-repeat = 'week in split track by $index'>
+        Week {{6*rowIndex + ($index+1)}}
+        <div ng-repeat = 'game in week'>
+            {{game}}
+        </div>
+    </div>
+    <br>
+</div>

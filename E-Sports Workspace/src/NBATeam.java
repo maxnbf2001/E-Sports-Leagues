@@ -4,12 +4,12 @@ public class NBATeam
 {
 	private DecimalFormat fmt = new DecimalFormat("#.###");
 	private String teamName, pct, lastFive;
-	private int rank, wins, losses, gb, strk;
+	private int wins, losses, strk;
+	private double gb;
 
-	private NBATeam ()
+	public NBATeam ()
 	{
 		teamName = "";
-		rank = 0;
 		wins = 0;
 		losses = 0;
 		pct = "0.000";
@@ -18,10 +18,9 @@ public class NBATeam
 		lastFive = "";
 	}
 	
-	private NBATeam (String name)
+	public NBATeam (String name)
 	{
 		teamName = name;
-		rank = 0;
 		wins = 0;
 		losses = 0;
 		pct = "0.000";
@@ -31,10 +30,9 @@ public class NBATeam
 	}
 	
 	
-	private NBATeam (String name, int r, int w, int l)
+	public NBATeam (String name, int w, int l)
 	{
 		teamName = name;
-		rank = r;
 		wins = w;
 		losses = l;
 		pct = "0.000";
@@ -51,8 +49,10 @@ public class NBATeam
 			strk = 1;
 		else 
 			strk+=1; 
-		
-		lastFive = "W"+lastFive.substring(0,4);
+		if (lastFive.length() == 5)
+			lastFive = "W"+lastFive.substring(0,4);
+		else 
+			lastFive = "W"+lastFive;
 	}
 	
 	public void addLoss()
@@ -63,8 +63,10 @@ public class NBATeam
 			strk = -1;
 		else
 			strk-=1;
-		
-		lastFive = "L"+lastFive.substring(0,4);
+		if (lastFive.length() == 5)
+			lastFive = "L"+lastFive.substring(0,4);
+		else 
+			lastFive = "L"+lastFive;
 	}
 	
 	public void updatePCT()
@@ -74,6 +76,42 @@ public class NBATeam
 		else if (wins > 0 && losses == 0)
 			pct = "1.000";
 		else 
-			pct = fmt.format((double)wins/(double)losses);
+			pct = fmt.format((double)wins/(double)(losses+wins));
 	}
+	
+	public String getName()
+	{
+		return teamName;
+	}
+	
+	public int getWins()
+	{
+		return wins;
+	}
+	
+	public int getLosses()
+	{
+		return losses;
+	}
+	
+	public String getPCT()
+	{
+		return pct;
+	}
+	
+	public double getGB()
+	{
+		return gb;
+	}
+	
+	public String getLastFive()
+	{
+		return lastFive;
+	}
+	
+	public int getStrk()
+	{
+		return strk;
+	}
+	
 }

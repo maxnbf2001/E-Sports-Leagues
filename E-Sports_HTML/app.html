@@ -12,7 +12,7 @@
     <league-buttons lgs ='$ctrl.info.fifaData'></league-buttons>
 </div>
 <div id = 'NBAContainer' ng-if="$ctrl.shown===$ctrl.NBA">
-    <conference-buttons conferences = '$ctrl.info.nbaData'></conference-buttons>
+    <conference-table cnfs = '$ctrl.info.nbaData'></conference-table>
 </div>
 
 <p class = "lastUpdated"> Data last updated on {{$ctrl.info.date}}</p>
