@@ -23,7 +23,6 @@ public class Driver {
 		JSONObject FIFAData = new JSONObject();
 		JSONObject NBAData = new JSONObject();
 		JSONObject allData = new JSONObject();
-		JSONArray leagues = new JSONArray();
 
 		// -------------------------------------------------------------------------
 		//  READS IN THE FIFA DATA
@@ -82,6 +81,7 @@ public class Driver {
 						Game game = new Game(findTeam (homeT, teams), findTeam (awayT, teams), homeG, awayG);
 						season[i].addGame(game, j);
 
+						//finds the team with the given name and assigns them a win, draw, or loss
 						Team HT = findTeam (homeT, teams);
 						Team AT = findTeam (awayT, teams);
 						if (homeG > awayG)
@@ -105,6 +105,7 @@ public class Driver {
 				}
 
 				splitFixtures.add(weeklyGames);
+				//makes sub arrays of the fixtures for formatting purposes on the html
 				if (splitFixtures.size() == 6)
 				{
 					fixtures.add(splitFixtures);
@@ -114,9 +115,10 @@ public class Driver {
 			}
 			fixtures.add(splitFixtures);
 
-
+			//sorts the teams by the given conditions
 			orderFIFA(teams);
-
+			
+			//makes every team into a JSON object and adds it into a JSONArray of teams
 			JSONArray teamList = new JSONArray();
 			JSONObject lginfo = new JSONObject ();
 			for (int i = 0; i < teams.length; i++)
@@ -160,19 +162,22 @@ public class Driver {
 		JSONArray fixtures = new JSONArray();
 		JSONArray splitFixtures = new JSONArray ();
 
-		for (int i = 0; i < (numNBATeams-1)*2; i++)
+		int numWeeks = (numNBATeams-1)*2;
+		
+		//loops through all of the weeks
+		for (int i = 0; i < numWeeks; i++)
 		{
 			String week = scan.nextLine();
 			JSONArray weeklyGames = new JSONArray();
+			
+			//loops through all of the games in a week
 			for (int j = 0; j < numNBATeams/2; j++)
 			{
 				String game = scan.nextLine();
 				weeklyGames.add(game);
-				if (game.indexOf("-") == -1) //the game has not been played
-				{
-					//Realizing i need to do nothing with the information at this point
-				}
-				else
+				
+				//handles the game if it has been played
+				if (game.indexOf("-") != -1)
 				{
 					//potential home points
 					String PHP = game.substring(game.indexOf("-")-3, game.indexOf("-"));
@@ -185,25 +190,27 @@ public class Driver {
 						homePoints = Integer.parseInt(PHP);
 					else
 						homePoints = Integer.parseInt(PHP.substring(1));
-					
+
 					if (Character.isDigit(PAP.charAt(2)))
 						awayPoints = Integer.parseInt(PAP);
 					else
 						awayPoints = Integer.parseInt(PAP.substring(0,2));
-					
+
 					String homeT = "";
 					String awayT = "";
-					
+
+					// determines the name of the home and away team
 					if (homePoints < 100)
 						homeT = game.substring(0, game.indexOf("-") -3);
 					else
 						homeT = game.substring(0,game.indexOf("-") - 4);
-					
+
 					if (awayPoints < 100)
 						awayT = game.substring(game.indexOf("-") +4, game.length());
 					else
 						awayT = game.substring(game.indexOf("-") +5, game.length());
 
+					// find the team with the given name, and assigns them a win or loss
 					NBATeam HT = findNBATeam (homeT, NBAteams);
 					NBATeam AT = findNBATeam (awayT, NBAteams);
 					if (homePoints > awayPoints)
@@ -219,7 +226,10 @@ public class Driver {
 
 				}
 			}
+			
 			splitFixtures.add(weeklyGames);
+			
+			//makes sub arrays of the fixtures for formatting purposes on the html
 			if (splitFixtures.size() == 6)
 			{
 				fixtures.add(splitFixtures);
@@ -228,9 +238,14 @@ public class Driver {
 			scan.nextLine();
 		}
 		fixtures.add(splitFixtures);
-		orderNBA (NBAteams);
-		gamesBehind (NBAteams);
 		
+		//sorts the nba teams based on the desired conditions
+		orderNBA (NBAteams);
+		
+		//calculates how many games behind the firt team each other team is
+		gamesBehind (NBAteams);
+
+		//makes a json array of all of the teams data
 		JSONArray teamList = new JSONArray();
 		for (int i = 0; i < NBAteams.length; i++)
 		{
@@ -245,18 +260,21 @@ public class Driver {
 			team.put("lastFive", NBAteams[i].getLastFive());
 			teamList.add(team);
 		}
-		
+
 		NBAData.put("teams", teamList);
 		NBAData.put("fixtures", fixtures);
-		
 
+		//date of the most recent build
 		DateFormat dateFormat = new SimpleDateFormat("MM/dd/yyyy HH:mm:ss");
 		Date date = new Date();
 		String lastUpdated = dateFormat.format(date);
+		
+		//puts all of the data in the final json object
 		allData.put("fifaData", FIFAData);
 		allData.put("nbaData", NBAData);
 		allData.put("date", lastUpdated);
 
+		//writes the data as a variable to a js file 
 		try(FileWriter file = new FileWriter("C:\\Users\\maxnb\\OneDrive\\Documents\\GitHub\\E-Sports-Leagues\\E-Sports_HTML\\info.js"))
 		{
 			file.write("var websiteData = " + allData.toString() + ";");
@@ -278,9 +296,10 @@ public class Driver {
 	{
 		for (int i = 1; i < arr.length; i++)
 			arr[i].setGB(((arr[0].getWins() - arr[0].getLosses()) - (arr[i].getWins() - arr[i].getLosses()))/2.0 +"");
-		
+
 	}
-	private static void orderFIFA(Team[] array) {
+	private static void orderFIFA(Team[] array) 
+	{
 
 		ArrayList<Team> arrTemp = new ArrayList<Team>();
 		for (int i = 0; i < array.length; i++)
@@ -318,8 +337,9 @@ public class Driver {
 			array[i] = arrTemp.get(i);
 		}
 	}
-	
-	private static void orderNBA (NBATeam[] array) {
+
+	private static void orderNBA (NBATeam[] array)
+	{
 
 		ArrayList<NBATeam> arrTemp = new ArrayList<NBATeam>();
 		for (int i = 0; i < array.length; i++)
@@ -338,11 +358,11 @@ public class Driver {
 					return sComp;
 				} 
 
-				
+
 				Integer x3 = ((NBATeam) o1).getLosses();
 				Integer x4 = ((NBATeam) o2).getLosses();
 				sComp =  x3.compareTo(x4);
-				
+
 				if (sComp != 0) {
 					return sComp;
 				} 
@@ -369,7 +389,7 @@ public class Driver {
 		}
 		return new Team();
 	}
-	
+
 	public static NBATeam findNBATeam (String name, NBATeam[] lot)
 	{
 		for (int i = 0; i < lot.length; i++)
