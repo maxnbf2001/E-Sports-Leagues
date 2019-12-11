@@ -5,7 +5,7 @@
          </button>
     </div>
 </div>
-<br>
+<p class = "standingsHeader"> Standings</p>
 <table class = "standingsTable">
     <tr class = "standingsHeaderRow">
         <th> Rank </th>
@@ -33,11 +33,10 @@
         <td> {{team.points}} </td>
     </tr>
 </table>
-<br>
-
+<p class = "fixtureHeader"> Fixtures and Results </p>
 <div class = "rowFixture" ng-repeat = 'split in $ctrl.lgs[$ctrl.getLeagueKeys()[$ctrl.selected]].fixtures' ng-init = "rowIndex = $index">
     <div class = "weekFixture" ng-repeat = 'week in split track by $index'>
-        Week {{3*rowIndex + ($index+1)}}
+        Week {{6*rowIndex + ($index+1)}}
         <div ng-repeat = 'game in week'>
             {{game}}
         </div>

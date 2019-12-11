@@ -38,7 +38,6 @@ public class Driver {
 			
 			JSONArray fixtures = new JSONArray();
 			JSONArray splitFixtures = new JSONArray ();
-			int split = 0;
 			
 			// creates a list of (NUM_TEAMS-1)*2 gameweeks with no information (consider making a Seasons class)
 			GameWeek[] season = new GameWeek[(NUM_TEAMS-1)*2];
@@ -95,19 +94,17 @@ public class Driver {
 					}
 					
 				}
-				split+=1; 
-				if (split%4 != 0)
-					splitFixtures.add(weeklyGames);
-				else
+
+				splitFixtures.add(weeklyGames);
+				if (splitFixtures.size() == 6)
 				{
-					split = 0;
 					fixtures.add(splitFixtures);
 					splitFixtures = new JSONArray ();
 				}
-	
 				scan.nextLine();
 			}
-
+			fixtures.add(splitFixtures);
+			
 
 			order(teams);
 
