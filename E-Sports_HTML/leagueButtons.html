@@ -1,12 +1,12 @@
 <div class = 'leagueButtons'>
     <div class = 'leagueButtonStyle' ng-repeat = "lg in $ctrl.getLeagueNames()">
-        <button class = 'leagueButton Button{{$ctrl.selected===$index+1}}}' ng-click = '$ctrl.selected=$index+1'>
+        <button class = 'leagueButton Button{{$ctrl.selected===$index}}' ng-click = '$ctrl.selected=$index'>
             {{lg}} League
          </button>
     </div>
 </div>
 <br>
-<table class = "standingsTable" ng-if = "$ctrl.selected !== 0">
+<table class = "standingsTable">
     <tr class = "standingsHeaderRow">
         <th> Rank </th>
         <th> Team </th>
@@ -20,7 +20,7 @@
         <th> Points </th>
     </tr>
 
-    <tr ng-repeat = "team in $ctrl.lgs[$ctrl.getLeagueKeys()[$ctrl.selected-1]].teams">
+    <tr ng-repeat = "team in $ctrl.lgs[$ctrl.getLeagueKeys()[$ctrl.selected]].teams">
         <td> {{team.rank}}</td>
         <td> {{team.name}}</td>
         <td> {{team.played}} </td>
@@ -35,10 +35,12 @@
 </table>
 <br>
 
-<div class = "weekNumber" ng-repeat = 'week in $ctrl.lgs[$ctrl.getLeagueKeys()[$ctrl.selected-1]].fixtures track by $index'>
-    Week {{$index+1}}
-    <div class = "weekGame" ng-repeat = 'game in week'>
-        {{game}}
+<div class = "rowFixture" ng-repeat = 'split in $ctrl.lgs[$ctrl.getLeagueKeys()[$ctrl.selected]].fixtures' ng-init = "rowIndex = $index">
+    <div class = "weekFixture" ng-repeat = 'week in split track by $index'>
+        Week {{3*rowIndex + ($index+1)}}
+        <div ng-repeat = 'game in week'>
+            {{game}}
+        </div>
     </div>
     <br>
 </div>

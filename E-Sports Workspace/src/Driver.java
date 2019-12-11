@@ -3,9 +3,12 @@ import java.io.FileWriter;
 import java.io.IOException;
 import java.nio.file.Files;
 import java.nio.file.Paths;
+import java.text.DateFormat;
+import java.text.SimpleDateFormat;
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.Comparator;
+import java.util.Date;
 import java.util.Scanner;
 
 import org.json.simple.JSONArray;
@@ -18,26 +21,38 @@ public class Driver {
 		final int NUM_TEAMS = 10;
 		JSONObject allData = new JSONObject();
 		JSONArray leagues = new JSONArray();
+		
+		//bulds the data for both the gold and blue league
 		for (int l = 0; l < 2; l++)
 		{
 			String league = scan.nextLine();
-			// creates a list of NUM_TEAMS teams with no information (consider making a Standings class)
+			
+			// creates a list of NUM_TEAMS teams with no information
 			Team[] teams = new Team[NUM_TEAMS];
 			for (int i = 0; i < teams.length; i++)
 			{
 				String teamName = scan.nextLine();
 				teams[i] = new Team (teamName);
 			}
+			
+			
 			JSONArray fixtures = new JSONArray();
+			JSONArray splitFixtures = new JSONArray ();
+			int split = 0;
+			
 			// creates a list of (NUM_TEAMS-1)*2 gameweeks with no information (consider making a Seasons class)
 			GameWeek[] season = new GameWeek[(NUM_TEAMS-1)*2];
+			
 			scan.nextLine();
+			
+			// loops through the entire season and reads in the games for each week
 			for (int i = 0; i < season.length; i++)
 			{
 				String week = scan.nextLine();
 				season[i] = new GameWeek(i+1);
 				JSONArray weeklyGames = new JSONArray();
 				
+				// reads in the games for each week
 				for (int j = 0; j < NUM_TEAMS/2; j++)
 				{
 					
@@ -80,19 +95,22 @@ public class Driver {
 					}
 					
 				}
-				fixtures.add(weeklyGames);
+				split+=1; 
+				if (split%4 != 0)
+					splitFixtures.add(weeklyGames);
+				else
+				{
+					split = 0;
+					fixtures.add(splitFixtures);
+					splitFixtures = new JSONArray ();
+				}
+	
 				scan.nextLine();
 			}
 
 
 			order(teams);
-			//System.out.println("Team\tPlayed\tWins\tDraws\tLoss\tGF\tGA\tGD\tPoints");
-			//for (int i = 0; i < teams.length; i++)
-			//{
-			//	System.out.println(teams[i]);
-			//}
 
-			// creates JSON file
 			JSONArray teamList = new JSONArray();
 			JSONObject lginfo = new JSONObject ();
 			for (int i = 0; i < teams.length; i++)
@@ -116,6 +134,10 @@ public class Driver {
 			allData.put(league, lginfo);
 			
 		}
+		DateFormat dateFormat = new SimpleDateFormat("MM/dd/yyyy HH:mm:ss");
+		Date date = new Date();
+		String lastUpdated = dateFormat.format(date);
+		allData.put("date", lastUpdated);
 		
 		try(FileWriter file = new FileWriter("C:\\Users\\maxnb\\OneDrive\\Documents\\GitHub\\E-Sports-Leagues\\E-Sports_HTML\\info.js"))
 		{

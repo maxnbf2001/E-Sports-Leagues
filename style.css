@@ -14,8 +14,7 @@ tr:nth-child(even) {
 
 #ButtonRow{
     display: flex;
-    justify-content: center;
-
+    justify-content: left;
 }
 
 #fifa{
@@ -29,12 +28,12 @@ tr:nth-child(even) {
 .gameButton{
     font-size: x-large;
     padding: 12px;
-    justify-content: center;
+    justify-content: left;
 }
 
 .leagueButtons{
     display: flex;
-    justify-content: center;
+    justify-content: left;
 }
 
 .leagueButton {
@@ -48,4 +47,29 @@ tr:nth-child(even) {
 
 .weekNumber{
     font-size: larger;
+}
+
+.rowFixture{
+    display: flex;
+}
+
+.weekFixture{
+    padding: 12px;
+}
+
+.lastUpdated{
+    color: grey;
+    margin: 50px;
+    text-align: center;
+}
+button:active {
+    background: blue;
+    box-shadow: inset 0px 0px 5px #c1c1c1;
+    outline: none;
+}
+
+.Buttontrue{
+    background: #aeaeae;
+    box-shadow: inset 0px 0px 5px #333333;
+    outline: none;
 }
