@@ -1,9 +1,6 @@
-<div class = 'leagueButtons'>
-    <div class = 'leagueButtonStyle' ng-repeat = "lg in $ctrl.getLeagueNames()">
-        <button class = 'leagueButton Button{{$ctrl.selected===$index}}' ng-click = '$ctrl.selected=$index'>
-            {{lg}} League
-         </button>
-    </div>
+<div class = "leagueButtons">
+<button class= "blueButton" ng-click = "$ctrl.selected=0"> Blue League</button>
+<button class= "goldButton" ng-click = "$ctrl.selected=1"> Gold League</button>
 </div>
 <p class = "standingsHeader"> Standings</p>
 <table class = "standingsTable">
