@@ -147,3 +147,11 @@ table,td,th{
     color: white;
 }
 
+#logo {
+    width: 400px;
+    margin: 50px auto;
+}
+#logo img {
+    width: 100%;
+    display: block;
+}
