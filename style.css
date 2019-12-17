@@ -2,22 +2,26 @@ table {
     font-family: arial, sans-serif;
     border-collapse: collapse;
     width: 88%;
+    margin: 12px;
 }
 td, th {
-    border: 1px solid #dddddd;
+
     text-align: left;
     padding: 6px;
-}
-tr:nth-child(even) {
-    background-color: #dddddd;
+
 }
 
 table,td,th{
     border-collapse: collapse;
     text-align: center;
     font-size: x-large;
+
 }
 
+.standingsHeaderRow{
+    background: gray;
+
+}
 
 .standingsTable{
     padding: 12px;
