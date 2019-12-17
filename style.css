@@ -120,6 +120,7 @@ table,td,th{
 .standingsHeader, .fixtureHeader {
     font-size: xx-large;
     padding: 12px;
+    font-weight: bolder;
 }
 
 
