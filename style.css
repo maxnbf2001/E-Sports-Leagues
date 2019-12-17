@@ -1,8 +1,7 @@
 table {
     font-family: arial, sans-serif;
     border-collapse: collapse;
-    width: 70%;
-
+    width: 88%;
 }
 td, th {
     border: 1px solid #dddddd;
@@ -12,6 +11,13 @@ td, th {
 tr:nth-child(even) {
     background-color: #dddddd;
 }
+
+table,td,th{
+    border-collapse: collapse;
+    text-align: center;
+    font-size: x-large;
+}
+
 
 .standingsTable{
     padding: 12px;
@@ -73,7 +79,7 @@ tr:nth-child(even) {
 }
 
 .goldButton, .blueButton {
-    font-size: larger;
+    font-size: xx-large;
     margin: 10px;
 }
 
@@ -117,7 +123,7 @@ tr:nth-child(even) {
 }
 
 .standingsHeader, .fixtureHeader {
-    font-size: larger;
+    font-size: xx-large;
     padding: 12px;
 }
 

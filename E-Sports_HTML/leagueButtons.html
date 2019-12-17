@@ -19,16 +19,16 @@
     </tr>
 
     <tr class = "teamInfo" ng-repeat = "team in $ctrl.lgs.fifaData[$ctrl.getLeagueKeys()[$ctrl.selected]].teams">
-        <td> {{team.rank}}</td>
-        <td> {{team.name}}</td>
-        <td> {{team.played}} </td>
-        <td> {{team.wins}} </td>
-        <td> {{team.draws}} </td>
-        <td> {{team.losses}} </td>
-        <td> {{team.gf}} </td>
-        <td> {{team.ga}} </td>
-        <td> {{team.gd}} </td>
-        <td> {{team.points}} </td>
+        <td class = "rankCol"> {{team.rank}}</td>
+        <td class = "nameCol"> {{team.name}}</td>
+        <td class = "playedCol"> {{team.played}} </td>
+        <td class = "winsCol"> {{team.wins}} </td>
+        <td class = "drawsCol"> {{team.draws}} </td>
+        <td class = "lossesCol"> {{team.losses}} </td>
+        <td class = "gfCol"> {{team.gf}} </td>
+        <td class = "gaCol"> {{team.ga}} </td>
+        <td class = "gdCol"> {{team.gd}} </td>
+        <td class = "pointsCol"> {{team.points}} </td>
     </tr>
 </table>
 <p class = "fixtureHeader"> Fixtures and Results </p>
