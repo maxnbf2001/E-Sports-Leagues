@@ -11,7 +11,7 @@
         <th> Last Five </th>
     </tr>
 
-    <tr ng-repeat = "team in $ctrl.cnfs.teams">
+    <tr ng-repeat = "team in $ctrl.cnfs.nbaData.teams">
         <td> {{team.rank}}</td>
         <td> {{team.name}}</td>
         <td> {{team.wins}} </td>
@@ -24,7 +24,7 @@
     </tr>
 </table>
 <p class = "fixtureHeader"> Fixtures and Results </p>
-<div class = "rowFixture" ng-repeat = 'split in $ctrl.cnfs.fixtures' ng-init = "rowIndex = $index">
+<div class = "rowFixture" ng-repeat = 'split in $ctrl.cnfs.nbaData.fixtures' ng-init = "rowIndex = $index">
     <div class = "weekFixture" ng-repeat = 'week in split track by $index'>
         Week {{6*rowIndex + ($index+1)}}
         <div ng-repeat = 'game in week'>
@@ -33,3 +33,5 @@
     </div>
     <br>
 </div>
+
+<p class = "lastUpdated"> Data last updated on {{$ctrl.cnfs.date}}</p>

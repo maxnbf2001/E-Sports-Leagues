@@ -19,7 +19,7 @@ tr:nth-child(even) {
 
 #ButtonRow{
     display: flex;
-    justify-content: left;
+    justify-content: center;
 }
 
 #fifa{
@@ -30,14 +30,14 @@ tr:nth-child(even) {
     text-decoration: none;
     padding: 35px;
     padding-bottom: 35px;
-    min-width: 250px;
+    min-width: 350px;
     transition: all 0.1s;
-    font: 40px "Josefin Sans";
+    font: 50px "Josefin Sans";
     font-weight: 700;
     display: inline-block;
     text-align: center;
     margin: 30px;
-    border-radius: 12px;
+    border-radius: 30px;
     position: relative;
 }
 
@@ -48,14 +48,14 @@ tr:nth-child(even) {
     text-decoration: none;
     padding: 35px;
     padding-bottom: 35px;
-    min-width: 250px;
+    min-width: 350px;
     transition: all 0.1s;
-    font: 40px "Josefin Sans";
+    font: 50px "Josefin Sans";
     font-weight: 700;
     display: inline-block;
     text-align: center;
     margin: 30px;
-    border-radius: 12px;
+    border-radius: 30px;
     position: relative;
     background-image: linear-gradient(rgba(0, 0, 0, 0), black), url("https://s1.ibtimes.com/sites/www.ibtimes.com/files/styles/full/public/2019/10/11/2995288190873eefb7e90b.jpg");
 
@@ -98,8 +98,14 @@ tr:nth-child(even) {
     margin: 50px;
     text-align: center;
 }
-button:active {
+.blueButton:active {
     background: blue;
+    box-shadow: inset 0px 0px 5px #c1c1c1;
+    outline: none;
+}
+
+.goldButton:active {
+    background: gold;
     box-shadow: inset 0px 0px 5px #c1c1c1;
     outline: none;
 }

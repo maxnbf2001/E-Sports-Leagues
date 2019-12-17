@@ -18,7 +18,7 @@
         <th> Points </th>
     </tr>
 
-    <tr ng-repeat = "team in $ctrl.lgs[$ctrl.getLeagueKeys()[$ctrl.selected]].teams">
+    <tr ng-repeat = "team in $ctrl.lgs.fifaData[$ctrl.getLeagueKeys()[$ctrl.selected]].teams">
         <td> {{team.rank}}</td>
         <td> {{team.name}}</td>
         <td> {{team.played}} </td>
@@ -32,7 +32,7 @@
     </tr>
 </table>
 <p class = "fixtureHeader"> Fixtures and Results </p>
-<div class = "rowFixture" ng-repeat = 'split in $ctrl.lgs[$ctrl.getLeagueKeys()[$ctrl.selected]].fixtures' ng-init = "rowIndex = $index">
+<div class = "rowFixture" ng-repeat = 'split in $ctrl.lgs.fifaData[$ctrl.getLeagueKeys()[$ctrl.selected]].fixtures' ng-init = "rowIndex = $index">
     <div class = "weekFixture" ng-repeat = 'week in split track by $index'>
         Week {{6*rowIndex + ($index+1)}}
         <div ng-repeat = 'game in week'>
@@ -42,6 +42,7 @@
     <br>
 </div>
 
+<p class = "lastUpdated"> Data last updated on {{$ctrl.lgs.date}}</p>
 
 
 
