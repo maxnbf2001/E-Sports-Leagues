@@ -27,7 +27,7 @@
 <div class = "rowFixture" ng-repeat = 'split in $ctrl.cnfs.nbaData.fixtures' ng-init = "rowIndex = $index">
     <div class = "weekFixture" ng-repeat = 'week in split track by $index'>
         Week {{6*rowIndex + ($index+1)}}
-        <div ng-repeat = 'game in week'>
+        <div class = "weekGame" ng-repeat = 'game in week'>
             {{game}}
         </div>
     </div>

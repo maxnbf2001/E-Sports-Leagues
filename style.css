@@ -20,7 +20,15 @@ table,td,th{
 
 .standingsHeaderRow{
     background: gray;
+}
 
+.weekFixture{
+    font-size: medium;
+    font-weight: bold;
+}
+
+.weekGame{
+    font-weight: normal;
 }
 
 .standingsTable{
