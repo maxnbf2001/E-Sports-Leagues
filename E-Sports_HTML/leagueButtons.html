@@ -1,6 +1,6 @@
 <div class = "leagueButtons">
-    <button class= "blueButton" ng-click = "$ctrl.selected=0"> Blue League</button>
-    <button class= "goldButton" ng-click = "$ctrl.selected=1"> Gold League</button>
+    <button id = "blueButton" class= 'leagueButton League{{$ctrl.selected===$ctrl.BLUE}}' ng-click = "$ctrl.selected=$ctrl.BLUE"> Blue League</button>
+    <button id = "goldButton" class= 'leagueButton League{{$ctrl.selected===$ctrl.GOLD}}' ng-click = "$ctrl.selected=$ctrl.GOLD"> Gold League</button>
 </div>
 
 <p class = "standingsHeader"> Standings</p>

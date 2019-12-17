@@ -115,12 +115,14 @@ table,td,th{
     background: blue;
     box-shadow: inset 0px 0px 5px #c1c1c1;
     outline: none;
+    transform: translateY(4px);
 }
 
 .goldButton:active {
     background: gold;
     box-shadow: inset 0px 0px 5px #c1c1c1;
     outline: none;
+    transform: translateY(4px);
 }
 
 .Buttontrue{
@@ -164,7 +166,7 @@ table,td,th{
     display: block;
 }
 
-.blueButton, .goldButton{
+#blueButton, #goldButton{
     width: 200px;
     font-size: 16px;
     font-weight: 600;
@@ -183,7 +185,7 @@ table,td,th{
     transition: all .4s ease-in-out;
 }
 
-.blueButton:hover, .goldButton:hover{
+#blueButton:hover, #goldButton:hover{
     background-position: 100% 0;
     moz-transition: all .4s ease-in-out;
     -o-transition: all .4s ease-in-out;
@@ -191,16 +193,16 @@ table,td,th{
     transition: all .4s ease-in-out;
 }
 
-.blueButton:focus, .goldButton:focus{
+#blueButton:focus, #goldButton:focus{
     outline: none;
 }
 
-.blueButton{
+#blueButton{
     background-image: linear-gradient(to right, darkblue, blue, darkturquoise, lightblue);
     box-shadow: 0 4px 15px 0 rgba(49, 196, 190, 0.75);
 }
 
-.goldButton {
-    background-image: linear-gradient(to right, darkgoldenrod, goldenrod, gold, yellow);
+#goldButton {
+    background-image: linear-gradient(to right, darkgoldenrod, goldenrod, gold, lightyellow);
     box-shadow: 0 4px 15px 0 gold;
 }
