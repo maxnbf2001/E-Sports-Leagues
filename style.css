@@ -78,11 +78,6 @@ table,td,th{
     justify-content: left;
 }
 
-.goldButton, .blueButton {
-    font-size: xx-large;
-    margin: 10px;
-}
-
 .weeklyFixtures{
     display:flex;
 }
@@ -154,4 +149,45 @@ table,td,th{
 #logo img {
     width: 100%;
     display: block;
+}
+
+.blueButton, .goldButton{
+    width: 200px;
+    font-size: 16px;
+    font-weight: 600;
+    color: #fff;
+    cursor: pointer;
+    margin: 20px;
+    height: 55px;
+    text-align:center;
+    border: none;
+    background-size: 300% 100%;
+
+    border-radius: 50px;
+    moz-transition: all .4s ease-in-out;
+    -o-transition: all .4s ease-in-out;
+    -webkit-transition: all .4s ease-in-out;
+    transition: all .4s ease-in-out;
+}
+
+.blueButton:hover, .goldButton:hover{
+    background-position: 100% 0;
+    moz-transition: all .4s ease-in-out;
+    -o-transition: all .4s ease-in-out;
+    -webkit-transition: all .4s ease-in-out;
+    transition: all .4s ease-in-out;
+}
+
+.blueButton:focus, .goldButton:focus{
+    outline: none;
+}
+
+.blueButton{
+    background-image: linear-gradient(to right, darkblue, blue, darkturquoise, lightblue);
+    box-shadow: 0 4px 15px 0 rgba(49, 196, 190, 0.75);
+}
+
+.goldButton {
+    background-image: linear-gradient(to right, darkgoldenrod, goldenrod, gold, yellow);
+    box-shadow: 0 4px 15px 0 gold;
 }
