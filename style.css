@@ -132,3 +132,12 @@ tr:nth-child(even) {
     display: block;
     position: absolute;
 }
+
+.teamInfo:hover{
+    background-color: black;
+}
+
+.teamInfo:hover td{
+    color: white;
+}
+
