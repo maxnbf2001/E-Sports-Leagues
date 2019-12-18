@@ -3,7 +3,8 @@
     <button id = "goldButton" class= 'leagueButton League{{$ctrl.selected===$ctrl.GOLD}}' ng-click = "$ctrl.selected=$ctrl.GOLD"> Gold League</button>
 </div>
 
-<p class = "standingsHeader"> Standings</p>
+<p class = "standingsHeader" ng-if = "$ctrl.selected===$ctrl.BLUE">Blue League Standings</p>
+<p class = "standingsHeader" ng-if = "$ctrl.selected===$ctrl.GOLD">Gold League Standings</p>
 <table class = "standingsTable">
     <tr class = "standingsHeaderRow">
         <th> </th>
