@@ -24,10 +24,11 @@
     </tr>
 </table>
 <p class = "fixtureHeader"> Fixtures and Results </p>
+<p class = "filterNames"> Enter your name to find your games: <input type = "text" ng-model = "teamName"></p>
 <div class = "rowFixture" ng-repeat = 'split in $ctrl.cnfs.nbaData.fixtures' ng-init = "rowIndex = $index">
     <div class = "weekFixture" ng-repeat = 'week in split track by $index'>
         Week {{6*rowIndex + ($index+1)}}
-        <div class = "weekGame" ng-repeat = 'game in week'>
+        <div class = "weekGame" ng-repeat = 'game in week | filter : teamName'>
             {{game}}
         </div>
     </div>

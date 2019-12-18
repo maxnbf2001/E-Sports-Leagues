@@ -31,7 +31,16 @@ table,td,th{
     font-weight: normal;
 }
 
+.weekGame:hover{
+    color: white;
+    background: black;
+}
+
 .standingsTable{
+    padding: 12px;
+}
+
+.filterNames{
     padding: 12px;
 }
 

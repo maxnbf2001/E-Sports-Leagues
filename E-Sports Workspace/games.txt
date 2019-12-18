@@ -1,414 +1,326 @@
 blue
-Team 1
-Team 2
-Team 3
-Team 4
-Team 5
-Team 6
-Team 7
-Team 8
-Team 9
-Team 10
+Beef
+Zang
+Ripps
+Zabib
+Wolpert
+Platzman
+Steinberg
+Assaf
 
 Week 1
-Team 10 5-1 Team 1
-Team 9 4-2 Team 2
-Team 8 0-3 Team 3
-Team 7 6-3 Team 4
-Team 6 0-0 Team 5
+Assaf 0-3 Beef
+Steinberg 2-2 Zang
+Platzman 0-0 Ripps
+Wolpert 2-1 Zabib
 
 Week 2
-Team 1 1-0 Team 9
-Team 10 0-2 Team 8
-Team 2 4-5 Team 7
-Team 3 2-8 Team 6
-Team 4 5-3 Team 5
+Beef 5-0 Steinberg
+Assaf 3-2 Platzman
+Zang 2-1 Wolpert
+Ripps 0-1 Zabib
 
 Week 3
-Team 8 2-1 Team 1
-Team 7 1-2 Team 9
-Team 6 2-0 Team 10
-Team 5 6-3 Team 2
-Team 4 5-6 Team 3
+Platzman vs Beef
+Wolpert vs Steinberg
+Zabib vs Assaf
+Ripps vs Zang
 
 Week 4
-Team 1 1-1 Team 7
-Team 8 0-0 Team 6
-Team 9 3-2 Team 5
-Team 10 2-2 Team 4
-Team 2 2-3 Team 3
+Beef vs Wolpert
+Platzman vs Zabib
+Steinberg vs Ripps
+Assaf vs Zang
 
 Week 5
-Team 6 vs Team 1
-Team 5 vs Team 7
-Team 4 vs Team 8
-Team 3 vs Team 9
-Team 2 vs Team 10
+Zabib vs Beef
+Ripps vs Wolpert
+Zang vs Platzman
+Assaf vs Steinberg
 
 Week 6
-Team 1 vs Team 5
-Team 6 vs Team 4
-Team 7 vs Team 3
-Team 8 vs Team 2
-Team 9 vs Team 10
+Beef vs Ripps
+Zabib vs Zang
+Wolpert vs Assaf
+Platzman vs Steinberg
 
 Week 7
-Team 4 vs Team 1
-Team 3 vs Team 5
-Team 2 vs Team 6
-Team 10 vs Team 7
-Team 9 vs Team 8
+Zang vs Beef
+Assaf vs Ripps
+Steinberg vs Zabib
+Platzman vs Wolpert
 
 Week 8
-Team 1 vs Team 3
-Team 4 vs Team 2
-Team 5 vs Team 10
-Team 6 vs Team 9
-Team 7 vs Team 8
+Beef vs Assaf
+Zang vs Steinberg
+Ripps vs Platzman
+Zabib vs Wolpert
 
 Week 9
-Team 2 vs Team 1
-Team 10 vs Team 3
-Team 9 vs Team 4
-Team 8 vs Team 5
-Team 7 vs Team 6
+Steinberg vs Beef
+Platzman vs Assaf
+Wolpert vs Zang
+Zabib vs Ripps
 
 Week 10
-Team 1 vs Team 10
-Team 2 vs Team 9
-Team 3 vs Team 8
-Team 4 vs Team 7
-Team 5 vs Team 6
+Beef vs Platzman
+Steinberg vs Wolpert
+Assaf vs Zabib
+Zang vs Ripps
 
 Week 11
-Team 9 vs Team 1
-Team 8 vs Team 10
-Team 7 vs Team 2
-Team 6 vs Team 3
-Team 5 vs Team 4
+Wolpert vs Beef
+Zabib vs Platzman
+Ripps vs Steinberg
+Zang vs Assaf
 
 Week 12
-Team 1 vs Team 8
-Team 9 vs Team 7
-Team 10 vs Team 6
-Team 2 vs Team 5
-Team 3 vs Team 4
+Beef vs Zabib
+Wolpert vs Ripps
+Platzman vs Zang
+Steinberg vs Assaf
 
 Week 13
-Team 7 vs Team 1
-Team 6 vs Team 8
-Team 5 vs Team 9
-Team 4 vs Team 10
-Team 3 vs Team 2
+Ripps vs Beef
+Zang vs Zabib
+Assaf vs Wolpert
+Steinberg vs Platzman
 
 Week 14
-Team 1 vs Team 6
-Team 7 vs Team 5
-Team 8 vs Team 4
-Team 9 vs Team 3
-Team 10 vs Team 2
-
-Week 15
-Team 5 vs Team 1
-Team 4 vs Team 6
-Team 3 vs Team 7
-Team 2 vs Team 8
-Team 10 vs Team 9
-
-Week 16
-Team 1 vs Team 4
-Team 5 vs Team 3
-Team 6 vs Team 2
-Team 7 vs Team 10
-Team 8 vs Team 9
-
-Week 17
-Team 3 vs Team 1
-Team 2 vs Team 4
-Team 10 vs Team 5
-Team 9 vs Team 6
-Team 8 vs Team 7
-
-Week 18
-Team 1 vs Team 2
-Team 3 vs Team 10
-Team 4 vs Team 9
-Team 5 vs Team 8
-Team 6 vs Team 7
+Beef vs Zang
+Ripps vs Assaf
+Zabib vs Steinberg
+Wolpert vs Platzman
 
 gold
-Team 11
-Team 12
-Team 13
-Team 14
-Team 15
-Team 16
-Team 17
-Team 18
-Team 19
-Team 20
+Vernoff
+Rowan
+Zingler
+Israel
+Weiss
+Hodys
+Wheeler
+Demian
 
 Week 1
-Team 20 vs Team 11
-Team 19 vs Team 12
-Team 18 vs Team 13
-Team 17 vs Team 14
-Team 16 vs Team 15
+Demian 0-2 Vernoff
+Wheeler 2-3 Rowan
+Hodys 2-1 Zingler
+Weiss 0-0 Israel
 
 Week 2
-Team 11 vs Team 19
-Team 20 vs Team 18
-Team 12 vs Team 17
-Team 13 vs Team 16
-Team 14 vs Team 15
+Vernoff vs Wheeler
+Demian vs Hodys
+Rowan vs Weiss
+Zingler vs Israel
 
 Week 3
-Team 18 vs Team 11
-Team 17 vs Team 19
-Team 16 vs Team 20
-Team 15 vs Team 12
-Team 14 vs Team 13
+Hodys vs Vernoff
+Weiss vs Wheeler
+Israel vs Demian
+Zingler vs Rowan
 
 Week 4
-Team 11 vs Team 17
-Team 18 vs Team 16
-Team 19 vs Team 15
-Team 20 vs Team 14
-Team 12 vs Team 13
+Vernoff vs Weiss
+Hodys vs Israel
+Wheeler vs Zingler
+Demian vs Rowan
 
 Week 5
-Team 16 vs Team 11
-Team 15 vs Team 17
-Team 14 vs Team 18
-Team 13 vs Team 19
-Team 12 vs Team 20
+Israel vs Vernoff
+Zingler vs Weiss
+Rowan vs Hodys
+Demian vs Wheeler
 
 Week 6
-Team 11 vs Team 15
-Team 16 vs Team 14
-Team 17 vs Team 13
-Team 18 vs Team 12
-Team 19 vs Team 20
+Vernoff vs Zingler
+Israel vs Rowan
+Weiss vs Demian
+Hodys vs Wheeler
 
 Week 7
-Team 14 vs Team 11
-Team 13 vs Team 15
-Team 12 vs Team 16
-Team 20 vs Team 17
-Team 19 vs Team 18
+Rowan vs Vernoff
+Demian vs Zingler
+Wheeler vs Israel
+Hodys vs Weiss
 
 Week 8
-Team 11 vs Team 13
-Team 14 vs Team 12
-Team 15 vs Team 20
-Team 16 vs Team 19
-Team 17 vs Team 18
+Vernoff vs Demian
+Rowan vs Wheeler
+Zingler vs Hodys
+Israel vs Weiss
 
 Week 9
-Team 12 vs Team 11
-Team 20 vs Team 13
-Team 19 vs Team 14
-Team 18 vs Team 15
-Team 17 vs Team 16
+Wheeler vs Vernoff
+Hodys vs Demian
+Weiss vs Rowan
+Israel vs Zingler
 
 Week 10
-Team 11 vs Team 20
-Team 12 vs Team 19
-Team 13 vs Team 18
-Team 14 vs Team 17
-Team 15 vs Team 16
+Vernoff vs Hodys
+Wheeler vs Weiss
+Demian vs Israel
+Rowan vs Zingler
 
 Week 11
-Team 19 vs Team 11
-Team 18 vs Team 20
-Team 17 vs Team 12
-Team 16 vs Team 13
-Team 15 vs Team 14
+Weiss vs Vernoff
+Israel vs Hodys
+Zingler vs Wheeler
+Rowan vs Demian
 
 Week 12
-Team 11 vs Team 18
-Team 19 vs Team 17
-Team 20 vs Team 16
-Team 12 vs Team 15
-Team 13 vs Team 14
+Vernoff vs Israel
+Weiss vs Zingler
+Hodys vs Rowan
+Wheeler vs Demian
 
 Week 13
-Team 17 vs Team 11
-Team 16 vs Team 18
-Team 15 vs Team 19
-Team 14 vs Team 20
-Team 13 vs Team 12
+Zingler vs Vernoff
+Rowan vs Israel
+Demian vs Weiss
+Wheeler vs Hodys
 
 Week 14
-Team 11 vs Team 16
-Team 17 vs Team 15
-Team 18 vs Team 14
-Team 19 vs Team 13
-Team 20 vs Team 12
-
-Week 15
-Team 15 vs Team 11
-Team 14 vs Team 16
-Team 13 vs Team 17
-Team 12 vs Team 18
-Team 20 vs Team 19
-
-Week 16
-Team 11 vs Team 14
-Team 15 vs Team 13
-Team 16 vs Team 12
-Team 17 vs Team 20
-Team 18 vs Team 19
-
-Week 17
-Team 13 vs Team 11
-Team 12 vs Team 14
-Team 20 vs Team 15
-Team 19 vs Team 16
-Team 18 vs Team 17
-
-Week 18
-Team 11 vs Team 12
-Team 13 vs Team 20
-Team 14 vs Team 19
-Team 15 vs Team 18
-Team 16 vs Team 17
+Vernoff vs Rowan
+Zingler vs Demian
+Israel vs Wheeler
+Weiss vs Hodys
 
 nba
-NBA 1
-NBA 2
-NBA 3
-NBA 4
-NBA 5
-NBA 6
-NBA 7
-NBA 8
-NBA 9
-NBA 10
+Ripps
+Zabib
+Wolpert
+Platzman
+Weiss
+Israel
+Wheeler
+Demian
+Zingler
+Vernoff
 
 Week 1
-NBA 10 130-90 NBA 1
-NBA 9 vs NBA 2
-NBA 8 vs NBA 3
-NBA 7 vs NBA 4
-NBA 6 vs NBA 5
+Vernoff 120-109 Ripps
+Zingler 98-154 Zabib
+Demian 63-102 Wolpert
+Wheeler 142-141 Platzman
+Israel 120-129 Weiss
 
 Week 2
-NBA 1 40-100 NBA 9
-NBA 10 100-20 NBA 8
-NBA 2 vs NBA 7
-NBA 3 vs NBA 6
-NBA 4 vs NBA 5
+Ripps vs Zingler
+Vernoff vs Demian
+Zabib vs Wheeler
+Wolpert vs Israel
+Platzman vs Weiss
 
 Week 3
-NBA 8 vs NBA 1
-NBA 7 vs NBA 9
-NBA 6 47-21 NBA 10
-NBA 5 vs NBA 2
-NBA 4 vs NBA 3
+Demian vs Ripps
+Wheeler vs Zingler
+Israel vs Vernoff
+Weiss vs Zabib
+Platzman vs Wolpert
 
 Week 4
-NBA 1 vs NBA 7
-NBA 8 vs NBA 6
-NBA 9 vs NBA 5
-NBA 10 vs NBA 4
-NBA 2 vs NBA 3
+Ripps vs Wheeler
+Demian vs Israel
+Zingler vs Weiss
+Vernoff vs Platzman
+Zabib vs Wolpert
 
 Week 5
-NBA 6 vs NBA 1
-NBA 5 vs NBA 7
-NBA 4 vs NBA 8
-NBA 3 vs NBA 9
-NBA 2 vs NBA 10
+Israel vs Ripps
+Weiss vs Wheeler
+Platzman vs Demian
+Wolpert vs Zingler
+Zabib vs Vernoff
 
 Week 6
-NBA 1 vs NBA 5
-NBA 6 vs NBA 4
-NBA 7 vs NBA 3
-NBA 8 vs NBA 2
-NBA 9 vs NBA 10
+Ripps vs Weiss
+Israel vs Platzman
+Wheeler vs Wolpert
+Demian vs Zabib
+Zingler vs Vernoff
 
 Week 7
-NBA 4 vs NBA 1
-NBA 3 vs NBA 5
-NBA 2 vs NBA 6
-NBA 10 vs NBA 7
-NBA 9 vs NBA 8
+Platzman vs Ripps
+Wolpert vs Weiss
+Zabib vs Israel
+Vernoff vs Wheeler
+Zingler vs Demian
 
 Week 8
-NBA 1 vs NBA 3
-NBA 4 vs NBA 2
-NBA 5 vs NBA 10
-NBA 6 vs NBA 9
-NBA 7 vs NBA 8
+Ripps vs Wolpert
+Platzman vs Zabib
+Weiss vs Vernoff
+Israel vs Zingler
+Wheeler vs Demian
 
 Week 9
-NBA 2 vs NBA 1
-NBA 10 vs NBA 3
-NBA 9 vs NBA 4
-NBA 8 vs NBA 5
-NBA 7 vs NBA 6
+Zabib vs Ripps
+Vernoff vs Wolpert
+Zingler vs Platzman
+Demian vs Weiss
+Wheeler vs Israel
 
 Week 10
-NBA 1 vs NBA 10
-NBA 2 vs NBA 9
-NBA 3 vs NBA 8
-NBA 4 vs NBA 7
-NBA 5 vs NBA 6
+Ripps vs Vernoff
+Zabib vs Zingler
+Wolpert vs Demian
+Platzman vs Wheeler
+Weiss vs Israel
 
 Week 11
-NBA 9 vs NBA 1
-NBA 8 vs NBA 10
-NBA 7 vs NBA 2
-NBA 6 vs NBA 3
-NBA 5 vs NBA 4
+Zingler vs Ripps
+Demian vs Vernoff
+Wheeler vs Zabib
+Israel vs Wolpert
+Weiss vs Platzman
 
 Week 12
-NBA 1 vs NBA 8
-NBA 9 vs NBA 7
-NBA 10 vs NBA 6
-NBA 2 vs NBA 5
-NBA 3 vs NBA 4
+Ripps vs Demian
+Zingler vs Wheeler
+Vernoff vs Israel
+Zabib vs Weiss
+Wolpert vs Platzman
 
 Week 13
-NBA 7 vs NBA 1
-NBA 6 vs NBA 8
-NBA 5 vs NBA 9
-NBA 4 vs NBA 10
-NBA 3 vs NBA 2
+Wheeler vs Ripps
+Israel vs Demian
+Weiss vs Zingler
+Platzman vs Vernoff
+Wolpert vs Zabib
 
 Week 14
-NBA 1 vs NBA 6
-NBA 7 vs NBA 5
-NBA 8 vs NBA 4
-NBA 9 vs NBA 3
-NBA 10 vs NBA 2
+Ripps vs Israel
+Wheeler vs Weiss
+Demian vs Platzman
+Zingler vs Wolpert
+Vernoff vs Zabib
 
 Week 15
-NBA 5 vs NBA 1
-NBA 4 vs NBA 6
-NBA 3 vs NBA 7
-NBA 2 vs NBA 8
-NBA 10 vs NBA 9
+Weiss vs Ripps
+Platzman vs Israel
+Wolpert vs Wheeler
+Zabib vs Demian
+Vernoff vs Zingler
 
 Week 16
-NBA 1 vs NBA 4
-NBA 5 vs NBA 3
-NBA 6 vs NBA 2
-NBA 7 vs NBA 10
-NBA 8 vs NBA 9
+Ripps vs Platzman
+Weiss vs Wolpert
+Israel vs Zabib
+Wheeler vs Vernoff
+Demian vs Zingler
 
 Week 17
-NBA 3 vs NBA 1
-NBA 2 vs NBA 4
-NBA 10 vs NBA 5
-NBA 9 vs NBA 6
-NBA 8 vs NBA 7
+Wolpert vs Ripps
+Zabib vs Platzman
+Vernoff vs Weiss
+Zingler vs Israel
+Demian vs Wheeler
 
 Week 18
-NBA 1 vs NBA 2
-NBA 3 vs NBA 10
-NBA 4 vs NBA 9
-NBA 5 vs NBA 8
-NBA 6 vs NBA 7
+Ripps vs Zabib
+Wolpert vs Vernoff
+Platzman vs Zingler
+Weiss vs Demian
+Israel vs Wheeler
 

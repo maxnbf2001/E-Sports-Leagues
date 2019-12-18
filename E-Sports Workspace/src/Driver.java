@@ -19,7 +19,7 @@ public class Driver {
 	public static void main(String[] args) throws IOException
 	{
 		Scanner scan = new Scanner (new File ("games.txt"));
-		final int NUM_TEAMS = 10;
+		final int NUM_TEAMS = 8;
 		JSONObject FIFAData = new JSONObject();
 		JSONObject NBAData = new JSONObject();
 		JSONObject allData = new JSONObject();
