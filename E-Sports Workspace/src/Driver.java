@@ -215,13 +215,13 @@ public class Driver {
 					NBATeam AT = findNBATeam (awayT, NBAteams);
 					if (homePoints > awayPoints)
 					{
-						HT.addWin();
-						AT.addLoss();
+						HT.addWin(homePoints, awayPoints);
+						AT.addLoss(awayPoints, homePoints);
 					}
 					else if (awayPoints > homePoints)
 					{
-						HT.addLoss();
-						AT.addWin();
+						HT.addLoss(homePoints, awayPoints);
+						AT.addWin(awayPoints, homePoints);
 					}
 
 				}
@@ -258,6 +258,8 @@ public class Driver {
 			team.put("gb", NBAteams[i].getGB());
 			team.put("strk", NBAteams[i].getStrk());
 			team.put("lastFive", NBAteams[i].getLastFive());
+			team.put("pf", NBAteams[i].getPF());
+			team.put("pa", NBAteams[i].getPA());
 			teamList.add(team);
 		}
 

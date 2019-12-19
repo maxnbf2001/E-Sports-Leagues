@@ -4,7 +4,7 @@ public class NBATeam
 {
 	private DecimalFormat fmt = new DecimalFormat("#.###");
 	private String teamName, pct, lastFive;
-	private int wins, losses, strk;
+	private int wins, losses, strk, pf, pa;
 	private String gb;
 
 	public NBATeam ()
@@ -16,6 +16,8 @@ public class NBATeam
 		gb = "";
 		strk = 0;
 		lastFive = "";
+		pa = 0;
+		pf = 0;
 	}
 	
 	public NBATeam (String name)
@@ -27,6 +29,8 @@ public class NBATeam
 		gb = "";
 		strk = 0;
 		lastFive = "";
+		pf = 0;
+		pa = 0;
 	}
 	
 	
@@ -39,9 +43,11 @@ public class NBATeam
 		gb = "";
 		strk = 0;
 		lastFive = "";
+		pf = 0;
+		pa = 0;
 	}
 	
-	public void addWin ()
+	public void addWin (int PF, int PA)
 	{
 		wins +=1; 
 		updatePCT();
@@ -53,9 +59,23 @@ public class NBATeam
 			lastFive = "W"+lastFive.substring(0,4);
 		else 
 			lastFive = "W"+lastFive;
+		
+		pf += PF;
+		pa += PA;
 	}
 	
-	public void addLoss()
+	
+	public int getPF ()
+	{
+		return pf;
+	}
+	
+	public int getPA ()
+	{
+		return pa;
+	}
+	
+	public void addLoss(int PF, int PA)
 	{
 		losses+=1;
 		updatePCT();
@@ -67,6 +87,9 @@ public class NBATeam
 			lastFive = "L"+lastFive.substring(0,4);
 		else 
 			lastFive = "L"+lastFive;
+		
+		pf += PF;
+		pa += PA;
 	}
 	
 	public void updatePCT()
