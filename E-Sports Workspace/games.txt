@@ -9,18 +9,18 @@ Steinberg
 Assaf
 
 Week 1
-Beef vs Assaf
-Zang vs Steinberg
-Ripps vs Platzman
-Zabib vs Wolpert
-Assaf vs Beef
-Steinberg vs Zang
-Platzman vs Ripps
-Wolpert vs Zabib
+Beef 4-1 Assaf
+Zang 4-3 Steinberg
+Ripps 2-2 Platzman
+Zabib 0-1 Wolpert
+Assaf 3-5 Beef
+Steinberg 1-1 Zang
+Platzman 2-0 Ripps
+Wolpert 2-1 Zabib
 
 Week 2
-Beef vs Steinberg
-Assaf vs Platzman
+Beef 2-1 Steinberg
+Assaf 3-2 Platzman
 Zang vs Wolpert
 Ripps vs Zabib
 Steinberg vs Beef
@@ -171,15 +171,15 @@ Zingler
 Vernoff
 
 Week 1
-Ripps vs Vernoff
-Zabib vs Zingler
-Wolpert vs Demian
-Platzman vs Wheeler
-Weiss vs Israel
-Vernoff vs Ripps
-Zingler vs Zabib
-Demian vs Wolpert
-Wheeler vs Platzman
+Ripps 140-91 Vernoff
+Zabib 69-102 Zingler
+Wolpert 86-121 Demian
+Platzman 56-93 Wheeler
+Weiss 55-31 Israel
+Vernoff 105-151 Ripps
+Zingler 88-92 Zabib
+Demian 53-38 Wolpert
+Wheeler 143-60 Platzman
 Israel vs Weiss
 
 Week 2
