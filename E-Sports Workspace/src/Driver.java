@@ -24,7 +24,8 @@ public class Driver {
 		JSONObject NBAData = new JSONObject();
 		JSONObject NHLData = new JSONObject();
 		JSONObject allData = new JSONObject();
-
+		
+		weekDate startDate = new weekDate (8, 1, 2020);
 		// -------------------------------------------------------------------------
 		//  READS IN THE FIFA DATA
 		// -------------------------------------------------------------------------
@@ -56,6 +57,7 @@ public class Driver {
 			{
 				String week = scan.nextLine();
 				season[i] = new GameWeek(i+1);
+				JSONObject weeklyFixtures = new JSONObject();
 				JSONArray weeklyGames = new JSONArray();
 
 				// reads in the games for each week
@@ -104,8 +106,11 @@ public class Driver {
 					}
 
 				}
-
-				splitFixtures.add(weeklyGames);
+				String now = startDate.toString();
+				startDate.nextWeek();
+				weeklyFixtures.put("dates", now + " - " + startDate.toString());
+				weeklyFixtures.put("weeklyGames", weeklyGames);
+				splitFixtures.add(weeklyFixtures);
 				//makes sub arrays of the fixtures for formatting purposes on the html
 				if (splitFixtures.size() == 6)
 				{
@@ -150,6 +155,7 @@ public class Driver {
 		//  READS IN THE NBA DATA
 		// -------------------------------------------------------------------------
 
+		startDate = new weekDate (8, 1, 2020);
 		String league = scan.nextLine();
 		final int numNBATeams = 10;
 		// creates a list of NUM_TEAMS teams with no information
@@ -169,6 +175,7 @@ public class Driver {
 		for (int i = 0; i < numWeeks; i++)
 		{
 			String week = scan.nextLine();
+			JSONObject weeklyFixtures = new JSONObject();
 			JSONArray weeklyGames = new JSONArray();
 			
 			//loops through all of the games in a week
@@ -228,8 +235,11 @@ public class Driver {
 				}
 			}
 			
-			splitFixtures.add(weeklyGames);
-			
+			String now = startDate.toString();
+			startDate.nextWeek();
+			weeklyFixtures.put("dates", now + " - " + startDate.toString());
+			weeklyFixtures.put("weeklyGames", weeklyGames);
+			splitFixtures.add(weeklyFixtures);
 			//makes sub arrays of the fixtures for formatting purposes on the html
 			if (splitFixtures.size() == 6)
 			{
@@ -268,10 +278,12 @@ public class Driver {
 		NBAData.put("teams", teamList);
 		NBAData.put("fixtures", fixtures);
 		
+		
 		// -------------------------------------------------------------------------
 		//  READS IN THE NHL DATA
 		// -------------------------------------------------------------------------
-
+		
+		startDate = new weekDate (8, 1, 2020);
 		league = scan.nextLine();
 		final int numNHLTeams = 8;
 		// creates a list of NUM_TEAMS teams with no information
@@ -292,6 +304,7 @@ public class Driver {
 		for (int i = 0; i < numWeeks; i++)
 		{
 			String week = scan.nextLine();
+			JSONObject weeklyFixtures = new JSONObject();
 			JSONArray weeklyGames = new JSONArray();
 			
 			//loops through all of the games in a week
@@ -326,8 +339,11 @@ public class Driver {
 				}
 			}
 
-			splitFixtures.add(weeklyGames);
-			
+			String now = startDate.toString();
+			startDate.nextWeek();
+			weeklyFixtures.put("dates", now + " - " + startDate.toString());
+			weeklyFixtures.put("weeklyGames", weeklyGames);
+			splitFixtures.add(weeklyFixtures);
 			//makes sub arrays of the fixtures for formatting purposes on the html
 			if (splitFixtures.size() == 6)
 			{
@@ -371,7 +387,7 @@ public class Driver {
 		DateFormat dateFormat = new SimpleDateFormat("MM/dd/yyyy HH:mm:ss");
 		Date date = new Date();
 		String lastUpdated = dateFormat.format(date);
-		
+
 		//puts all of the data in the final json object
 		allData.put("fifaData", FIFAData);
 		allData.put("nbaData", NBAData);

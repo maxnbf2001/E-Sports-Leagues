@@ -37,8 +37,8 @@
     <p class = "filterNames"> Filter games by team or score: <input type = "text" ng-model = "teamName"></p>
     <div class = "rowFixture" ng-repeat = 'split in $ctrl.cnfs.nhlData.fixtures' ng-init = "rowIndex = $index">
         <div class = "weekFixture" ng-repeat = 'week in split track by $index'>
-            Week {{6*rowIndex + ($index+1)}}
-            <div class = "weekGame" ng-repeat = 'game in week | filter : teamName'>
+            Week {{6*rowIndex + ($index+1)}} {{week.dates}}
+            <div class = "weekGame" ng-repeat = 'game in week.weeklyGames | filter : teamName'>
                 {{game}}
             </div>
         </div>
