@@ -11,10 +11,10 @@
         <th> Team </th>
         <th> Wins </th>
         <th> Losses </th>
-        <th> PF </th>
-        <th> PA </th>
         <th> PCT </th>
         <th> GB </th>
+        <th> PF </th>
+        <th> PA </th>
         <th> Streak </th>
         <th> Last Five </th>
     </tr>
@@ -24,10 +24,10 @@
         <td> {{team.name}}</td>
         <td> {{team.wins}} </td>
         <td> {{team.losses}} </td>
-        <td> {{team.pf}} </td>
-        <td> {{team.pa}} </td>
         <td> {{team.pct}} </td>
         <td> {{team.gb}} </td>
+        <td> {{team.pf}} </td>
+        <td> {{team.pa}} </td>
         <td ng-if = $ctrl.winStreak(team.strk)> W{{team.strk}} </td>
         <td ng-if = !$ctrl.winStreak(team.strk)> L{{$ctrl.getAbs(team.strk)}}</td>
         <td> {{team.lastFive}} </td>
