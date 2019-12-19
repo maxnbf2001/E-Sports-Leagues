@@ -11,5 +11,5 @@ function MainController()
     this.FIFA = 0;
     this.NBA = 1;
 
-    this.shown = 2;
+    this.shown = -1;
 }

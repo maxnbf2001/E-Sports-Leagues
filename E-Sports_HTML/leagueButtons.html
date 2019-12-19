@@ -1,8 +1,10 @@
 <div class = "leagueButtons">
     <button id = "blueButton" class= 'leagueButton League{{$ctrl.selected===$ctrl.BLUE}}' ng-click = "$ctrl.selected=$ctrl.BLUE"> Blue League</button>
     <button id = "goldButton" class= 'leagueButton League{{$ctrl.selected===$ctrl.GOLD}}' ng-click = "$ctrl.selected=$ctrl.GOLD"> Gold League</button>
+    <button id = "playoffButton" class ='leagueButton League{{$ctrl.selected===$ctrl.PLAYOFF}}' ng-click = "$ctrl.selected=$ctrl.PLAYOFF"> Playoffs </button>
 </div>
 
+<div ng-if = $ctrl.selected!==$ctrl.PLAYOFF>
 <p class = "standingsHeader" ng-if = "$ctrl.selected===$ctrl.BLUE">Blue League Standings</p>
 <p class = "standingsHeader" ng-if = "$ctrl.selected===$ctrl.GOLD">Gold League Standings</p>
 <table class = "standingsTable">
@@ -44,7 +46,68 @@
     </div>
     <br>
 </div>
+</div>
 
+<div ng-if = $ctrl.selected===$ctrl.PLAYOFF>
+        <div id="tournament">
+            <ul class="round round-2">
+                <li class="spacer">&nbsp;</li>
+                <li class="game game-top winner">Team 1 <span>Score</span></li>
+                <li class="game game-spacer">&nbsp;</li>
+                <li class="game game-bottom "> Team 2 <span>Score</span></li>
+
+                <li class="spacer">&nbsp;</li>
+
+                <li class="game game-top winner">Team 3 <span>Score</span></li>
+                <li class="game game-spacer">&nbsp;</li>
+                <li class="game game-bottom ">Team 4<span>Score</span></li>
+
+                <li class="spacer">&nbsp;</li>
+
+                <li class="game game-top ">Team 5 <span>Score</span></li>
+                <li class="game game-spacer">&nbsp;</li>
+                <li class="game game-bottom winner">Team 6 <span>Score</span></li>
+
+                <li class="spacer">&nbsp;</li>
+
+                <li class="game game-top ">Team 7 <span>Score</span></li>
+                <li class="game game-spacer">&nbsp;</li>
+                <li class="game game-bottom winner">Team 8 <span>Score</span></li>
+
+                <li class="spacer">&nbsp;</li>
+            </ul>
+            <ul class="round round-3">
+                <li class="spacer">&nbsp;</li>
+
+                <li class="game game-top winner">Team 1 <span>Score</span></li>
+                <li class="game game-spacer">&nbsp;</li>
+                <li class="game game-bottom ">Team 3 <span>Score</span></li>
+
+                <li class="spacer">&nbsp;</li>
+
+                <li class="game game-top ">Team 5 St <span>Score</span></li>
+                <li class="game game-spacer">&nbsp;</li>
+                <li class="game game-bottom winner">Team 7 <span>Score</span></li>
+
+                <li class="spacer">&nbsp;</li>
+            </ul>
+            <ul class="round round-4">
+                <li class="spacer">&nbsp;</li>
+
+                <li class="game game-top winner">Team 1 <span>Score</span></li>
+                <li class="game game-spacer">&nbsp;</li>
+                <li class="game game-bottom ">Team 5 <span>Score</span></li>
+
+                <li class="spacer">&nbsp;</li>
+            </ul>
+
+            <ul class="round round-5">
+                <li class="spacer">&nbsp;</li>
+                <li class="game game-top winner"> Team 1
+                <li class="spacer">&nbsp;</li>
+            </ul>
+        </div>
+</div>
 <p class = "lastUpdated"> Data last updated on {{$ctrl.lgs.date}}</p>
 
 

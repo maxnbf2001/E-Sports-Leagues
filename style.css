@@ -17,6 +17,56 @@ table,td,th{
     font-size: x-large;
 
 }
+.round {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 200px;
+    list-style: none;
+    padding: 0;
+}
+.round .spacer {
+    flex-grow: 1;
+}
+.round .spacer:first-child,
+.round .spacer:last-child {
+    flex-grow: 0.5;
+}
+
+.round .game-spacer {
+    flex-grow: 1;
+}
+
+/*
+ *  General Styles
+*/
+#tournament{
+    display: flex;
+    flex-direction: row;
+    padding: 12px;
+}
+
+li.game {
+    padding-left: 20px;
+}
+
+li.game span {
+    float: right;
+    margin-right: 5px;
+}
+
+li.game-top {
+    border-bottom: 1px solid #aaa;
+}
+
+li.game-spacer {
+    border-right: 1px solid #aaa;
+    min-height: 40px;
+}
+
+li.game-bottom {
+    border-top: 1px solid #aaa;
+}
 
 .standingsHeaderRow{
     background: gray;
@@ -181,7 +231,7 @@ table,td,th{
     display: block;
 }
 
-#blueButton, #goldButton{
+#blueButton, #goldButton, #playoffButton{
     width: 200px;
     font-size: 16px;
     font-weight: 600;
@@ -200,7 +250,7 @@ table,td,th{
     transition: all .4s ease-in-out;
 }
 
-#blueButton:hover, #goldButton:hover{
+#blueButton:hover, #goldButton:hover, #playoffButton:hover{
     background-position: 100% 0;
     moz-transition: all .4s ease-in-out;
     -o-transition: all .4s ease-in-out;
@@ -208,7 +258,7 @@ table,td,th{
     transition: all .4s ease-in-out;
 }
 
-#blueButton:focus, #goldButton:focus{
+#blueButton:focus, #goldButton:focus, #playoffButton:focus{
     outline: none;
 }
 
@@ -220,4 +270,13 @@ table,td,th{
 #goldButton {
     background-image: linear-gradient(to right, darkgoldenrod, goldenrod, gold, lightyellow);
     box-shadow: 0 4px 15px 0 gold;
+}
+
+#playoffButton{
+    background-image: linear-gradient(to right, black, darkgray, lightgray, white);
+    box-shadow: 0 4px 15px 0 gray;
+}
+
+#playoffButton{
+    color: black;
 }

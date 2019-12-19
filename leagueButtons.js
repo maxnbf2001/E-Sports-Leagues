@@ -9,6 +9,7 @@ angular.module('esports').component('leagueButtons', {
 function LBController(){
     this.BLUE = 0;
     this.GOLD = 1;
+    this.PLAYOFF = 2;
     this.selected = this.BLUE;
 
     this.getLeagueNames = function(){
