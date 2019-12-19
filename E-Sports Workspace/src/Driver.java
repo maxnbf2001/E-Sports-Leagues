@@ -112,7 +112,7 @@ public class Driver {
 				weeklyFixtures.put("weeklyGames", weeklyGames);
 				splitFixtures.add(weeklyFixtures);
 				//makes sub arrays of the fixtures for formatting purposes on the html
-				if (splitFixtures.size() == 6)
+				if (splitFixtures.size() == 5)
 				{
 					fixtures.add(splitFixtures);
 					splitFixtures = new JSONArray ();
@@ -241,7 +241,7 @@ public class Driver {
 			weeklyFixtures.put("weeklyGames", weeklyGames);
 			splitFixtures.add(weeklyFixtures);
 			//makes sub arrays of the fixtures for formatting purposes on the html
-			if (splitFixtures.size() == 6)
+			if (splitFixtures.size() == 5)
 			{
 				fixtures.add(splitFixtures);
 				splitFixtures = new JSONArray ();
@@ -345,7 +345,7 @@ public class Driver {
 			weeklyFixtures.put("weeklyGames", weeklyGames);
 			splitFixtures.add(weeklyFixtures);
 			//makes sub arrays of the fixtures for formatting purposes on the html
-			if (splitFixtures.size() == 6)
+			if (splitFixtures.size() == 5)
 			{
 				fixtures.add(splitFixtures);
 				splitFixtures = new JSONArray ();
