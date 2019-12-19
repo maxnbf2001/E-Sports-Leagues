@@ -20,22 +20,21 @@ public class Build_Schedule {
 
 	public static void makeSched (String[] arr, PrintWriter writer)
 	{
-		
+
 		for (int i = 0; i < arr.length; i++)
 		{
 			writer.println(arr[i]);
 		}
 		writer.println();
-		for (int i = 0; i < (arr.length-1)*2; i++)
+		for (int i = 0; i < (arr.length-1); i++)
 		{
 			writer.println("Week " + (i+1));
-			if ((i+1)%2 == 0)
-				for (int j = 0; j < arr.length/2; j++)
-					writer.println(arr[j] + " vs " +arr[arr.length-1-j]);
-			else
-				for (int j = 0; j < arr.length/2; j++)
-					writer.println(arr[arr.length - 1 - j] + " vs " +arr[j]);
-				
+			for (int j = 0; j < arr.length/2; j++)
+				writer.println(arr[j] + " vs " +arr[arr.length-1-j]);
+
+			for (int j = 0; j < arr.length/2; j++)
+				writer.println(arr[arr.length - 1 - j] + " vs " +arr[j]);
+
 			rotate (arr, arr.length);
 			writer.println();
 		}

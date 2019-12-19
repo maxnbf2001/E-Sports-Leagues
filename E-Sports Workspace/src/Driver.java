@@ -46,7 +46,7 @@ public class Driver {
 			JSONArray splitFixtures = new JSONArray ();
 
 			// creates a list of (NUM_TEAMS-1)*2 gameweeks with no information (consider making a Seasons class)
-			GameWeek[] season = new GameWeek[(NUM_TEAMS-1)*2];
+			GameWeek[] season = new GameWeek[(NUM_TEAMS-1)];
 
 			scan.nextLine();
 
@@ -58,7 +58,7 @@ public class Driver {
 				JSONArray weeklyGames = new JSONArray();
 
 				// reads in the games for each week
-				for (int j = 0; j < NUM_TEAMS/2; j++)
+				for (int j = 0; j < NUM_TEAMS; j++)
 				{
 
 					String g = scan.nextLine();
@@ -162,7 +162,7 @@ public class Driver {
 		JSONArray fixtures = new JSONArray();
 		JSONArray splitFixtures = new JSONArray ();
 
-		int numWeeks = (numNBATeams-1)*2;
+		int numWeeks = (numNBATeams-1);
 		
 		//loops through all of the weeks
 		for (int i = 0; i < numWeeks; i++)
@@ -171,7 +171,7 @@ public class Driver {
 			JSONArray weeklyGames = new JSONArray();
 			
 			//loops through all of the games in a week
-			for (int j = 0; j < numNBATeams/2; j++)
+			for (int j = 0; j < numNBATeams; j++)
 			{
 				String game = scan.nextLine();
 				weeklyGames.add(game);
