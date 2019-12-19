@@ -15,6 +15,7 @@
         <th> GB </th>
         <th> PF </th>
         <th> PA </th>
+        <th> PD </th>
         <th> Streak </th>
         <th> Last Five </th>
     </tr>
@@ -28,6 +29,7 @@
         <td> {{team.gb}} </td>
         <td> {{team.pf}} </td>
         <td> {{team.pa}} </td>
+        <td> {{team.pd}} </td>
         <td ng-if = $ctrl.winStreak(team.strk)> W{{team.strk}} </td>
         <td ng-if = !$ctrl.winStreak(team.strk)> L{{$ctrl.getAbs(team.strk)}}</td>
         <td> {{team.lastFive}} </td>

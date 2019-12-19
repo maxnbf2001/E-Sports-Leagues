@@ -75,6 +75,10 @@ public class NBATeam
 		return pa;
 	}
 	
+	public int getPD ()
+	{
+		return pf - pa;
+	}
 	public void addLoss(int PF, int PA)
 	{
 		losses+=1;

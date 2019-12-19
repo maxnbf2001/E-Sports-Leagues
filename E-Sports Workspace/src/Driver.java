@@ -260,6 +260,7 @@ public class Driver {
 			team.put("lastFive", NBAteams[i].getLastFive());
 			team.put("pf", NBAteams[i].getPF());
 			team.put("pa", NBAteams[i].getPA());
+			team.put("pd", NBAteams[i].getPF() - NBAteams[i].getPA());
 			teamList.add(team);
 		}
 
@@ -371,7 +372,15 @@ public class Driver {
 
 				Integer x5 = ((NBATeam) o1).getWins();
 				Integer x6 = ((NBATeam) o2).getWins();
-				return x6.compareTo(x5);
+				
+				if (sComp != 0) {
+					return sComp;
+				} 
+				
+				Integer x7 = ((NBATeam) o1).getPD();
+				Integer x8 = ((NBATeam) o2).getPD();
+				
+				return x8.compareTo(x7);
 			}});
 
 		for (int i = 0; i < array.length; i++)
