@@ -276,7 +276,3 @@ li.game-bottom {
     background-image: linear-gradient(to right, black, darkgray, lightgray, white);
     box-shadow: 0 4px 15px 0 gray;
 }
-
-#playoffButton{
-    color: black;
-}
