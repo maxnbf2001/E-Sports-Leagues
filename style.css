@@ -231,7 +231,7 @@ li.game-bottom {
     display: block;
 }
 
-#blueButton, #goldButton, #playoffButton{
+#blueButton, #goldButton, #playoffButton, #conferenceButton{
     width: 200px;
     font-size: 16px;
     font-weight: 600;
@@ -250,7 +250,7 @@ li.game-bottom {
     transition: all .4s ease-in-out;
 }
 
-#blueButton:hover, #goldButton:hover, #playoffButton:hover{
+#blueButton:hover, #goldButton:hover, #playoffButton:hover, #conferenceButton:hover{
     background-position: 100% 0;
     moz-transition: all .4s ease-in-out;
     -o-transition: all .4s ease-in-out;
@@ -258,7 +258,7 @@ li.game-bottom {
     transition: all .4s ease-in-out;
 }
 
-#blueButton:focus, #goldButton:focus, #playoffButton:focus{
+#blueButton:focus, #goldButton:focus, #playoffButton:focus, #conferenceButton:focus{
     outline: none;
 }
 
@@ -275,4 +275,9 @@ li.game-bottom {
 #playoffButton{
     background-image: linear-gradient(to right, black, darkgray, lightgray, white);
     box-shadow: 0 4px 15px 0 gray;
+}
+
+#conferenceButton{
+    background-image: linear-gradient(to right, brown, saddlebrown ,sandybrown, rosybrown);
+    box-shadow: 0 4px 15px 0 brown;
 }
