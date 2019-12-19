@@ -8,6 +8,9 @@
     <button id="nba" class = 'gameButton Button{{$ctrl.shown===$ctrl.NBA}}' ng-click="$ctrl.shown=$ctrl.NBA">
         NBA
     </button>
+    <button id ="nhl" class= 'gameButton Button{{$ctrl.shown===$ctrl.NHL}}' ng-click = "$ctrl.shown=$ctrl.NHL">
+        NHL
+    </button>
 </div>
 <p></p>
 
@@ -16,5 +19,8 @@
 </div>
 <div id = 'NBAContainer' ng-if="$ctrl.shown===$ctrl.NBA">
     <conference-table cnfs = '$ctrl.info'></conference-table>
+</div>
+<div id = 'NHLContainer' ng-if="$ctrl.shown===$ctrl.NHL">
+    <nhl-conference-table cnfs = '$ctrl.info'></nhl-conference-table>
 </div>
 

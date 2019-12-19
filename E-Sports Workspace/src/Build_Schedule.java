@@ -7,6 +7,7 @@ public class Build_Schedule {
 		String[] blue = {"Beef", "Zang", "Ripps", "Zabib", "Wolpert", "Platzman", "Steinberg", "Assaf"};
 		String[] gold = {"Vernoff", "Rowan", "Zingler", "Israel", "Weiss", "Hodys", "Wheeler", "Demian"};
 		String[] nba  = {"Ripps", "Zabib", "Wolpert", "Platzman", "Weiss", "Israel", "Wheeler", "Demian", "Zingler", "Vernoff"};
+		String[] nhl  = {"Lippman", "Wolpert", "Brosnick", "Broder", "Kasimor", "Novo", "Hassan", "Zabib"};
 		PrintWriter writer = new PrintWriter ("games.txt", "UTF-8");
 		writer.println("blue");
 		makeSched (blue, writer);
@@ -14,6 +15,8 @@ public class Build_Schedule {
 		makeSched (gold, writer);
 		writer.println("nba");
 		makeSched (nba, writer);
+		writer.println("nhl");
+		makeSched (nhl, writer);
 
 		writer.close();
 	}

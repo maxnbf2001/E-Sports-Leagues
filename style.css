@@ -107,7 +107,7 @@ li.game-bottom {
 
 #fifa{
     color: #FFF;
-    background: linear-gradient(rgba(0, 0, 0, 0), black), url("https://i.ytimg.com/vi/72-aSqgueQY/maxresdefault.jpg");
+    background: linear-gradient(rgba(0, 0, 0, 0), black), url("https://thesefootballtimes.co/wp-content/uploads/2019/08/fifa20-180719a.jpg");
     background-position: center;
     background-size: cover;
     text-decoration: none;
@@ -122,6 +122,7 @@ li.game-bottom {
     margin: 30px;
     border-radius: 30px;
     position: relative;
+
 }
 
 #nba{
@@ -140,7 +141,27 @@ li.game-bottom {
     margin: 30px;
     border-radius: 30px;
     position: relative;
-    background-image: linear-gradient(rgba(0, 0, 0, 0), black), url("https://s1.ibtimes.com/sites/www.ibtimes.com/files/styles/full/public/2019/10/11/2995288190873eefb7e90b.jpg");
+    background-image: linear-gradient(rgba(0, 0, 0, 0), black), url("https://i1.wp.com/9to5toys.com/wp-content/uploads/sites/5/2019/09/nba-2k20.jpg?w=2500&quality=82&strip=all&ssl=1");
+
+}
+
+#nhl{
+    color: #FFF;
+    background-position: center;
+    background-size: cover;
+    text-decoration: none;
+    padding: 35px;
+    padding-bottom: 35px;
+    min-width: 350px;
+    transition: all 0.1s;
+    font: 50px "Josefin Sans";
+    font-weight: 700;
+    display: inline-block;
+    text-align: center;
+    margin: 30px;
+    border-radius: 30px;
+    position: relative;
+    background-image: linear-gradient(rgba(0, 0, 0, 0), black), url("https://beerleaguetalk.com/wp-content/uploads/2018/07/nhl-17-review_004-640x640.jpg");
 
 }
 
@@ -203,13 +224,13 @@ li.game-bottom {
 }
 
 
-#fifa:hover, #nba:hover {
+#fifa:hover, #nba:hover, #nhl:hover {
     -webkit-transform: scale(1.04);
     transform: scale(1.04);
     box-shadow: 0px 15px 10px -10px rgba(0, 0, 0, 0.3);
     border-radius: 7px;
 }
-#fifa:after, #nba:after {
+#fifa:after, #nba:after, #nhl:after {
     display: block;
     position: absolute;
 }
@@ -231,7 +252,7 @@ li.game-bottom {
     display: block;
 }
 
-#blueButton, #goldButton, #playoffButton, #conferenceButton{
+#blueButton, #goldButton, #playoffButton, #conferenceButton, #nhlConferenceButton{
     width: 200px;
     font-size: 16px;
     font-weight: 600;
@@ -250,7 +271,7 @@ li.game-bottom {
     transition: all .4s ease-in-out;
 }
 
-#blueButton:hover, #goldButton:hover, #playoffButton:hover, #conferenceButton:hover{
+#blueButton:hover, #goldButton:hover, #playoffButton:hover, #conferenceButton:hover, #nhlConferenceButton:hover{
     background-position: 100% 0;
     moz-transition: all .4s ease-in-out;
     -o-transition: all .4s ease-in-out;
@@ -258,7 +279,7 @@ li.game-bottom {
     transition: all .4s ease-in-out;
 }
 
-#blueButton:focus, #goldButton:focus, #playoffButton:focus, #conferenceButton:focus{
+#blueButton:focus, #goldButton:focus, #playoffButton:focus, #conferenceButton:focus, #nhlConferenceButton:focus{
     outline: none;
 }
 
@@ -280,4 +301,9 @@ li.game-bottom {
 #conferenceButton{
     background-image: linear-gradient(to right, brown, saddlebrown ,sandybrown, rosybrown);
     box-shadow: 0 4px 15px 0 brown;
+}
+
+#nhlConferenceButton{
+    background-image: linear-gradient(to right, red, mediumvioletred,  rebeccapurple , blue);
+    box-shadow: 0 4px 15px 0 mediumpurple;
 }

@@ -22,6 +22,7 @@ public class Driver {
 		final int NUM_TEAMS = 8;
 		JSONObject FIFAData = new JSONObject();
 		JSONObject NBAData = new JSONObject();
+		JSONObject NHLData = new JSONObject();
 		JSONObject allData = new JSONObject();
 
 		// -------------------------------------------------------------------------
@@ -266,7 +267,106 @@ public class Driver {
 
 		NBAData.put("teams", teamList);
 		NBAData.put("fixtures", fixtures);
+		
+		// -------------------------------------------------------------------------
+		//  READS IN THE NHL DATA
+		// -------------------------------------------------------------------------
 
+		league = scan.nextLine();
+		final int numNHLTeams = 8;
+		// creates a list of NUM_TEAMS teams with no information
+		NHLTeam[] NHLteams = new NHLTeam[numNHLTeams];
+		for (int i = 0; i < NHLteams.length; i++)
+		{
+			String teamName = scan.nextLine();
+
+			NHLteams[i] = new NHLTeam(teamName);
+		}
+		scan.nextLine();
+		fixtures = new JSONArray();
+		splitFixtures = new JSONArray ();
+
+		numWeeks = (numNHLTeams-1);
+		
+		//loops through all of the weeks
+		for (int i = 0; i < numWeeks; i++)
+		{
+			String week = scan.nextLine();
+			JSONArray weeklyGames = new JSONArray();
+			
+			//loops through all of the games in a week
+			for (int j = 0; j < numNHLTeams; j++)
+			{
+				String game = scan.nextLine();
+				weeklyGames.add(game);
+				
+				//handles the game if it has been played
+				if (game.indexOf("-") != -1)
+				{
+					String homeT = game.substring(0, game.indexOf("-") -2);
+					String awayT = game.substring(game.indexOf("-") +3, game.length());
+
+					int homeG = Integer.parseInt(game.substring(game.indexOf("-")-1, game.indexOf("-")));
+					int awayG = Integer.parseInt(game.substring(game.indexOf("-")+1, game.indexOf("-")+2));
+
+					
+					//finds the team with the given name and assigns them a win, draw, or loss
+					NHLTeam HT = findNHLTeam (homeT, NHLteams);
+					NHLTeam AT = findNHLTeam (awayT, NHLteams);
+					if (homeG > awayG)
+					{
+						HT.addWin(homeG, awayG);
+						AT.addLoss(awayG, homeG);
+					}
+					else if (awayG > homeG)
+					{
+						HT.addLoss(homeG, awayG);
+						AT.addWin(awayG, homeG);
+					}
+				}
+			}
+
+			splitFixtures.add(weeklyGames);
+			
+			//makes sub arrays of the fixtures for formatting purposes on the html
+			if (splitFixtures.size() == 6)
+			{
+				fixtures.add(splitFixtures);
+				splitFixtures = new JSONArray ();
+			}
+			scan.nextLine();
+		}
+		fixtures.add(splitFixtures);
+		
+		//sorts the nba teams based on the desired conditions
+		orderNHL (NHLteams);
+	
+		//makes a json array of all of the teams data
+		teamList = new JSONArray();
+		for (int i = 0; i < NHLteams.length; i++)
+		{
+			JSONObject team = new JSONObject();
+			team.put("rank", (i+1));
+			team.put("name", NHLteams[i].getName());
+			team.put("wins", NHLteams[i].getWins());
+			team.put("losses", NHLteams[i].getLosses());
+			team.put("pct", NHLteams[i].getPCT());
+			team.put("strk", NHLteams[i].getStrk());
+			team.put("lastFive", NHLteams[i].getLastFive());
+			team.put("gf", NHLteams[i].getGF());
+			team.put("ga", NHLteams[i].getGA());
+			team.put("gd", NHLteams[i].getGF() - NHLteams[i].getGA());
+			teamList.add(team);
+		}
+
+		NHLData.put("teams", teamList);
+		NHLData.put("fixtures", fixtures);
+
+		
+		
+		
+		
+		
 		//date of the most recent build
 		DateFormat dateFormat = new SimpleDateFormat("MM/dd/yyyy HH:mm:ss");
 		Date date = new Date();
@@ -275,6 +375,7 @@ public class Driver {
 		//puts all of the data in the final json object
 		allData.put("fifaData", FIFAData);
 		allData.put("nbaData", NBAData);
+		allData.put("nhlData", NHLData);
 		allData.put("date", lastUpdated);
 
 		//writes the data as a variable to a js file 
@@ -389,6 +490,55 @@ public class Driver {
 		}
 	}
 
+	private static void orderNHL (NHLTeam[] array)
+	{
+
+		ArrayList<NHLTeam> arrTemp = new ArrayList<NHLTeam>();
+		for (int i = 0; i < array.length; i++)
+		{
+			arrTemp.add(array[i]);
+		}
+		Collections.sort(arrTemp, new Comparator() {
+
+			public int compare(Object o1, Object o2) {
+
+				Integer x1 = (int) (1000*Double.parseDouble(((NHLTeam) o1).getPCT()));
+				Integer x2 = (int) (1000*Double.parseDouble(((NHLTeam) o2).getPCT()));
+				int sComp = x2.compareTo(x1);
+
+				if (sComp != 0) {
+					return sComp;
+				} 
+
+
+				Integer x3 = ((NHLTeam) o1).getLosses();
+				Integer x4 = ((NHLTeam) o2).getLosses();
+				sComp =  x3.compareTo(x4);
+
+				if (sComp != 0) {
+					return sComp;
+				} 
+
+				Integer x5 = ((NHLTeam) o1).getWins();
+				Integer x6 = ((NHLTeam) o2).getWins();
+				
+				if (sComp != 0) {
+					return sComp;
+				} 
+				
+				Integer x7 = ((NHLTeam) o1).getGD();
+				Integer x8 = ((NHLTeam) o2).getGD();
+				
+				return x8.compareTo(x7);
+			}});
+
+		for (int i = 0; i < array.length; i++)
+		{
+			array[i] = arrTemp.get(i);
+		}
+	}
+
+	
 	public static Team findTeam (String name, Team[] lot)
 	{
 		for (int i = 0; i < lot.length; i++)
@@ -411,6 +561,18 @@ public class Driver {
 			}
 		}
 		return new NBATeam();
+	}
+
+	public static NHLTeam findNHLTeam (String name, NHLTeam[] lot)
+	{
+		for (int i = 0; i < lot.length; i++)
+		{
+			if (name.equals(lot[i].getName()))
+			{
+				return lot[i];
+			}
+		}
+		return new NHLTeam();
 	}
 
 }

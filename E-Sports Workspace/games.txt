@@ -278,3 +278,83 @@ Zingler vs Platzman
 Demian vs Weiss
 Wheeler vs Israel
 
+nhl
+Lippman
+Wolpert
+Brosnick
+Broder
+Kasimor
+Novo
+Hassan
+Zabib
+
+Week 1
+Lippman 6-1 Zabib
+Wolpert 3-2 Hassan
+Brosnick 3-8 Novo
+Broder 1-0 Kasimor
+Zabib 0-2 Lippman
+Hassan vs Wolpert
+Novo vs Brosnick
+Kasimor vs Broder
+
+Week 2
+Lippman vs Hassan
+Zabib vs Novo
+Wolpert vs Kasimor
+Brosnick vs Broder
+Hassan vs Lippman
+Novo vs Zabib
+Kasimor vs Wolpert
+Broder vs Brosnick
+
+Week 3
+Lippman vs Novo
+Hassan vs Kasimor
+Zabib vs Broder
+Wolpert vs Brosnick
+Novo vs Lippman
+Kasimor vs Hassan
+Broder vs Zabib
+Brosnick vs Wolpert
+
+Week 4
+Lippman vs Kasimor
+Novo vs Broder
+Hassan vs Brosnick
+Zabib vs Wolpert
+Kasimor vs Lippman
+Broder vs Novo
+Brosnick vs Hassan
+Wolpert vs Zabib
+
+Week 5
+Lippman vs Broder
+Kasimor vs Brosnick
+Novo vs Wolpert
+Hassan vs Zabib
+Broder vs Lippman
+Brosnick vs Kasimor
+Wolpert vs Novo
+Zabib vs Hassan
+
+Week 6
+Lippman vs Brosnick
+Broder vs Wolpert
+Kasimor vs Zabib
+Novo vs Hassan
+Brosnick vs Lippman
+Wolpert vs Broder
+Zabib vs Kasimor
+Hassan vs Novo
+
+Week 7
+Lippman vs Wolpert
+Brosnick vs Zabib
+Broder vs Hassan
+Kasimor vs Novo
+Wolpert vs Lippman
+Zabib vs Brosnick
+Hassan vs Broder
+Novo vs Kasimor
+

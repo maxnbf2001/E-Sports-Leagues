@@ -10,6 +10,7 @@ function MainController()
     this.info = websiteData;
     this.FIFA = 0;
     this.NBA = 1;
+    this.NHL = 2;
 
     this.shown = -1;
 }
