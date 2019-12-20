@@ -22,20 +22,7 @@
 
     <tr class = "teamInfo" ng-repeat = "team in $ctrl.cnfs.nbaData.teams">
         <td> {{team.rank}}</td>
-        <td>
-            <ul class = "mainUL">
-                <div class = "gamesPlayed ">
-                    <a class = "nameCol"> {{team.name}}</a>
-                    <div class = "hoverInfo" ng-repeat = 'split in $ctrl.cnfs.nbaData.fixtures'>
-                        <div ng-repeat = 'week in split'>
-                            <div ng-repeat = 'game in week.weeklyGames | filter : team.name'>
-                                {{game}}
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </ul>
-        </td>
+        <td> {{team.name}}</td>
         <td> {{team.wins}} </td>
         <td> {{team.losses}} </td>
         <td> {{team.pct}} </td>

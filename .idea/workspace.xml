@@ -3,9 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="bd6a4850-6634-48b7-8ad3-7ee4086ba954" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/E-Sports_HTML/conferenceTable.html" beforeDir="false" afterPath="$PROJECT_DIR$/E-Sports_HTML/conferenceTable.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/E-Sports_HTML/leagueButtons.html" beforeDir="false" afterPath="$PROJECT_DIR$/E-Sports_HTML/leagueButtons.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/E-Sports_HTML/nhlConferenceTable.html" beforeDir="false" afterPath="$PROJECT_DIR$/E-Sports_HTML/nhlConferenceTable.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/style.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -84,9 +81,5 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="19" y="30" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser/0.0.1536.824@0.0.1536.824" timestamp="1576030879513" />
-    <state x="42" y="188" key="run.anything.popup" timestamp="1576859568435">
-      <screen x="0" y="0" width="1536" height="824" />
-    </state>
-    <state x="42" y="188" key="run.anything.popup/0.0.1536.824@0.0.1536.824" timestamp="1576859568435" />
   </component>
 </project>
