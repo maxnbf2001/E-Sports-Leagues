@@ -22,8 +22,21 @@
     </tr>
 
     <tr class = "teamInfo" ng-repeat = "team in $ctrl.lgs.fifaData[$ctrl.getLeagueKeys()[$ctrl.selected]].teams">
-        <td class = "rankCol"> {{team.rank}}</td>
-        <td class = "nameCol"> {{team.name}}</td>
+        <td class = "rankCol"> {{team.rank}} </td>
+        <td>
+        <ul class = "mainUL">
+            <div class = "gamesPlayed ">
+                <a class = "nameCol"> {{team.name}}</a>
+                <div class = "hoverInfo" ng-repeat = 'split in $ctrl.lgs.fifaData[$ctrl.getLeagueKeys()[$ctrl.selected]].fixtures'>
+                    <div ng-repeat = 'week in split'>
+                        <div ng-repeat = 'game in week.weeklyGames | filter : team.name'>
+                            {{game}}
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </ul>
+        </td>
         <td class = "playedCol"> {{team.played}} </td>
         <td class = "winsCol"> {{team.wins}} </td>
         <td class = "drawsCol"> {{team.draws}} </td>
@@ -47,6 +60,8 @@
     <br>
 </div>
 </div>
+
+
 
 
 
