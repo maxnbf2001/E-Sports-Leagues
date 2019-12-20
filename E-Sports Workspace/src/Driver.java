@@ -26,6 +26,7 @@ public class Driver {
 		JSONObject allData = new JSONObject();
 		
 		weekDate startDate = new weekDate (8, 1, 2020);
+		
 		// -------------------------------------------------------------------------
 		//  READS IN THE FIFA DATA
 		// -------------------------------------------------------------------------
@@ -49,9 +50,12 @@ public class Driver {
 
 			// creates a list of (NUM_TEAMS-1)*2 gameweeks with no information (consider making a Seasons class)
 			GameWeek[] season = new GameWeek[(NUM_TEAMS-1)];
-
 			scan.nextLine();
 
+			// gets the list of the biggest victories
+			ArrayList<String> biggestVictory = new ArrayList<String>();
+			int biggestMargin = 0;
+			
 			// loops through the entire season and reads in the games for each week
 			for (int i = 0; i < season.length; i++)
 			{
@@ -59,21 +63,15 @@ public class Driver {
 				season[i] = new GameWeek(i+1);
 				JSONObject weeklyFixtures = new JSONObject();
 				JSONArray weeklyGames = new JSONArray();
-
+			
 				// reads in the games for each week
 				for (int j = 0; j < NUM_TEAMS; j++)
 				{
 
 					String g = scan.nextLine();
 					weeklyGames.add(g);
-					if (g.indexOf("-") == -1) //if the game has not been played
-					{
-						String homeT = g.substring(0, g.indexOf("vs") -1);
-						String awayT = g.substring(g.indexOf("vs") +2, g.length());
-						Game game = new Game(findTeam(homeT, teams), findTeam(awayT, teams));
-						season[i].addGame(game, j);
-					}
-					else //if the game has been played
+					
+					if (g.indexOf("-") != -1) //if the game has been played
 					{
 						String homeT = g.substring(0, g.indexOf("-") -2);
 						String awayT = g.substring(g.indexOf("-") +3, g.length());
@@ -81,8 +79,14 @@ public class Driver {
 						int homeG = Integer.parseInt(g.substring(g.indexOf("-")-1, g.indexOf("-")));
 						int awayG = Integer.parseInt(g.substring(g.indexOf("-")+1, g.indexOf("-")+2));
 
-						Game game = new Game(findTeam (homeT, teams), findTeam (awayT, teams), homeG, awayG);
-						season[i].addGame(game, j);
+						if (Math.abs(homeG-awayG) > biggestMargin)
+						{
+							biggestVictory = new ArrayList<String>();
+							biggestVictory.add(g);
+							biggestMargin = Math.abs(homeG-awayG);
+						}
+						else if (Math.abs(homeG-awayG) == biggestMargin)
+							biggestVictory.add(g);
 
 						//finds the team with the given name and assigns them a win, draw, or loss
 						Team HT = findTeam (homeT, teams);
@@ -121,6 +125,7 @@ public class Driver {
 			}
 			fixtures.add(splitFixtures);
 
+			
 			//sorts the teams by the given conditions
 			orderFIFA(teams);
 			
@@ -145,11 +150,54 @@ public class Driver {
 			}
 			lginfo.put("teams", teamList);
 			lginfo.put("fixtures", fixtures);
-			FIFAData.put(league, lginfo);
+			
+			mostClean(teams);
+			JSONArray cleanList = new JSONArray();
+			for (int i = 0; i < teams.length; i++)
+			{
+				JSONObject team = new JSONObject();
+				team.put("name", teams[i].getName());
+				team.put("clean", teams[i].getClean());
+				cleanList.add(team);
+			}
+			lginfo.put("cleanList", cleanList);
+		
+			mostScored(teams);
+			JSONArray scoredList = new JSONArray();
+			for (int i = 0; i < teams.length; i++)
+			{
+				JSONObject team = new JSONObject();
+				team.put("name", teams[i].getName());
+				team.put("scored", teams[i].getGF());
+				scoredList.add(team);
+			}
+			lginfo.put("scoredList", scoredList);
+		
+			mostConceded(teams);
+			JSONArray concededList = new JSONArray();
+			for (int i = 0; i < teams.length; i++)
+			{
+				JSONObject team = new JSONObject();
+				team.put("name", teams[i].getName());
+				team.put("conceded", teams[i].getGA());
+				concededList.add(team);
+			}
+			lginfo.put("concededList", concededList);
+			
+			JSONArray bvarray = new JSONArray();
 
+			for (int i = 0; i < biggestVictory.size(); i++)
+			{
+				System.out.println(biggestVictory.get(i));
+				bvarray.add(biggestVictory.get(i));
+			}
+			lginfo.put("bv", bvarray);
+			
+			FIFAData.put(league, lginfo);
 		}
 
 
+		
 
 		// -------------------------------------------------------------------------
 		//  READS IN THE NBA DATA
@@ -412,6 +460,75 @@ public class Driver {
 
 
 	}
+	
+	public static void mostClean (Team[] array)
+	{
+		ArrayList<Team> arrTemp = new ArrayList<Team>();
+		for (int i = 0; i < array.length; i++)
+		{
+			arrTemp.add(array[i]);
+		}
+		Collections.sort(arrTemp, new Comparator() {
+
+			public int compare(Object o1, Object o2) {
+
+				Integer x5 = ((Team) o1).getClean();
+				Integer x6 = ((Team) o2).getClean();
+				return x6.compareTo(x5);
+			}});
+
+		for (int i = 0; i < array.length; i++)
+		{
+			array[i] = arrTemp.get(i);
+		}
+	}
+	
+	public static void mostScored (Team[] array)
+	{
+		ArrayList<Team> arrTemp = new ArrayList<Team>();
+		for (int i = 0; i < array.length; i++)
+		{
+			arrTemp.add(array[i]);
+		}
+		Collections.sort(arrTemp, new Comparator() {
+
+			public int compare(Object o1, Object o2) {
+
+				Integer x5 = ((Team) o1).getGF();
+				Integer x6 = ((Team) o2).getGF();
+				return x6.compareTo(x5);
+			}});
+
+		for (int i = 0; i < array.length; i++)
+		{
+			array[i] = arrTemp.get(i);
+		}
+	}
+	
+	public static void mostConceded (Team[] array)
+	{
+		ArrayList<Team> arrTemp = new ArrayList<Team>();
+		for (int i = 0; i < array.length; i++)
+		{
+			arrTemp.add(array[i]);
+		}
+		Collections.sort(arrTemp, new Comparator() {
+
+			public int compare(Object o1, Object o2) {
+
+				Integer x5 = ((Team) o1).getGA();
+				Integer x6 = ((Team) o2).getGA();
+				return x6.compareTo(x5);
+			}});
+
+		for (int i = 0; i < array.length; i++)
+		{
+			array[i] = arrTemp.get(i);
+		}
+	}
+	
+	
+	
 	private static void gamesBehind (NBATeam[] arr)
 	{
 		for (int i = 1; i < arr.length; i++)

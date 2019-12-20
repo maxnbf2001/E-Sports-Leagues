@@ -10,6 +10,7 @@ function LBController(){
     this.BLUE = 0;
     this.GOLD = 1;
     this.PLAYOFF = 2;
+    this.STATS = 3;
     this.selected = this.BLUE;
 
     this.getLeagueNames = function(){

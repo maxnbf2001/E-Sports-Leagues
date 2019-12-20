@@ -1,8 +1,9 @@
+import java.util.ArrayList;
 
 public class Team 
 {
 	private String teamName;
-	private int wins, losses, draws, points, GD, GF, GA; 
+	private int wins, losses, draws, points, GD, GF, GA, clean; 
 	
 	public Team ()
 	{
@@ -14,6 +15,7 @@ public class Team
 	   GD = 0;
        GF = 0; 
        GA = 0;
+       clean = 0;
 	}
 	
 	public Team (String name)
@@ -26,6 +28,7 @@ public class Team
 	   GD = 0;
        GF = 0; 
        GA = 0;
+       clean = 0;
 	}
 	
 	
@@ -39,6 +42,10 @@ public class Team
 		GF = gf;
 		GA = ga;
 		GD = gf - ga;
+		if (ga == 0)
+			clean = 1;
+		else
+			clean = 0;
 	}
 	
 	public void addWin (int gf, int ga)
@@ -48,6 +55,9 @@ public class Team
 		GD = GD + gf - ga;
 		GA += ga;
 		GF += gf;
+		
+		if (ga == 0)
+			clean +=1;
 	}
 	
 	public void addLoss (int gf, int ga)
@@ -65,6 +75,9 @@ public class Team
 		GD = GD + gf - ga;
 		GA += ga;
 		GF += gf;
+		
+		if (ga == 0)
+			clean +=1;
 	}
 	
 	public String getName()
@@ -110,6 +123,12 @@ public class Team
 		return points;
 	}
 	
+
+	
+	public int getClean ()
+	{
+		return clean;
+	}
 	public String toString ()
 	{
 		return teamName + "\t" + (wins+losses+draws) + "\t" + wins
