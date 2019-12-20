@@ -1,25 +1,26 @@
+import java.util.ArrayList;
 
 public class GameWeek
 {
-	private Game[] game;
+	private ArrayList<Game> gameWeek;
 	private int weekNum;
-	private final int numGames = 20;
+
 	
 	public GameWeek ()
 	{
-		game = new Game[numGames];
+		gameWeek = new ArrayList<Game>();
 		weekNum = 0;
 	}
 	
-	public GameWeek (int n)
+
+	public void addGame (Game g)
 	{
-		game = new Game[numGames];
-		weekNum = n;
+		gameWeek.add(g);
 	}
 	
-	public void addGame (Game g, int n)
+	public ArrayList<Game> getGames ()
 	{
-		game[n] = g;
+		return gameWeek;
 	}
 	
 }

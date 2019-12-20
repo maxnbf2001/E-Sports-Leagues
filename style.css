@@ -317,10 +317,22 @@ li.game-bottom {
 }
 
 .cleanTable, .scoredTable, .concededTable{
-    width: 33.3%;
+    width: 24%;
 }
 
 .leagueHeader{
     font-weight: bold;
     font-size: xx-large;
+}
+
+.singleInfo{
+    padding: 10px;
+    font-weight: bold;
+    font-size: xx-large;
+}
+
+.bvgames{
+    font-weight: normal;
+    font-size: medium;
+    paddig: 15px;
 }

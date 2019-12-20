@@ -55,6 +55,7 @@ public class NBATeam
 			strk = 1;
 		else 
 			strk+=1; 
+		
 		if (lastFive.length() == 5)
 			lastFive = "W"+lastFive.substring(0,4);
 		else 

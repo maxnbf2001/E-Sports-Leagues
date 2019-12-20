@@ -3,7 +3,7 @@ import java.util.ArrayList;
 public class Team 
 {
 	private String teamName;
-	private int wins, losses, draws, points, GD, GF, GA, clean; 
+	private int wins, losses, draws, points, GD, GF, GA, clean, strk, bwstreak, blstreak;
 	
 	public Team ()
 	{
@@ -16,6 +16,7 @@ public class Team
        GF = 0; 
        GA = 0;
        clean = 0;
+       strk = 0;
 	}
 	
 	public Team (String name)
@@ -29,6 +30,7 @@ public class Team
        GF = 0; 
        GA = 0;
        clean = 0;
+       strk = 0;
 	}
 	
 	
@@ -42,6 +44,7 @@ public class Team
 		GF = gf;
 		GA = ga;
 		GD = gf - ga;
+		strk = 0;
 		if (ga == 0)
 			clean = 1;
 		else
@@ -58,14 +61,40 @@ public class Team
 		
 		if (ga == 0)
 			clean +=1;
+		
+		if (strk < 0)
+			strk = 1;
+		else 
+			strk+=1; 
+		
+		if (strk > bwstreak)
+			bwstreak = strk;
+	}
+	
+	public int getBW ()
+	{
+		return bwstreak;
 	}
 	
 	public void addLoss (int gf, int ga)
-	{
+	{	
 		losses+=1;
 		GD = GD + gf - ga;
 		GA += ga;
 		GF += gf;
+		
+		if (strk > 0)
+			strk = -1;
+		else
+			strk-=1;
+		
+		if (strk < blstreak)
+			blstreak = strk;
+	}
+	
+	public int getBL()
+	{
+		return blstreak;
 	}
 	
 	public void addDraw (int gf, int ga)

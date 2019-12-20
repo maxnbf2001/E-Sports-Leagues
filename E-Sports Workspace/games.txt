@@ -21,32 +21,32 @@ Wolpert 2-1 Zabib
 Week 2
 Beef 2-1 Steinberg
 Assaf 3-2 Platzman
-Zang vs Wolpert
-Ripps vs Zabib
-Steinberg vs Beef
-Platzman vs Assaf
-Wolpert vs Zang
-Zabib vs Ripps
+Zang 5-2 Wolpert
+Ripps 8-0 Zabib
+Steinberg 0-3 Beef
+Platzman 2-4 Assaf
+Wolpert 3-3 Zang
+Zabib 6-3 Ripps
 
 Week 3
-Beef vs Platzman
-Steinberg vs Wolpert
-Assaf vs Zabib
-Zang vs Ripps
-Platzman vs Beef
-Wolpert vs Steinberg
-Zabib vs Assaf
-Ripps vs Zang
+Beef 2-1 Platzman
+Steinberg 0-3 Wolpert
+Assaf 3-2 Zabib
+Zang 2-1 Ripps
+Platzman 1-0 Beef
+Wolpert 3-0 Steinberg
+Zabib 0-3 Assaf
+Ripps 4-5 Zang
 
 Week 4
-Beef vs Wolpert
-Platzman vs Zabib
-Steinberg vs Ripps
-Assaf vs Zang
-Wolpert vs Beef
-Zabib vs Platzman
-Ripps vs Steinberg
-Zang vs Assaf
+Beef 1-0 Wolpert
+Platzman 2-2 Zabib
+Steinberg 3-1 Ripps
+Assaf 4-3 Zang
+Wolpert 0-3 Beef
+Zabib 0-1 Platzman
+Ripps 2-1 Steinberg
+Zang 0-0 Assaf
 
 Week 5
 Beef vs Zabib
