@@ -4,7 +4,7 @@ public class NBATeam
 {
 	private DecimalFormat fmt = new DecimalFormat("#.###");
 	private String teamName, pct, lastFive;
-	private int wins, losses, strk, pf, pa;
+	private int wins, losses, strk, pf, pa, bwstreak, blstreak;
 	private String gb;
 
 	public NBATeam ()
@@ -63,6 +63,13 @@ public class NBATeam
 		
 		pf += PF;
 		pa += PA;
+		
+		if (strk > bwstreak)
+			bwstreak = strk;
+	}
+	public int getBW ()
+	{
+		return bwstreak;
 	}
 	
 	
@@ -95,6 +102,14 @@ public class NBATeam
 		
 		pf += PF;
 		pa += PA;
+		
+		if (strk < blstreak)
+			blstreak = strk;
+	}
+	
+	public int getBL()
+	{
+		return blstreak;
 	}
 	
 	public void updatePCT()

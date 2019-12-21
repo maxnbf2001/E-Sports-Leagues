@@ -1,19 +1,19 @@
 
 public class Game 
 {
-	private Team home;
-	private Team away;
+	private String home;
+	private String away;
 	private int HG;
 	private int AG;
 	public Game ()
 	{
-		home = new Team();
-		away = new Team();
+		home = "";
+		away = "";
 		HG = 0;
 		AG = 0;
 	}
 	
-	public Game (Team t1, Team t2)
+	public Game (String t1, String t2)
 	{
 		home = t1;
 		away = t2;
@@ -21,7 +21,7 @@ public class Game
 		AG = -1;
 	}
 	
-	public Game (Team t1, Team t2, int g1, int g2)
+	public Game (String t1, String t2, int g1, int g2)
 	{
 		home = t1;
 		away = t2;
@@ -45,12 +45,12 @@ public class Game
 		return AG;
 	}
 	
-	public Team getHome()
+	public String getHome()
 	{
 		return home;
 	}
 	
-	public Team getAway()
+	public String getAway()
 	{
 		return away;
 	}

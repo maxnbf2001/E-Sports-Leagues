@@ -10,6 +10,7 @@ function CTController(){
 
     this.CONFERENCE = 1;
     this.PLAYOFF = 2;
+    this.STATS = 3;
     this.selected = this.CONFERENCE;
 
     this.winStreak = function(streak){
