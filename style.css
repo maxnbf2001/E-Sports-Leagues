@@ -293,7 +293,7 @@ li.game-bottom {
 }
 
 #playoffButton{
-    background-image: linear-gradient(to right, darkred, red, indianred, lightcoral);
+    background-image: linear-gradient(to right, darkred, red, orangered, lightcoral);
     box-shadow: 0 4px 15px 0 red;
 }
 
