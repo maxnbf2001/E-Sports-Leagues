@@ -320,6 +320,10 @@ li.game-bottom {
     width: 22%;
 }
 
+.NBAscoredTable, .NBAconcededTable{
+    width: 35%;
+}
+
 .leagueHeader{
     font-weight: bold;
     font-size: xx-large;
