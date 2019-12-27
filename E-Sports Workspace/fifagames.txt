@@ -1,0 +1,160 @@
+fifablue
+Rowan
+Wolpert
+Haber
+Dean
+Glazer
+Messer
+Beef
+nogame
+
+Week 1
+Rowan vs nogame
+nogame vs Rowan
+Wolpert vs Beef
+Beef vs Wolpert
+Haber vs Messer
+Messer vs Haber
+Dean vs Glazer
+Glazer vs Dean
+
+Week 2
+Rowan vs Beef
+Beef vs Rowan
+nogame vs Messer
+Messer vs nogame
+Wolpert vs Glazer
+Glazer vs Wolpert
+Haber vs Dean
+Dean vs Haber
+
+Week 3
+Rowan vs Messer
+Messer vs Rowan
+Beef vs Glazer
+Glazer vs Beef
+nogame vs Dean
+Dean vs nogame
+Wolpert vs Haber
+Haber vs Wolpert
+
+Week 4
+Rowan vs Glazer
+Glazer vs Rowan
+Messer vs Dean
+Dean vs Messer
+Beef vs Haber
+Haber vs Beef
+nogame vs Wolpert
+Wolpert vs nogame
+
+Week 5
+Rowan vs Dean
+Dean vs Rowan
+Glazer vs Haber
+Haber vs Glazer
+Messer vs Wolpert
+Wolpert vs Messer
+Beef vs nogame
+nogame vs Beef
+
+Week 6
+Rowan vs Haber
+Haber vs Rowan
+Dean vs Wolpert
+Wolpert vs Dean
+Glazer vs nogame
+nogame vs Glazer
+Messer vs Beef
+Beef vs Messer
+
+Week 7
+Rowan vs Wolpert
+Wolpert vs Rowan
+Haber vs nogame
+nogame vs Haber
+Dean vs Beef
+Beef vs Dean
+Glazer vs Messer
+Messer vs Glazer
+
+fifagold
+Lippman
+Karasik
+Assaf
+Golbert
+Geller
+Zang
+Steinberg
+nogame
+
+Week 1
+Lippman vs nogame
+nogame vs Lippman
+Karasik vs Steinberg
+Steinberg vs Karasik
+Assaf vs Zang
+Zang vs Assaf
+Golbert vs Geller
+Geller vs Golbert
+
+Week 2
+Lippman vs Steinberg
+Steinberg vs Lippman
+nogame vs Zang
+Zang vs nogame
+Karasik vs Geller
+Geller vs Karasik
+Assaf vs Golbert
+Golbert vs Assaf
+
+Week 3
+Lippman vs Zang
+Zang vs Lippman
+Steinberg vs Geller
+Geller vs Steinberg
+nogame vs Golbert
+Golbert vs nogame
+Karasik vs Assaf
+Assaf vs Karasik
+
+Week 4
+Lippman vs Geller
+Geller vs Lippman
+Zang vs Golbert
+Golbert vs Zang
+Steinberg vs Assaf
+Assaf vs Steinberg
+nogame vs Karasik
+Karasik vs nogame
+
+Week 5
+Lippman vs Golbert
+Golbert vs Lippman
+Geller vs Assaf
+Assaf vs Geller
+Zang vs Karasik
+Karasik vs Zang
+Steinberg vs nogame
+nogame vs Steinberg
+
+Week 6
+Lippman vs Assaf
+Assaf vs Lippman
+Golbert vs Karasik
+Karasik vs Golbert
+Geller vs nogame
+nogame vs Geller
+Zang vs Steinberg
+Steinberg vs Zang
+
+Week 7
+Lippman vs Karasik
+Karasik vs Lippman
+Assaf vs nogame
+nogame vs Assaf
+Golbert vs Steinberg
+Steinberg vs Golbert
+Geller vs Zang
+Zang vs Geller
+

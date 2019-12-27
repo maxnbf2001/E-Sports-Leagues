@@ -1,0 +1,128 @@
+nbablue
+Dean
+Rasch
+Zang
+Haber
+Rowan
+Glazer
+Assaf
+nogame
+
+Week 1
+Dean vs nogame
+nogame vs Dean
+Rasch vs Assaf
+Assaf vs Rasch
+Zang vs Glazer
+Glazer vs Zang
+Haber vs Rowan
+Rowan vs Haber
+
+Week 2
+Dean vs Assaf
+Assaf vs Dean
+nogame vs Glazer
+Glazer vs nogame
+Rasch vs Rowan
+Rowan vs Rasch
+Zang vs Haber
+Haber vs Zang
+
+Week 3
+Dean vs Glazer
+Glazer vs Dean
+Assaf vs Rowan
+Rowan vs Assaf
+nogame vs Haber
+Haber vs nogame
+Rasch vs Zang
+Zang vs Rasch
+
+Week 4
+Dean vs Rowan
+Rowan vs Dean
+Glazer vs Haber
+Haber vs Glazer
+Assaf vs Zang
+Zang vs Assaf
+nogame vs Rasch
+Rasch vs nogame
+
+Week 5
+Dean vs Haber
+Haber vs Dean
+Rowan vs Zang
+Zang vs Rowan
+Glazer vs Rasch
+Rasch vs Glazer
+Assaf vs nogame
+nogame vs Assaf
+
+Week 6
+Dean vs Zang
+Zang vs Dean
+Haber vs Rasch
+Rasch vs Haber
+Rowan vs nogame
+nogame vs Rowan
+Glazer vs Assaf
+Assaf vs Glazer
+
+Week 7
+Dean vs Rasch
+Rasch vs Dean
+Zang vs nogame
+nogame vs Zang
+Haber vs Assaf
+Assaf vs Haber
+Rowan vs Glazer
+Glazer vs Rowan
+
+nbagold
+Novo
+Hassan
+Greenwald
+Lucier
+Wolpert
+Steinberg
+
+Week 1
+Novo vs Steinberg
+Steinberg vs Novo
+Hassan vs Wolpert
+Wolpert vs Hassan
+Greenwald vs Lucier
+Lucier vs Greenwald
+
+Week 2
+Novo vs Wolpert
+Wolpert vs Novo
+Steinberg vs Lucier
+Lucier vs Steinberg
+Hassan vs Greenwald
+Greenwald vs Hassan
+
+Week 3
+Novo vs Lucier
+Lucier vs Novo
+Wolpert vs Greenwald
+Greenwald vs Wolpert
+Steinberg vs Hassan
+Hassan vs Steinberg
+
+Week 4
+Novo vs Greenwald
+Greenwald vs Novo
+Lucier vs Hassan
+Hassan vs Lucier
+Wolpert vs Steinberg
+Steinberg vs Wolpert
+
+Week 5
+Novo vs Hassan
+Hassan vs Novo
+Greenwald vs Steinberg
+Steinberg vs Greenwald
+Lucier vs Wolpert
+Wolpert vs Lucier
+

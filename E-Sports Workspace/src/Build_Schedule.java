@@ -9,19 +9,24 @@ public class Build_Schedule {
 		String[] nbablue = {"Dean", "Rasch", "Zang", "Haber", "Rowan", "Glazer", "Assaf"};
 		String[] nbagold = {"Novo", "Hassan", "Greenwald", "Lucier", "Wolpert", "Steinberg"};
 		String[] nhl  = {"Hassan", "Dean", "Lippman", "Zabib", "Kasimor", "Broder", "Rowan", "Wolpert"};
-		PrintWriter writer = new PrintWriter ("games.txt", "UTF-8");
-		writer.println("fifablue");
-		makeSched (blue, writer);
-		writer.println("fifagold");
-		makeSched (gold, writer);
-		writer.println("nbablue");
-		makeSched (nbablue, writer);
-		writer.println("nbagold");
-		makeSched (nbagold, writer);
-		writer.println("nhl");
-		makeSched (nhl, writer);
+		PrintWriter writer1 = new PrintWriter ("fifagames.txt", "UTF-8");
+		PrintWriter writer2 = new PrintWriter ("nbagames.txt", "UTF-8");
+		PrintWriter writer3 = new PrintWriter ("nhlgames.txt", "UTF-8");
+		writer1.println("fifablue");
+		makeSched (blue, writer1);
+		writer1.println("fifagold");
+		makeSched (gold, writer1);
+		writer2.println("nbablue");
+		makeSched (nbablue, writer2);
+		writer2.println("nbagold");
+		makeSched (nbagold, writer2);
+		writer3.println("nhl");
+		makeSched (nhl, writer3);
 
-		writer.close();
+		writer1.close();
+		writer2.close();
+		writer3.close();
+		
 	}
 
 	public static void makeSched (String[] arr, PrintWriter writer)

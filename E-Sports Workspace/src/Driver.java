@@ -18,7 +18,7 @@ public class Driver {
 
 	public static void main(String[] args) throws IOException
 	{
-		Scanner scan = new Scanner (new File ("games.txt"));
+		
 		int numFIFATeams = 7;
 		int numNBATeams = 7;
 		int numNHLTeams = 8;
@@ -35,6 +35,7 @@ public class Driver {
 		// -------------------------------------------------------------------------
 
 		//bulds the data for both the gold and blue league
+		Scanner scan = new Scanner (new File ("fifagames.txt"));
 		for (int l = 0; l < 2; l++)
 		{
 			startDate = new weekDate (8, 1, 2020);
@@ -255,17 +256,16 @@ public class Driver {
 		// -------------------------------------------------------------------------
 
 		startDate = new weekDate (8, 1, 2020);
-
+		scan = new Scanner (new File ("nbagames.txt"));
 		for (int m = 0; m < 2; m++)
 		{
+	
 			String league = scan.nextLine();
 			startDate = new weekDate (8, 1, 2020);
 			NBATeam[] NBAteams = new NBATeam[numNBATeams];
-			System.out.println("League " + league);
 			for (int i = 0; i < NBAteams.length; i++)
 			{
 				String teamName = scan.nextLine();
-				System.out.println("Team" + (i+1) + " " + teamName);
 				NBAteams[i] = new NBATeam(teamName);
 			}
 			scan.nextLine();
@@ -282,13 +282,11 @@ public class Driver {
 			else
 				seasonLength = NBAteams.length-1;
 
-			System.out.println(seasonLength);
 			GameWeek[] season = new GameWeek[seasonLength];
 			//loops through all of the weeks
 			for (int i = 0; i < season.length; i++)
 			{
 				String week = scan.nextLine();
-				System.out.println(week);
 				
 				JSONObject weeklyFixtures = new JSONObject();
 				JSONArray weeklyGames = new JSONArray();
@@ -304,7 +302,6 @@ public class Driver {
 				for (int j = 0; j < numGames; j++)
 				{
 					String game = scan.nextLine();
-					System.out.println(game);
 					if (game.indexOf("nogame") == -1)
 					{
 						weeklyGames.add(game);
@@ -485,6 +482,7 @@ public class Driver {
 		//  READS IN THE NHL DATA
 		// -------------------------------------------------------------------------
 
+		scan = new Scanner (new File ("nhlgames.txt"));
 		startDate = new weekDate (8, 1, 2020);
 		String league = scan.nextLine();
 		// creates a list of NUM_TEAMS teams with no information

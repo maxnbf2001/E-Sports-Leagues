@@ -1,0 +1,80 @@
+nhl
+Hassan
+Dean
+Lippman
+Zabib
+Kasimor
+Broder
+Rowan
+Wolpert
+
+Week 1
+Hassan vs Wolpert
+Wolpert vs Hassan
+Dean vs Rowan
+Rowan vs Dean
+Lippman vs Broder
+Broder vs Lippman
+Zabib vs Kasimor
+Kasimor vs Zabib
+
+Week 2
+Hassan vs Rowan
+Rowan vs Hassan
+Wolpert vs Broder
+Broder vs Wolpert
+Dean vs Kasimor
+Kasimor vs Dean
+Lippman vs Zabib
+Zabib vs Lippman
+
+Week 3
+Hassan vs Broder
+Broder vs Hassan
+Rowan vs Kasimor
+Kasimor vs Rowan
+Wolpert vs Zabib
+Zabib vs Wolpert
+Dean vs Lippman
+Lippman vs Dean
+
+Week 4
+Hassan vs Kasimor
+Kasimor vs Hassan
+Broder vs Zabib
+Zabib vs Broder
+Rowan vs Lippman
+Lippman vs Rowan
+Wolpert vs Dean
+Dean vs Wolpert
+
+Week 5
+Hassan vs Zabib
+Zabib vs Hassan
+Kasimor vs Lippman
+Lippman vs Kasimor
+Broder vs Dean
+Dean vs Broder
+Rowan vs Wolpert
+Wolpert vs Rowan
+
+Week 6
+Hassan vs Lippman
+Lippman vs Hassan
+Zabib vs Dean
+Dean vs Zabib
+Kasimor vs Wolpert
+Wolpert vs Kasimor
+Broder vs Rowan
+Rowan vs Broder
+
+Week 7
+Hassan vs Dean
+Dean vs Hassan
+Lippman vs Wolpert
+Wolpert vs Lippman
+Zabib vs Rowan
+Rowan vs Zabib
+Kasimor vs Broder
+Broder vs Kasimor
+
