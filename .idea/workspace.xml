@@ -3,18 +3,9 @@
   <component name="ChangeListManager">
     <list default="true" id="bd6a4850-6634-48b7-8ad3-7ee4086ba954" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/E-Sports Workspace/bin/Build_Schedule.class" beforeDir="false" afterPath="$PROJECT_DIR$/E-Sports Workspace/bin/Build_Schedule.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/E-Sports Workspace/bin/Driver$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/E-Sports Workspace/bin/Driver$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/E-Sports Workspace/bin/Driver$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/E-Sports Workspace/bin/Driver$2.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/E-Sports Workspace/bin/Driver.class" beforeDir="false" afterPath="$PROJECT_DIR$/E-Sports Workspace/bin/Driver.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/E-Sports Workspace/games.txt" beforeDir="false" afterPath="$PROJECT_DIR$/E-Sports Workspace/games.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/E-Sports Workspace/src/Build_Schedule.java" beforeDir="false" afterPath="$PROJECT_DIR$/E-Sports Workspace/src/Build_Schedule.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/E-Sports Workspace/src/Driver.java" beforeDir="false" afterPath="$PROJECT_DIR$/E-Sports Workspace/src/Driver.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/E-Sports_HTML/conferenceTable.html" beforeDir="false" afterPath="$PROJECT_DIR$/E-Sports_HTML/conferenceTable.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/E-Sports_HTML/info.js" beforeDir="false" afterPath="$PROJECT_DIR$/E-Sports_HTML/info.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/E-Sports_HTML/leagueButtons.html" beforeDir="false" afterPath="$PROJECT_DIR$/E-Sports_HTML/leagueButtons.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/conferenceTable.js" beforeDir="false" afterPath="$PROJECT_DIR$/conferenceTable.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/leagueButtons.js" beforeDir="false" afterPath="$PROJECT_DIR$/leagueButtons.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/E-Sports_HTML/nhlConferenceTable.html" beforeDir="false" afterPath="$PROJECT_DIR$/E-Sports_HTML/nhlConferenceTable.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/style.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
