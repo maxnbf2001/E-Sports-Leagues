@@ -8,10 +8,11 @@ angular.module('esports').component('conferenceTable', {
 
 function CTController(){
 
-    this.CONFERENCE = 1;
+    this.BLUE = 0;
+    this.GOLD = 1;
     this.PLAYOFF = 2;
     this.STATS = 3;
-    this.selected = this.CONFERENCE;
+    this.selected = this.BLUE;
 
     this.winStreak = function(streak){
         if (streak >= 0)
@@ -22,6 +23,14 @@ function CTController(){
 
     this.getAbs = function (streak){
         return Math.abs(streak);
+    };
+
+    this.getLeagueNames = function(){
+        return ["Blue", "Gold"]
+    };
+
+    this.getLeagueKeys = function(){
+        return ["nbablue", "nbagold"]
     };
 
 }

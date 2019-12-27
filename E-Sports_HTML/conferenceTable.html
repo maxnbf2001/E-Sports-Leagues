@@ -1,53 +1,57 @@
-<div class = "conferenceButtons">
-    <button id = "conferenceButton" class = "conferenceButton Conference{{$ctrl.selected===$ctrl.CONFERENCE}}" ng-click = "$ctrl.selected=$ctrl.CONFERENCE"> Conference Standings </button>
-    <button id = "playoffButton" class = "conferenceButton Conference{{$ctrl.selected===$ctrl.PLAYOFF}}" ng-click = "$ctrl.selected=$ctrl.PLAYOFF"> Playoffs </button>
-    <button id = "statsButton" class ='conferenceButton Conference{{$ctrl.selected===$ctrl.STATS}}' ng-click = "$ctrl.selected=$ctrl.STATS"> Statistics </button>
+<div class = "leagueButtons">
+    <button id = "blueButton" class= 'leagueButton League{{$ctrl.selected===$ctrl.BLUE}}' ng-click = "$ctrl.selected=$ctrl.BLUE"> Blue League</button>
+    <button id = "goldButton" class= 'leagueButton League{{$ctrl.selected===$ctrl.GOLD}}' ng-click = "$ctrl.selected=$ctrl.GOLD"> Gold League</button>
+    <button id = "playoffButton" class = 'leagueButton League{{$ctrl.selected===$ctrl.PLAYOFF}}' ng-click = "$ctrl.selected=$ctrl.PLAYOFF"> NBA Playoffs </button>
+    <button id = "statsButton" class ='leagueButton League{{$ctrl.selected===$ctrl.STATS}}' ng-click = "$ctrl.selected=$ctrl.STATS"> Statistics </button>
 </div>
 
-<div ng-if = "$ctrl.selected===$ctrl.CONFERENCE">
-<p class = "standingsHeader"> NBA Conference Standings</p>
-<table class = "standingsTable">
-    <tr class = "standingsHeaderRow">
-        <th> </th>
-        <th> Team </th>
-        <th> Wins </th>
-        <th> Losses </th>
-        <th> PCT </th>
-        <th> GB </th>
-        <th> PF </th>
-        <th> PA </th>
-        <th> PD </th>
-        <th> Streak </th>
-        <th> Last Five </th>
-    </tr>
+<div ng-if = "$ctrl.selected!==$ctrl.PLAYOFF && $ctrl.selected!==$ctrl.STATS">
+    <p class = "standingsHeader" ng-if = "$ctrl.selected===$ctrl.BLUE">Blue League Standings</p>
+    <p class = "standingsHeader" ng-if = "$ctrl.selected===$ctrl.GOLD">Gold League Standings</p>
+    <table class = "standingsTable">
+        <tr class = "standingsHeaderRow">
+            <th> </th>
+            <th> Team </th>
+            <th> Wins </th>
+            <th> Losses </th>
+            <th> PCT </th>
+            <th> GB </th>
+            <th> PF </th>
+            <th> PA </th>
+            <th> PD </th>
+            <th> Streak </th>
+            <th> Last Five </th>
+        </tr>
 
-    <tr class = "teamInfo" ng-repeat = "team in $ctrl.cnfs.nbaData.teams">
-        <td> {{team.rank}}</td>
-        <td> {{team.name}}</td>
-        <td> {{team.wins}} </td>
-        <td> {{team.losses}} </td>
-        <td> {{team.pct}} </td>
-        <td> {{team.gb}} </td>
-        <td> {{team.pf}} </td>
-        <td> {{team.pa}} </td>
-        <td> {{team.pd}} </td>
-        <td ng-if = $ctrl.winStreak(team.strk)> W{{team.strk}} </td>
-        <td ng-if = !$ctrl.winStreak(team.strk)> L{{$ctrl.getAbs(team.strk)}}</td>
-        <td> {{team.lastFive}} </td>
-    </tr>
-</table>
-<p class = "fixtureHeader"> Fixtures and Results </p>
-<p class = "filterNames"> Filter games by team or score: <input type = "text" ng-model = "teamName"></p>
-<div class = "rowFixture" ng-repeat = 'split in $ctrl.cnfs.nbaData.fixtures' ng-init = "rowIndex = $index">
-    <div class = "weekFixture" ng-repeat = 'week in split track by $index'>
-        Week {{6*rowIndex + ($index+1)}} {{week.dates}}
-        <div class = "weekGame" ng-repeat = 'game in week.weeklyGames | filter : teamName'>
-            {{game}}
+        <tr class = "teamInfo" ng-repeat = "team in $ctrl.cnfs.nbaData[$ctrl.getLeagueKeys()[$ctrl.selected]].teams">
+            <td> {{team.rank}}</td>
+            <td> {{team.name}}</td>
+            <td> {{team.wins}} </td>
+            <td> {{team.losses}} </td>
+            <td> {{team.pct}} </td>
+            <td> {{team.gb}} </td>
+            <td> {{team.pf}} </td>
+            <td> {{team.pa}} </td>
+            <td> {{team.pd}} </td>
+            <td ng-if = $ctrl.winStreak(team.strk)> W{{team.strk}} </td>
+            <td ng-if = !$ctrl.winStreak(team.strk)> L{{$ctrl.getAbs(team.strk)}}</td>
+            <td> {{team.lastFive}} </td>
+        </tr>
+    </table>
+
+    <p class = "fixtureHeader"> Fixtures and Results </p>
+    <p class = "filterNames"> Filter games by team or score: <input type = "text" ng-model = "teamName"></p>
+    <div class = "rowFixture" ng-repeat = 'split in $ctrl.cnfs.nbaData[$ctrl.getLeagueKeys()[$ctrl.selected]].fixtures' ng-init = "rowIndex = $index">
+        <div class = "weekFixture" ng-repeat = 'week in split track by $index'>
+            Week {{6*rowIndex + ($index+1)}} {{week.dates}}
+            <div class = "weekGame" ng-repeat = 'game in week.weeklyGames | filter : teamName'>
+                {{game}}
+            </div>
         </div>
+        <br>
     </div>
-    <br>
 </div>
-</div>
+
 
 
 <div ng-if = $ctrl.selected===$ctrl.PLAYOFF>
@@ -112,56 +116,56 @@
 </div>
 
 <div ng-if = "$ctrl.selected===$ctrl.STATS">
-        <div class = "leagueStats">
-            <table class = "NBAscoredTable">
-                <tr class = "standingsHeaderRow">
-                    <th> Team </th>
-                    <th> Points Scored </th>
-                </tr>
-                <tr class = "teamInfo" class = "scoredInfo" ng-repeat = "team in $ctrl.cnfs.nbaData.scoredList">
-                    <td class = "statNameCol"> {{team.name}}</td>
-                    <td class = "statDataCol"> {{team.scored}}</td>
-                </tr>
-            </table>
+    <div class = "leagueStats">
+        <table class = "NBAscoredTable">
+            <tr class = "standingsHeaderRow">
+                <th> Team </th>
+                <th> Points Scored </th>
+            </tr>
+            <tr class = "teamInfo" class = "scoredInfo" ng-repeat = "team in $ctrl.cnfs.nbaData.scoredList">
+                <td class = "statNameCol"> {{team.name}}</td>
+                <td class = "statDataCol"> {{team.scored}}</td>
+            </tr>
+        </table>
 
 
-            <table class = "NBAconcededTable">
-                <tr class = "standingsHeaderRow">
-                    <th> Team </th>
-                    <th> Points Allowed </th>
-                </tr>
-                <tr class = "teamInfo" ng-repeat = "team in $ctrl.cnfs.nbaData.concededList">
-                    <td class = "statNameCol"> {{team.name}}</td>
-                    <td class = "statDataCol"> {{team.conceded}}</td>
-                </tr>
-            </table>
-            <div class = "singleInfo">
-                Biggest Victory:
-                <div class ="bvgames" ng-repeat = 'game in $ctrl.cnfs.nbaData.biggestVictory'>
-                    {{game}}
-                </div>
-                <div ng-if = $ctrl.cnfs.nbaData.biggestVictory.length===0> </div>
-                <br>
-                Highest Scoring:
-                <div class ="bvgames" ng-repeat = 'game in $ctrl.cnfs.nbaData.highestScoring'>
-                    {{game}}
-                </div>
-                <div ng-if = '$ctrl.cnfs.nbaData.highestScoring.length===0'></div>
-                <br>
-                Best Win Streak: {{$ctrl.cnfs.nbaData.winstreak.streak}}
-                <div class ="bvgames"ng-if = '$ctrl.cnfs.nbaData.winstreak.streak!==0' ng-repeat = 'team in $ctrl.cnfs.nbaData.winstreak.teams'>
-                    {{team}}
-                </div>
-                <div ng-if = '$ctrl.cnfs.nbaData.winstreak.streak===0'></div>
-                <br>
-                Worst Losing Streak: {{$ctrl.cnfs.nbaData.lossstreak.streak}}
-                <div class ="bvgames" ng-if = '$ctrl.cnfs.nbaData.lossstreak.streak!==0' ng-repeat = 'team in $ctrl.cnfs.nbaData.lossstreak.teams'>
-                    {{team}}
-                </div>
-
+        <table class = "NBAconcededTable">
+            <tr class = "standingsHeaderRow">
+                <th> Team </th>
+                <th> Points Allowed </th>
+            </tr>
+            <tr class = "teamInfo" ng-repeat = "team in $ctrl.cnfs.nbaData.concededList">
+                <td class = "statNameCol"> {{team.name}}</td>
+                <td class = "statDataCol"> {{team.conceded}}</td>
+            </tr>
+        </table>
+        <div class = "singleInfo">
+            Biggest Victory:
+            <div class ="bvgames" ng-repeat = 'game in $ctrl.cnfs.nbaData.biggestVictory'>
+                {{game}}
             </div>
+            <div ng-if = $ctrl.cnfs.nbaData.biggestVictory.length===0> </div>
+            <br>
+            Highest Scoring:
+            <div class ="bvgames" ng-repeat = 'game in $ctrl.cnfs.nbaData.highestScoring'>
+                {{game}}
+            </div>
+            <div ng-if = '$ctrl.cnfs.nbaData.highestScoring.length===0'></div>
+            <br>
+            Best Win Streak: {{$ctrl.cnfs.nbaData.winstreak.streak}}
+            <div class ="bvgames"ng-if = '$ctrl.cnfs.nbaData.winstreak.streak!==0' ng-repeat = 'team in $ctrl.cnfs.nbaData.winstreak.teams'>
+                {{team}}
+            </div>
+            <div ng-if = '$ctrl.cnfs.nbaData.winstreak.streak===0'></div>
+            <br>
+            Worst Losing Streak: {{$ctrl.cnfs.nbaData.lossstreak.streak}}
+            <div class ="bvgames" ng-if = '$ctrl.cnfs.nbaData.lossstreak.streak!==0' ng-repeat = 'team in $ctrl.cnfs.nbaData.lossstreak.teams'>
+                {{team}}
+            </div>
+
         </div>
     </div>
+</div>
 </div>
 
 

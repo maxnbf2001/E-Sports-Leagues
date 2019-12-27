@@ -15,11 +15,11 @@ function LBController(){
 
     this.getLeagueNames = function(){
        return ["Blue", "Gold"]
-    }
+    };
 
     this.getLeagueKeys = function(){
-        return ["blue", "gold"]
-    }
+        return ["fifablue", "fifagold"]
+    };
 
 
 

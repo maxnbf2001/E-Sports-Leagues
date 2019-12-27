@@ -17,6 +17,14 @@ table,td,th{
     font-size: x-large;
 
 }
+
+.standingsTable tr:nth-child(2), .standingsTable tr:nth-child(3), .standingsTable tr:nth-child(4), .standingsTable tr:nth-child(5){
+    background: lightgray;
+}
+
+.standingsTable tr:nth-child(2):hover, .standingsTable tr:nth-child(3):hover, .standingsTable tr:nth-child(4):hover, .standingsTable tr:nth-child(5):hover{
+    background: black;
+}
 .round {
     display: flex;
     flex-direction: column;

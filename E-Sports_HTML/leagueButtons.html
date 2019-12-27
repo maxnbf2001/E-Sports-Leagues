@@ -1,67 +1,67 @@
 <div class = "leagueButtons">
     <button id = "blueButton" class= 'leagueButton League{{$ctrl.selected===$ctrl.BLUE}}' ng-click = "$ctrl.selected=$ctrl.BLUE"> Blue League</button>
     <button id = "goldButton" class= 'leagueButton League{{$ctrl.selected===$ctrl.GOLD}}' ng-click = "$ctrl.selected=$ctrl.GOLD"> Gold League</button>
-    <button id = "playoffButton" class ='leagueButton League{{$ctrl.selected===$ctrl.PLAYOFF}}' ng-click = "$ctrl.selected=$ctrl.PLAYOFF"> Playoffs </button>
+    <button id = "playoffButton" class ='leagueButton League{{$ctrl.selected===$ctrl.PLAYOFF}}' ng-click = "$ctrl.selected=$ctrl.PLAYOFF"> FIFA Playoffs </button>
     <button id = "statsButton" class ='leagueButton League{{$ctrl.selected===$ctrl.STATS}}' ng-click = "$ctrl.selected=$ctrl.STATS"> Statistics </button>
 </div>
 
 <div ng-if = "$ctrl.selected!==$ctrl.PLAYOFF && $ctrl.selected!==$ctrl.STATS">
-<p class = "standingsHeader" ng-if = "$ctrl.selected===$ctrl.BLUE">Blue League Standings</p>
-<p class = "standingsHeader" ng-if = "$ctrl.selected===$ctrl.GOLD">Gold League Standings</p>
-<table class = "standingsTable">
-    <tr class = "standingsHeaderRow">
-        <th> </th>
-        <th> Team </th>
-        <th> Played </th>
-        <th> Wins </th>
-        <th> Draws </th>
-        <th> Losses </th>
-        <th> GF </th>
-        <th> GA </th>
-        <th> GD </th>
-        <th> Points </th>
-    </tr>
+    <p class = "standingsHeader" ng-if = "$ctrl.selected===$ctrl.BLUE">Blue League Standings</p>
+    <p class = "standingsHeader" ng-if = "$ctrl.selected===$ctrl.GOLD">Gold League Standings</p>
+    <table class = "standingsTable">
+        <tr class = "standingsHeaderRow">
+            <th> </th>
+            <th> Team </th>
+            <th> Played </th>
+            <th> Wins </th>
+            <th> Draws </th>
+            <th> Losses </th>
+            <th> GF </th>
+            <th> GA </th>
+            <th> GD </th>
+            <th> Points </th>
+        </tr>
 
-    <tr class = "teamInfo" ng-repeat = "team in $ctrl.lgs.fifaData[$ctrl.getLeagueKeys()[$ctrl.selected]].teams">
-        <td class = "rankCol"> {{team.rank}}</td>
-        <td class = "nameCol"> {{team.name}}</td>
-        <td class = "playedCol"> {{team.played}} </td>
-        <td class = "winsCol"> {{team.wins}} </td>
-        <td class = "drawsCol"> {{team.draws}} </td>
-        <td class = "lossesCol"> {{team.losses}} </td>
-        <td class = "gfCol"> {{team.gf}} </td>
-        <td class = "gaCol"> {{team.ga}} </td>
-        <td class = "gdCol"> {{team.gd}} </td>
-        <td class = "pointsCol"> {{team.points}} </td>
-    </tr>
-</table>
+        <tr class = "teamInfo" ng-repeat = "team in $ctrl.lgs.fifaData[$ctrl.getLeagueKeys()[$ctrl.selected]].teams">
+            <td class = "rankCol"> {{team.rank}}</td>
+            <td class = "nameCol"> {{team.name}}</td>
+            <td class = "playedCol"> {{team.played}} </td>
+            <td class = "winsCol"> {{team.wins}} </td>
+            <td class = "drawsCol"> {{team.draws}} </td>
+            <td class = "lossesCol"> {{team.losses}} </td>
+            <td class = "gfCol"> {{team.gf}} </td>
+            <td class = "gaCol"> {{team.ga}} </td>
+            <td class = "gdCol"> {{team.gd}} </td>
+            <td class = "pointsCol"> {{team.points}} </td>
+        </tr>
+    </table>
 
-<p class = "fixtureHeader"> Fixtures and Results </p>
-<p class = "filterNames"> Filter games by team or score: <input type = "text" ng-model = "teamName"></p>
-<div class = "rowFixture" ng-repeat = 'split in $ctrl.lgs.fifaData[$ctrl.getLeagueKeys()[$ctrl.selected]].fixtures' ng-init = "rowIndex = $index">
-    <div class = "weekFixture" ng-repeat = 'week in split track by $index'>
-        Week {{6*rowIndex + ($index+1)}} {{week.dates}}
-        <div class = "weekGame" ng-repeat = 'game in week.weeklyGames | filter : teamName'>
-            {{game}}
+    <p class = "fixtureHeader"> Fixtures and Results </p>
+    <p class = "filterNames"> Filter games by team or score: <input type = "text" ng-model = "teamName"></p>
+    <div class = "rowFixture" ng-repeat = 'split in $ctrl.lgs.fifaData[$ctrl.getLeagueKeys()[$ctrl.selected]].fixtures' ng-init = "rowIndex = $index">
+        <div class = "weekFixture" ng-repeat = 'week in split track by $index'>
+            Week {{6*rowIndex + ($index+1)}} {{week.dates}}
+            <div class = "weekGame" ng-repeat = 'game in week.weeklyGames | filter : teamName'>
+                {{game}}
+            </div>
         </div>
+        <br>
     </div>
-    <br>
-</div>
 </div>
 
 
 
 <div ng-if = $ctrl.selected===$ctrl.PLAYOFF>
-        <div id="tournament">
-            <ul class="round round-2">
-                <li class="spacer">&nbsp;</li>
-                <li class="game game-top winner">Team 1 <span>Score</span></li>
-                <li class="game game-spacer">&nbsp;</li>
-                <li class="game game-bottom "> Team 2 <span>Score</span></li>
+    <div id="tournament">
+        <ul class="round round-2">
+            <li class="spacer">&nbsp;</li>
+            <li class="game game-top winner">Team 1 <span>Score</span></li>
+            <li class="game game-spacer">&nbsp;</li>
+            <li class="game game-bottom "> Team 2 <span>Score</span></li>
 
-                <li class="spacer">&nbsp;</li>
+            <li class="spacer">&nbsp;</li>
 
-                <li class="game game-top winner">Team 3 <span>Score</span></li>
+            <li class="game game-top winner">Team 3 <span>Score</span></li>
                 <li class="game game-spacer">&nbsp;</li>
                 <li class="game game-bottom ">Team 4<span>Score</span></li>
 

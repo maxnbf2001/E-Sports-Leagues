@@ -1,360 +1,368 @@
-blue
-Beef
-Zang
-Ripps
-Zabib
-Wolpert
-Platzman
-Steinberg
-Assaf
-
-Week 1
-Beef 4-1 Assaf
-Zang 4-3 Steinberg
-Ripps 2-2 Platzman
-Zabib 0-1 Wolpert
-Assaf 3-5 Beef
-Steinberg 1-1 Zang
-Platzman 2-0 Ripps
-Wolpert 2-1 Zabib
-
-Week 2
-Beef 2-1 Steinberg
-Assaf 3-2 Platzman
-Zang 5-2 Wolpert
-Ripps 8-0 Zabib
-Steinberg 0-3 Beef
-Platzman 2-4 Assaf
-Wolpert 3-3 Zang
-Zabib 6-3 Ripps
-
-Week 3
-Beef 2-1 Platzman
-Steinberg 0-3 Wolpert
-Assaf 3-2 Zabib
-Zang 2-1 Ripps
-Platzman 1-0 Beef
-Wolpert 3-0 Steinberg
-Zabib 0-3 Assaf
-Ripps 4-5 Zang
-
-Week 4
-Beef 1-0 Wolpert
-Platzman 2-2 Zabib
-Steinberg 3-1 Ripps
-Assaf 4-3 Zang
-Wolpert 0-3 Beef
-Zabib 0-1 Platzman
-Ripps 2-1 Steinberg
-Zang 0-0 Assaf
-
-Week 5
-Beef vs Zabib
-Wolpert vs Ripps
-Platzman vs Zang
-Steinberg vs Assaf
-Zabib vs Beef
-Ripps vs Wolpert
-Zang vs Platzman
-Assaf vs Steinberg
-
-Week 6
-Beef vs Ripps
-Zabib vs Zang
-Wolpert vs Assaf
-Platzman vs Steinberg
-Ripps vs Beef
-Zang vs Zabib
-Assaf vs Wolpert
-Steinberg vs Platzman
-
-Week 7
-Beef vs Zang
-Ripps vs Assaf
-Zabib vs Steinberg
-Wolpert vs Platzman
-Zang vs Beef
-Assaf vs Ripps
-Steinberg vs Zabib
-Platzman vs Wolpert
-
-gold
-Vernoff
+fifablue
 Rowan
-Zingler
-Israel
-Weiss
-Hodys
-Wheeler
-Demian
-
-Week 1
-Vernoff vs Demian
-Rowan vs Wheeler
-Zingler vs Hodys
-Israel vs Weiss
-Demian vs Vernoff
-Wheeler vs Rowan
-Hodys vs Zingler
-Weiss vs Israel
-
-Week 2
-Vernoff vs Wheeler
-Demian vs Hodys
-Rowan vs Weiss
-Zingler vs Israel
-Wheeler vs Vernoff
-Hodys vs Demian
-Weiss vs Rowan
-Israel vs Zingler
-
-Week 3
-Vernoff vs Hodys
-Wheeler vs Weiss
-Demian vs Israel
-Rowan vs Zingler
-Hodys vs Vernoff
-Weiss vs Wheeler
-Israel vs Demian
-Zingler vs Rowan
-
-Week 4
-Vernoff vs Weiss
-Hodys vs Israel
-Wheeler vs Zingler
-Demian vs Rowan
-Weiss vs Vernoff
-Israel vs Hodys
-Zingler vs Wheeler
-Rowan vs Demian
-
-Week 5
-Vernoff vs Israel
-Weiss vs Zingler
-Hodys vs Rowan
-Wheeler vs Demian
-Israel vs Vernoff
-Zingler vs Weiss
-Rowan vs Hodys
-Demian vs Wheeler
-
-Week 6
-Vernoff vs Zingler
-Israel vs Rowan
-Weiss vs Demian
-Hodys vs Wheeler
-Zingler vs Vernoff
-Rowan vs Israel
-Demian vs Weiss
-Wheeler vs Hodys
-
-Week 7
-Vernoff vs Rowan
-Zingler vs Demian
-Israel vs Wheeler
-Weiss vs Hodys
-Rowan vs Vernoff
-Demian vs Zingler
-Wheeler vs Israel
-Hodys vs Weiss
-
-nba
-Ripps
-Zabib
 Wolpert
-Platzman
-Weiss
-Israel
-Wheeler
-Demian
-Zingler
-Vernoff
+Haber
+Dean
+Glazer
+Messer
+Beef
+nogame
 
 Week 1
-Ripps 140-91 Vernoff
-Zabib 69-102 Zingler
-Wolpert 86-121 Demian
-Platzman 56-93 Wheeler
-Weiss 55-31 Israel
-Vernoff 105-151 Ripps
-Zingler 88-92 Zabib
-Demian 53-38 Wolpert
-Wheeler 143-60 Platzman
-Israel vs Weiss
+Rowan vs nogame
+nogame vs Rowan
+Wolpert vs Beef
+Beef vs Wolpert
+Haber vs Messer
+Messer vs Haber
+Dean vs Glazer
+Glazer vs Dean
 
 Week 2
-Ripps vs Zingler
-Vernoff vs Demian
-Zabib vs Wheeler
-Wolpert vs Israel
-Platzman vs Weiss
-Zingler vs Ripps
-Demian vs Vernoff
-Wheeler vs Zabib
-Israel vs Wolpert
-Weiss vs Platzman
+Rowan vs Beef
+Beef vs Rowan
+nogame vs Messer
+Messer vs nogame
+Wolpert vs Glazer
+Glazer vs Wolpert
+Haber vs Dean
+Dean vs Haber
 
 Week 3
-Ripps vs Demian
-Zingler vs Wheeler
-Vernoff vs Israel
-Zabib vs Weiss
-Wolpert vs Platzman
-Demian vs Ripps
-Wheeler vs Zingler
-Israel vs Vernoff
-Weiss vs Zabib
-Platzman vs Wolpert
+Rowan vs Messer
+Messer vs Rowan
+Beef vs Glazer
+Glazer vs Beef
+nogame vs Dean
+Dean vs nogame
+Wolpert vs Haber
+Haber vs Wolpert
 
 Week 4
-Ripps vs Wheeler
-Demian vs Israel
-Zingler vs Weiss
-Vernoff vs Platzman
-Zabib vs Wolpert
-Wheeler vs Ripps
-Israel vs Demian
-Weiss vs Zingler
-Platzman vs Vernoff
-Wolpert vs Zabib
+Rowan vs Glazer
+Glazer vs Rowan
+Messer vs Dean
+Dean vs Messer
+Beef vs Haber
+Haber vs Beef
+nogame vs Wolpert
+Wolpert vs nogame
 
 Week 5
-Ripps vs Israel
-Wheeler vs Weiss
-Demian vs Platzman
-Zingler vs Wolpert
-Vernoff vs Zabib
-Israel vs Ripps
-Weiss vs Wheeler
-Platzman vs Demian
-Wolpert vs Zingler
-Zabib vs Vernoff
+Rowan vs Dean
+Dean vs Rowan
+Glazer vs Haber
+Haber vs Glazer
+Messer vs Wolpert
+Wolpert vs Messer
+Beef vs nogame
+nogame vs Beef
 
 Week 6
-Ripps vs Weiss
-Israel vs Platzman
-Wheeler vs Wolpert
-Demian vs Zabib
-Zingler vs Vernoff
-Weiss vs Ripps
-Platzman vs Israel
-Wolpert vs Wheeler
-Zabib vs Demian
-Vernoff vs Zingler
+Rowan vs Haber
+Haber vs Rowan
+Dean vs Wolpert
+Wolpert vs Dean
+Glazer vs nogame
+nogame vs Glazer
+Messer vs Beef
+Beef vs Messer
 
 Week 7
-Ripps vs Platzman
-Weiss vs Wolpert
-Israel vs Zabib
-Wheeler vs Vernoff
-Demian vs Zingler
-Platzman vs Ripps
-Wolpert vs Weiss
-Zabib vs Israel
-Vernoff vs Wheeler
-Zingler vs Demian
+Rowan vs Wolpert
+Wolpert vs Rowan
+Haber vs nogame
+nogame vs Haber
+Dean vs Beef
+Beef vs Dean
+Glazer vs Messer
+Messer vs Glazer
 
-Week 8
-Ripps vs Wolpert
-Platzman vs Zabib
-Weiss vs Vernoff
-Israel vs Zingler
-Wheeler vs Demian
-Wolpert vs Ripps
-Zabib vs Platzman
-Vernoff vs Weiss
-Zingler vs Israel
-Demian vs Wheeler
-
-Week 9
-Ripps vs Zabib
-Wolpert vs Vernoff
-Platzman vs Zingler
-Weiss vs Demian
-Israel vs Wheeler
-Zabib vs Ripps
-Vernoff vs Wolpert
-Zingler vs Platzman
-Demian vs Weiss
-Wheeler vs Israel
-
-nhl
+fifagold
 Lippman
-Wolpert
-Brosnick
-Broder
-Kasimor
+Karasik
+Assaf
+Golbert
+Geller
+Zang
+Steinberg
+nogame
+
+Week 1
+Lippman vs nogame
+nogame vs Lippman
+Karasik vs Steinberg
+Steinberg vs Karasik
+Assaf vs Zang
+Zang vs Assaf
+Golbert vs Geller
+Geller vs Golbert
+
+Week 2
+Lippman vs Steinberg
+Steinberg vs Lippman
+nogame vs Zang
+Zang vs nogame
+Karasik vs Geller
+Geller vs Karasik
+Assaf vs Golbert
+Golbert vs Assaf
+
+Week 3
+Lippman vs Zang
+Zang vs Lippman
+Steinberg vs Geller
+Geller vs Steinberg
+nogame vs Golbert
+Golbert vs nogame
+Karasik vs Assaf
+Assaf vs Karasik
+
+Week 4
+Lippman vs Geller
+Geller vs Lippman
+Zang vs Golbert
+Golbert vs Zang
+Steinberg vs Assaf
+Assaf vs Steinberg
+nogame vs Karasik
+Karasik vs nogame
+
+Week 5
+Lippman vs Golbert
+Golbert vs Lippman
+Geller vs Assaf
+Assaf vs Geller
+Zang vs Karasik
+Karasik vs Zang
+Steinberg vs nogame
+nogame vs Steinberg
+
+Week 6
+Lippman vs Assaf
+Assaf vs Lippman
+Golbert vs Karasik
+Karasik vs Golbert
+Geller vs nogame
+nogame vs Geller
+Zang vs Steinberg
+Steinberg vs Zang
+
+Week 7
+Lippman vs Karasik
+Karasik vs Lippman
+Assaf vs nogame
+nogame vs Assaf
+Golbert vs Steinberg
+Steinberg vs Golbert
+Geller vs Zang
+Zang vs Geller
+
+nbablue
+Dean
+Rasch
+Zang
+Haber
+Rowan
+Glazer
+Assaf
+nogame
+
+Week 1
+Dean vs nogame
+nogame vs Dean
+Rasch vs Assaf
+Assaf vs Rasch
+Zang vs Glazer
+Glazer vs Zang
+Haber vs Rowan
+Rowan vs Haber
+
+Week 2
+Dean vs Assaf
+Assaf vs Dean
+nogame vs Glazer
+Glazer vs nogame
+Rasch vs Rowan
+Rowan vs Rasch
+Zang vs Haber
+Haber vs Zang
+
+Week 3
+Dean vs Glazer
+Glazer vs Dean
+Assaf vs Rowan
+Rowan vs Assaf
+nogame vs Haber
+Haber vs nogame
+Rasch vs Zang
+Zang vs Rasch
+
+Week 4
+Dean vs Rowan
+Rowan vs Dean
+Glazer vs Haber
+Haber vs Glazer
+Assaf vs Zang
+Zang vs Assaf
+nogame vs Rasch
+Rasch vs nogame
+
+Week 5
+Dean vs Haber
+Haber vs Dean
+Rowan vs Zang
+Zang vs Rowan
+Glazer vs Rasch
+Rasch vs Glazer
+Assaf vs nogame
+nogame vs Assaf
+
+Week 6
+Dean vs Zang
+Zang vs Dean
+Haber vs Rasch
+Rasch vs Haber
+Rowan vs nogame
+nogame vs Rowan
+Glazer vs Assaf
+Assaf vs Glazer
+
+Week 7
+Dean vs Rasch
+Rasch vs Dean
+Zang vs nogame
+nogame vs Zang
+Haber vs Assaf
+Assaf vs Haber
+Rowan vs Glazer
+Glazer vs Rowan
+
+nbagold
 Novo
 Hassan
-Zabib
+Greenwald
+Lucier
+Wolpert
+Steinberg
 
 Week 1
-Lippman 6-1 Zabib
-Wolpert 3-2 Hassan
-Brosnick 3-8 Novo
-Broder 1-0 Kasimor
-Zabib 0-2 Lippman
+Novo vs Steinberg
+Steinberg vs Novo
 Hassan vs Wolpert
-Novo vs Brosnick
-Kasimor vs Broder
+Wolpert vs Hassan
+Greenwald vs Lucier
+Lucier vs Greenwald
 
 Week 2
-Lippman vs Hassan
-Zabib vs Novo
-Wolpert vs Kasimor
-Brosnick vs Broder
-Hassan vs Lippman
-Novo vs Zabib
-Kasimor vs Wolpert
-Broder vs Brosnick
+Novo vs Wolpert
+Wolpert vs Novo
+Steinberg vs Lucier
+Lucier vs Steinberg
+Hassan vs Greenwald
+Greenwald vs Hassan
 
 Week 3
-Lippman vs Novo
-Hassan vs Kasimor
-Zabib vs Broder
-Wolpert vs Brosnick
-Novo vs Lippman
-Kasimor vs Hassan
-Broder vs Zabib
-Brosnick vs Wolpert
+Novo vs Lucier
+Lucier vs Novo
+Wolpert vs Greenwald
+Greenwald vs Wolpert
+Steinberg vs Hassan
+Hassan vs Steinberg
 
 Week 4
-Lippman vs Kasimor
-Novo vs Broder
-Hassan vs Brosnick
-Zabib vs Wolpert
-Kasimor vs Lippman
-Broder vs Novo
-Brosnick vs Hassan
-Wolpert vs Zabib
+Novo vs Greenwald
+Greenwald vs Novo
+Lucier vs Hassan
+Hassan vs Lucier
+Wolpert vs Steinberg
+Steinberg vs Wolpert
 
 Week 5
+Novo vs Hassan
+Hassan vs Novo
+Greenwald vs Steinberg
+Steinberg vs Greenwald
+Lucier vs Wolpert
+Wolpert vs Lucier
+
+nhl
+Hassan
+Dean
+Lippman
+Zabib
+Kasimor
+Broder
+Rowan
+Wolpert
+
+Week 1
+Hassan vs Wolpert
+Wolpert vs Hassan
+Dean vs Rowan
+Rowan vs Dean
 Lippman vs Broder
-Kasimor vs Brosnick
-Novo vs Wolpert
-Hassan vs Zabib
 Broder vs Lippman
-Brosnick vs Kasimor
-Wolpert vs Novo
+Zabib vs Kasimor
+Kasimor vs Zabib
+
+Week 2
+Hassan vs Rowan
+Rowan vs Hassan
+Wolpert vs Broder
+Broder vs Wolpert
+Dean vs Kasimor
+Kasimor vs Dean
+Lippman vs Zabib
+Zabib vs Lippman
+
+Week 3
+Hassan vs Broder
+Broder vs Hassan
+Rowan vs Kasimor
+Kasimor vs Rowan
+Wolpert vs Zabib
+Zabib vs Wolpert
+Dean vs Lippman
+Lippman vs Dean
+
+Week 4
+Hassan vs Kasimor
+Kasimor vs Hassan
+Broder vs Zabib
+Zabib vs Broder
+Rowan vs Lippman
+Lippman vs Rowan
+Wolpert vs Dean
+Dean vs Wolpert
+
+Week 5
+Hassan vs Zabib
 Zabib vs Hassan
+Kasimor vs Lippman
+Lippman vs Kasimor
+Broder vs Dean
+Dean vs Broder
+Rowan vs Wolpert
+Wolpert vs Rowan
 
 Week 6
-Lippman vs Brosnick
-Broder vs Wolpert
-Kasimor vs Zabib
-Novo vs Hassan
-Brosnick vs Lippman
-Wolpert vs Broder
-Zabib vs Kasimor
-Hassan vs Novo
+Hassan vs Lippman
+Lippman vs Hassan
+Zabib vs Dean
+Dean vs Zabib
+Kasimor vs Wolpert
+Wolpert vs Kasimor
+Broder vs Rowan
+Rowan vs Broder
 
 Week 7
+Hassan vs Dean
+Dean vs Hassan
 Lippman vs Wolpert
-Brosnick vs Zabib
-Broder vs Hassan
-Kasimor vs Novo
 Wolpert vs Lippman
-Zabib vs Brosnick
-Hassan vs Broder
-Novo vs Kasimor
+Zabib vs Rowan
+Rowan vs Zabib
+Kasimor vs Broder
+Broder vs Kasimor
 
