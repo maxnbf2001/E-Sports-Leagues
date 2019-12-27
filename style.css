@@ -317,8 +317,8 @@ li.game-bottom {
 }
 
 #nhlConferenceButton{
-    background-image: linear-gradient(to right, black, darkgray,  gray, lightgray);
-    box-shadow: 0 4px 15px 0 gray;
+    background-image: linear-gradient(to right, blue, darkgoldenrod,  darkgoldenrod, blue);
+    box-shadow: 0 4px 15px 0 lightskyblue;
 }
 
 #statsButton{
