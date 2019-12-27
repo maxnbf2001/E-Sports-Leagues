@@ -208,6 +208,7 @@ li.game-bottom {
     color: grey;
     margin: 50px;
     text-align: center;
+    bottom: 15px;
 }
 .blueButton:active {
     background: blue;
