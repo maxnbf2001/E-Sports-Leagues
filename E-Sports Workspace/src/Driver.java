@@ -498,10 +498,11 @@ public class Driver {
 		JSONArray splitFixtures = new JSONArray ();
 
 		int numWeeks = (numNHLTeams-1);
-
+		GameWeek[] season = new GameWeek[numWeeks];
 		//loops through all of the weeks
 		for (int i = 0; i < numWeeks; i++)
 		{
+			season[i] = new GameWeek();
 			String week = scan.nextLine();
 			JSONObject weeklyFixtures = new JSONObject();
 			JSONArray weeklyGames = new JSONArray();
@@ -515,8 +516,16 @@ public class Driver {
 				//handles the game if it has been played
 				if (game.indexOf("-") != -1)
 				{
+					boolean ot = false;
+					if (game.indexOf("OT") != -1)
+						ot = true;
+					
 					String homeT = game.substring(0, game.indexOf("-") -2);
-					String awayT = game.substring(game.indexOf("-") +3, game.length());
+					String awayT = "";
+					if (ot)
+						awayT = game.substring(game.indexOf("-") +3, game.length()-3);
+					else
+						awayT = game.substring(game.indexOf("-") +3, game.length());
 
 					int homeG = Integer.parseInt(game.substring(game.indexOf("-")-1, game.indexOf("-")));
 					int awayG = Integer.parseInt(game.substring(game.indexOf("-")+1, game.indexOf("-")+2));
@@ -525,14 +534,18 @@ public class Driver {
 					//finds the team with the given name and assigns them a win, draw, or loss
 					NHLTeam HT = findNHLTeam (homeT, NHLteams);
 					NHLTeam AT = findNHLTeam (awayT, NHLteams);
+				
+					season[i].addGame(new Game (homeT, awayT, homeG, awayG));
+					
+					
 					if (homeG > awayG)
 					{
 						HT.addWin(homeG, awayG);
-						AT.addLoss(awayG, homeG);
+						AT.addLoss(awayG, homeG, ot);
 					}
 					else if (awayG > homeG)
 					{
-						HT.addLoss(homeG, awayG);
+						HT.addLoss(homeG, awayG, ot);
 						AT.addWin(awayG, homeG);
 					}
 				}
@@ -563,9 +576,11 @@ public class Driver {
 			JSONObject team = new JSONObject();
 			team.put("rank", (i+1));
 			team.put("name", NHLteams[i].getName());
+			team.put("played", NHLteams[i].getWins() + NHLteams[i].getLosses() + NHLteams[i].getOTL());
 			team.put("wins", NHLteams[i].getWins());
 			team.put("losses", NHLteams[i].getLosses());
-			team.put("pct", NHLteams[i].getPCT());
+			team.put("otl", NHLteams[i].getOTL());
+			team.put("points", NHLteams[i].getPoints());
 			team.put("strk", NHLteams[i].getStrk());
 			team.put("lastFive", NHLteams[i].getLastFive());
 			team.put("gf", NHLteams[i].getGF());
@@ -574,10 +589,76 @@ public class Driver {
 			teamList.add(team);
 		}
 
+		//sorts the teams by goals scored and adds them into the league info
+		mostScored(NHLteams);
+		JSONArray scoredList = new JSONArray();
+		for (int i = 0; i < NHLteams.length; i++)
+		{
+			JSONObject team = new JSONObject();
+			team.put("name", NHLteams[i].getName());
+			team.put("scored", NHLteams[i].getGF());
+			scoredList.add(team);
+		}
+		NHLData.put("scoredList", scoredList);
+
+		//sorts the teams by goals conceded and adds them into the league info
+		mostConceded(NHLteams);
+		JSONArray concededList = new JSONArray();
+		for (int i = 0; i < NHLteams.length; i++)
+		{
+			JSONObject team = new JSONObject();
+			team.put("name", NHLteams[i].getName());
+			team.put("conceded", NHLteams[i].getGA());
+			concededList.add(team);
+		}
+		NHLData.put("concededList", concededList);
+
+		//adds the games with the biggest victory margin to the league information
+		JSONArray bvarray = new JSONArray();
+		ArrayList<String> biggestVictory = getBiggestVictory(season);
+		for (int i = 0; i < biggestVictory.size(); i++)
+		{
+			bvarray.add(biggestVictory.get(i));
+		}
+		NHLData.put("biggestVictory", bvarray);
+
+		//adds the games with the most amount of goals to the league information
+
+		JSONArray hsarray = new JSONArray();
+		ArrayList<String> highestScoring = getHighestScoring(season);
+		for (int i = 0; i < highestScoring.size(); i++)
+		{
+			hsarray.add(highestScoring.get(i));
+		}
+		NHLData.put("highestScoring", hsarray);
+
+
+		JSONArray winStreakTeams = new JSONArray();
+		ArrayList<NHLTeam> winStreak = biggestWinStreak(NHLteams);
+		for (int i = 0; i < winStreak.size(); i++)
+		{
+			winStreakTeams.add(winStreak.get(i).getName());
+		}
+		JSONObject win = new JSONObject();
+		win.put("teams", winStreakTeams);
+		win.put("streak", winStreak.get(0).getBW());
+		NHLData.put("winstreak", win);
+
+		JSONArray lossStreakTeams = new JSONArray();
+		ArrayList<NHLTeam> lossStreak = biggestLossStreak(NHLteams);
+		for (int i = 0; i < lossStreak.size(); i++)
+		{
+			lossStreakTeams.add(lossStreak.get(i).getName());
+		}
+		JSONObject loss = new JSONObject();
+		loss.put("teams", lossStreakTeams);
+		loss.put("streak", Math.abs(lossStreak.get(0).getBL()));
+		
+		NHLData.put("lossstreak", loss);
+		
+		
 		NHLData.put("teams", teamList);
 		NHLData.put("fixtures", fixtures);
-
-
 
 
 
@@ -667,7 +748,47 @@ public class Driver {
 
 		return highestScoring;
 	}
+	public static ArrayList<NHLTeam> biggestWinStreak (NHLTeam[] arr)
+	{
+		ArrayList<NHLTeam> biggestStreak = new ArrayList<NHLTeam>();
+		int bs = 0;
 
+		for (int i = 0; i < arr.length; i++)
+		{
+			if (arr[i].getBW() > bs)
+			{
+				biggestStreak = new ArrayList<NHLTeam>();
+				biggestStreak.add(arr[i]);
+				bs = arr[i].getBW();
+			}
+			else if (arr[i].getBW() == bs)
+				biggestStreak.add(arr[i]);
+		}
+
+		return biggestStreak;
+
+	}
+
+	public static ArrayList<NHLTeam> biggestLossStreak (NHLTeam[] arr)
+	{
+		ArrayList<NHLTeam> biggestStreak = new ArrayList<NHLTeam>();
+		int bs = 0;
+
+		for (int i = 0; i < arr.length; i++)
+		{
+			if (arr[i].getBL() < bs)
+			{
+				biggestStreak = new ArrayList<NHLTeam>();
+				biggestStreak.add(arr[i]);
+				bs = arr[i].getBL();
+			}
+			else if (arr[i].getBL() == bs)
+				biggestStreak.add(arr[i]);
+		}
+
+		return biggestStreak;
+
+	}
 	public static ArrayList<NBATeam> biggestWinStreak (NBATeam[] arr)
 	{
 		ArrayList<NBATeam> biggestStreak = new ArrayList<NBATeam>();
@@ -863,6 +984,52 @@ public class Driver {
 			array[i] = arrTemp.get(i);
 		}
 	}
+	
+	public static void mostScored (NHLTeam[] array)
+	{
+		ArrayList<NHLTeam> arrTemp = new ArrayList<NHLTeam>();
+		for (int i = 0; i < array.length; i++)
+		{
+			arrTemp.add(array[i]);
+		}
+		Collections.sort(arrTemp, new Comparator() {
+
+			public int compare(Object o1, Object o2) {
+
+				Integer x5 = ((NHLTeam) o1).getGF();
+				Integer x6 = ((NHLTeam) o2).getGF();
+				return x6.compareTo(x5);
+			}});
+
+		for (int i = 0; i < array.length; i++)
+		{
+			array[i] = arrTemp.get(i);
+		}
+	}
+
+
+	public static void mostConceded (NHLTeam[] array)
+	{
+		ArrayList<NHLTeam> arrTemp = new ArrayList<NHLTeam>();
+		for (int i = 0; i < array.length; i++)
+		{
+			arrTemp.add(array[i]);
+		}
+		Collections.sort(arrTemp, new Comparator() {
+
+			public int compare(Object o1, Object o2) {
+
+				Integer x5 = ((NHLTeam) o1).getGA();
+				Integer x6 = ((NHLTeam) o2).getGA();
+				return x6.compareTo(x5);
+			}});
+
+		for (int i = 0; i < array.length; i++)
+		{
+			array[i] = arrTemp.get(i);
+		}
+	}
+
 
 
 	private static void gamesBehind (NBATeam[] arr)
@@ -971,8 +1138,8 @@ public class Driver {
 
 			public int compare(Object o1, Object o2) {
 
-				Integer x1 = (int) (1000*Double.parseDouble(((NHLTeam) o1).getPCT()));
-				Integer x2 = (int) (1000*Double.parseDouble(((NHLTeam) o2).getPCT()));
+				Integer x1 = ((NHLTeam) o1).getPoints();
+				Integer x2 = ((NHLTeam) o2).getPoints();
 				int sComp = x2.compareTo(x1);
 
 				if (sComp != 0) {
@@ -980,9 +1147,9 @@ public class Driver {
 				} 
 
 
-				Integer x3 = ((NHLTeam) o1).getLosses();
-				Integer x4 = ((NHLTeam) o2).getLosses();
-				sComp =  x3.compareTo(x4);
+				Integer x3 = ((NHLTeam) o1).getGD();
+				Integer x4 = ((NHLTeam) o2).getGD();
+				sComp =  x4.compareTo(x3);
 
 				if (sComp != 0) {
 					return sComp;
@@ -991,14 +1158,7 @@ public class Driver {
 				Integer x5 = ((NHLTeam) o1).getWins();
 				Integer x6 = ((NHLTeam) o2).getWins();
 
-				if (sComp != 0) {
-					return sComp;
-				} 
-
-				Integer x7 = ((NHLTeam) o1).getGD();
-				Integer x8 = ((NHLTeam) o2).getGD();
-
-				return x8.compareTo(x7);
+				return x6.compareTo(x5);
 			}});
 
 		for (int i = 0; i < array.length; i++)

@@ -10,6 +10,7 @@ function NHLCTController(){
 
     this.NHLCONFERENCE = 1;
     this.PLAYOFF = 2;
+    this.STATS = 3;
     this.selected = this.NHLCONFERENCE;
 
     this.winStreak = function(streak){

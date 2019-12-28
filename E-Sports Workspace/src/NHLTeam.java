@@ -3,19 +3,20 @@ import java.text.DecimalFormat;
 public class NHLTeam {
 	
 	private DecimalFormat fmt = new DecimalFormat("#.###");
-	private String teamName, pct, lastFive;
-	private int wins, losses, strk, gf, ga;
+	private String teamName, lastFive;
+	private int wins, losses, otlosses, points, strk, gf, ga, bwstreak, blstreak;
 
 	public NHLTeam ()
 	{
 		teamName = "";
 		wins = 0;
 		losses = 0;
-		pct = "0.000";
 		strk = 0;
 		lastFive = "";
 		ga = 0;
 		gf = 0;
+		otlosses = 0;
+		points = 0;
 	}
 	
 	public NHLTeam (String name)
@@ -23,11 +24,12 @@ public class NHLTeam {
 		teamName = name;
 		wins = 0;
 		losses = 0;
-		pct = "0.000";
 		strk = 0;
 		lastFive = "";
 		gf = 0;
 		ga = 0;
+		otlosses = 0;
+		points = 0;
 	}
 	
 	
@@ -36,17 +38,17 @@ public class NHLTeam {
 		teamName = name;
 		wins = w;
 		losses = l;
-		pct = "0.000";
 		strk = 0;
 		lastFive = "";
 		gf = 0;
 		ga = 0;
+		otlosses = 0;
+		points = 0;
 	}
 	
 	public void addWin (int GF, int GA)
 	{
 		wins +=1; 
-		updatePCT();
 		if (strk < 0)
 			strk = 1;
 		else 
@@ -58,8 +60,17 @@ public class NHLTeam {
 		
 		gf += GF;
 		ga += GA;
+		
+		points+=2;
+		
+		if (strk > bwstreak)
+			bwstreak = strk;
 	}
 	
+	public int getBW ()
+	{
+		return bwstreak;
+	}
 	
 	public int getGF ()
 	{
@@ -75,10 +86,16 @@ public class NHLTeam {
 	{
 		return gf - ga;
 	}
-	public void addLoss(int GF, int GA)
+	public void addLoss(int GF, int GA, boolean OT)
 	{
-		losses+=1;
-		updatePCT();
+		if (OT)
+		{
+			otlosses+=1;
+			points+=1;
+		}
+		else
+			losses+=1;
+		
 		if (strk > 0)
 			strk = -1;
 		else
@@ -90,22 +107,16 @@ public class NHLTeam {
 		
 		gf += GF;
 		ga += GA;
+		
+		if (strk < blstreak)
+			blstreak = strk;
+		
 	}
 	
-	public void updatePCT()
+	public int getBL()
 	{
-		if (wins == 0 && losses == 0)
-			pct = "0.000";
-		else if (wins > 0 && losses == 0)
-			pct = "1.000";
-		else 
-			pct = fmt.format((double)wins/(double)(losses+wins));
-		if (pct.equals("0"))
-			pct = "0.000";
-		while (pct.length() < 5)
-			pct = pct + "0";
+		return blstreak;
 	}
-	
 	public String getName()
 	{
 		return teamName;
@@ -121,11 +132,6 @@ public class NHLTeam {
 		return losses;
 	}
 	
-	public String getPCT()
-	{
-		return pct;
-	}
-
 	public String getLastFive()
 	{
 		return lastFive;
@@ -136,6 +142,15 @@ public class NHLTeam {
 		return strk;
 	}
 	
+	public int getOTL()
+	{
+		return otlosses;
+	}
+	
+	public int getPoints()
+	{
+		return points;
+	}
 
 
 }

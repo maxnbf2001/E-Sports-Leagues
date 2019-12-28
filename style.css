@@ -334,7 +334,7 @@ li.game-bottom {
     width: 22%;
 }
 
-.NBAscoredTable, .NBAconcededTable{
+.NBAscoredTable, .NBAconcededTable, .NHLconcededTable, .NHLscoredTable{
     width: 35%;
 }
 

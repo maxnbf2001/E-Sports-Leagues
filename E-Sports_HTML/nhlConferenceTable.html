@@ -1,6 +1,7 @@
 <div class = "conferenceButtons">
     <button id = "nhlConferenceButton" class = "conferenceButton Conference{{$ctrl.selected===$ctrl.NHLCONFERENCE}}" ng-click = "$ctrl.selected=$ctrl.NHLCONFERENCE"> Conference Standings </button>
     <button id = "playoffButton" class = "conferenceButton Conference{{$ctrl.selected===$ctrl.PLAYOFF}}" ng-click = "$ctrl.selected=$ctrl.PLAYOFF"> NHL Playoffs </button>
+    <button id = "statsButton" class ='conferenceButton Conference{{$ctrl.selected===$ctrl.STATS}}' ng-click = "$ctrl.selected=$ctrl.STATS"> Statistics </button>
 </div>
 
 <div ng-if = "$ctrl.selected===$ctrl.NHLCONFERENCE">
@@ -10,9 +11,11 @@
         <tr class = "standingsHeaderRow">
             <th> </th>
             <th> Team </th>
+            <th> Played </th>
             <th> Wins </th>
             <th> Losses </th>
-            <th> PCT </th>
+            <th> OT Losses </th>
+            <th> Points </th>
             <th> GF </th>
             <th> GA </th>
             <th> GD </th>
@@ -23,9 +26,11 @@
         <tr class = "teamInfo" ng-repeat = "team in $ctrl.cnfs.nhlData.teams">
             <td> {{team.rank}}</td>
             <td> {{team.name}}</td>
+            <td> {{team.played}} </td>
             <td> {{team.wins}} </td>
             <td> {{team.losses}} </td>
-            <td> {{team.pct}} </td>
+            <td> {{team.otl}} </td>
+            <td> {{team.points}}</td>
             <td> {{team.gf}} </td>
             <td> {{team.ga}} </td>
             <td> {{team.gd}} </td>
@@ -83,4 +88,55 @@
     </div>
 </div>
 
+<div ng-if = "$ctrl.selected===$ctrl.STATS">
+        <div class = "leagueStats">
+            <table class = "NHLscoredTable">
+                <tr class = "standingsHeaderRow">
+                    <th> Team </th>
+                    <th> Goals Scored </th>
+                </tr>
+                <tr class = "teamInfo" ng-repeat = "team in $ctrl.cnfs.nhlData.scoredList">
+                    <td class = "statNameCol"> {{team.name}}</td>
+                    <td class = "statDataCol"> {{team.scored}}</td>
+                </tr>
+            </table>
+
+            <table class = "NHLconcededTable">
+                <tr class = "standingsHeaderRow">
+                    <th> Team </th>
+                    <th> Goals Conceded </th>
+                </tr>
+                <tr class = "teamInfo"  ng-repeat = "team in $ctrl.cnfs.nhlData.concededList">
+                    <td class = "statNameCol"> {{team.name}}</td>
+                    <td class = "statDataCol"> {{team.conceded}}</td>
+                </tr>
+            </table>
+
+
+            <div class = "singleInfo">
+                Biggest Victory:
+                <div class ="bvgames" ng-repeat = 'game in $ctrl.cnfs.nhlData.biggestVictory'>
+                    {{game}}
+                </div>
+                <div ng-if = $ctrl.cnfs.nhlData.biggestVictory.length===0> </div>
+                <br>
+                Highest Scoring:
+                <div class ="bvgames" ng-repeat = 'game in $ctrl.cnfs.nhlData.highestScoring'>
+                    {{game}}
+                </div>
+                <div ng-if = '$ctrl.cnfs.nhlData.highestScoring.length===0'></div>
+                <br>
+                Best Win Streak: {{$ctrl.cnfs.nhlData.winstreak.streak}}
+                <div class ="bvgames"ng-if = '$ctrl.cnfs.nhlData.winstreak.streak!==0' ng-repeat = 'team in $ctrl.cnfs.nhlData.winstreak.teams'>
+                    {{team}}
+                </div>
+                <div ng-if = '$ctrl.cnfs.nhlData.winstreak.streak===0'></div>
+                <br>
+                Worst Losing Streak: {{$ctrl.cnfs.nhlData.lossstreak.streak}}
+                <div class ="bvgames" ng-if = '$ctrl.cnfs.nhlData.lossstreak.streak!==0' ng-repeat = 'team in $ctrl.cnfs.nhlData.lossstreak.teams'>
+                    {{team}}
+                </div>
+            </div>
+        </div>
+</div>
 <p class = "lastUpdated"> Data last updated on {{$ctrl.cnfs.date}}</p>
