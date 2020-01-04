@@ -1,18 +1,18 @@
 nbablue
-Dean
-Rasch
-Zang
-Haber
-Rowan
-Glazer
-Assaf
+Dean (Bucks)
+Rasch (Warriors)
+Zang (Lakers)
+Haber (Clippers)
+Rowan (Rockets)
+Glazer (Celtics)
+Assaf ()
 nogame
 
 Week 1
 Dean vs nogame
 nogame vs Dean
-Rasch vs Assaf
-Assaf vs Rasch
+Rasch 150-101 Assaf
+Assaf 98-90 Rasch
 Zang vs Glazer
 Glazer vs Zang
 Haber vs Rowan
@@ -79,12 +79,12 @@ Rowan vs Glazer
 Glazer vs Rowan
 
 nbagold
-Novo
-Hassan
-Greenwald
-Lucier
-Wolpert
-Steinberg
+Novo (Celtics)
+Hassan (Bucks)
+Greenwald (Lakers)
+Lucier (Nets)
+Wolpert (Warriors)
+Steinberg (Clippers)
 
 Week 1
 Novo vs Steinberg

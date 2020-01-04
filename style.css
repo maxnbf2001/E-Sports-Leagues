@@ -429,3 +429,6 @@ li.game-bottom {
     font-weight: bold;
   }
 
+.FIFAstatDataCol, .FIFAstatNameCol, .FIFAnameCol, .FIFAdataCol{
+    font-size: medium;
+}

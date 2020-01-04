@@ -1,26 +1,26 @@
 nhl
-Hassan
-Dean
-Lippman
-Zabib
-Kasimor
-Broder
-Rowan
-Wolpert
+Hassan (Bruins)
+Dean (Canadiens)
+Lippman (Lightning)
+Zabib (Islanders)
+Kasimor (Capitals)
+Broder (Leafs)
+Rowan (Avalanche)
+Wolpert (Stars)
 
 Week 1
-Hassan vs Wolpert
+Hassan 6-1 Wolpert
 Wolpert vs Hassan
 Dean vs Rowan
 Rowan vs Dean
 Lippman vs Broder
 Broder vs Lippman
-Zabib vs Kasimor
+Zabib 2-3 Kasimor OT
 Kasimor vs Zabib
 
 Week 2
 Hassan vs Rowan
-Rowan vs Hassan
+Rowan 0-1 Hassan
 Wolpert vs Broder
 Broder vs Wolpert
 Dean vs Kasimor

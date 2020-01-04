@@ -46,8 +46,8 @@
             Week {{4*rowIndex + ($index+1)}} {{week.dates}}
             <div class = "weekGame" ng-repeat = 'game in week.weeklyGames | filter : teamName'>
                 <div class = "homeTeam"> {{game.homeT}} </div>
-                <div class = "score" ng-if = "game.awayG!==-1"> {{game.homeG}} - {{game.awayG}}</div>
-                <div class = "vs" ng-if = "game.awayG===-1"> vs </div>
+                <div class = "score" ng-if = "game.score!=='-1 - -1'"> {{game.score}}</div>
+                <div class = "vs" ng-if = "game.score==='-1 - -1'"> vs </div>
                 <div class = "awayTeam"> {{game.awayT}} </div>
             </div>
         </div>

@@ -101,8 +101,7 @@ public class Driver {
 							season[i].addGame(new Game(homeT, awayT, homeG, awayG));
 							gameObject.put("homeT", homeT);
 							gameObject.put("awayT", awayT);
-							gameObject.put("homeG", homeG);
-							gameObject.put("awayG", awayG);
+							gameObject.put("score", homeG + " - " + awayG);
 							weeklyGames.add(gameObject);
 							if (homeG > awayG)
 							{
@@ -127,8 +126,7 @@ public class Driver {
 							String awayT = g.substring(g.indexOf("vs") +2, g.length());
 							gameObject.put("homeT", homeT);
 							gameObject.put("awayT", awayT);
-							gameObject.put("homeG", -1);
-							gameObject.put("awayG", -1);
+							gameObject.put("score", "-1 - -1");
 							weeklyGames.add(gameObject);
 						}
 					}
@@ -357,8 +355,7 @@ public class Driver {
 
 							gameObject.put("homeT", homeT);
 							gameObject.put("awayT", awayT);
-							gameObject.put("homeP", homePoints);
-							gameObject.put("awayP", awayPoints);
+							gameObject.put("score", homePoints + " - " + awayPoints);
 							weeklyGames.add(gameObject);
 							// find the team with the given name, and assigns them a win or loss
 							NBATeam HT = findNBATeam (homeT, NBAteams);
@@ -381,8 +378,7 @@ public class Driver {
 							String awayT = game.substring(game.indexOf("vs")+2, game.length());
 							gameObject.put("homeT", homeT);
 							gameObject.put("awayT", awayT);
-							gameObject.put("homeP", -1);
-							gameObject.put("awayP", -1);
+							gameObject.put("score", "-1 - -1");
 							weeklyGames.add(gameObject);
 						}
 					}
@@ -567,8 +563,7 @@ public class Driver {
 
 					gameObject.put("homeT", homeT);
 					gameObject.put("awayT", awayT);
-					gameObject.put("homeG", homeG);
-					gameObject.put("awayG", awayG);
+					gameObject.put("score", homeG + " - " + awayG);
 					weeklyGames.add(gameObject);
 					
 					if (homeG > awayG)
@@ -588,8 +583,7 @@ public class Driver {
 					String awayT = game.substring(game.indexOf("vs")+2, game.length());
 					gameObject.put("homeT", homeT);
 					gameObject.put("awayT", awayT);
-					gameObject.put("homeG", -1);
-					gameObject.put("awayG", -1);
+					gameObject.put("score", -1 + " - " + -1);
 					weeklyGames.add(gameObject);
 					
 				}
@@ -1216,7 +1210,7 @@ public class Driver {
 	{
 		for (int i = 0; i < lot.length; i++)
 		{
-			if (name.equals(lot[i].getName()))
+			if (name.equals(lot[i].getName().substring(0, lot[i].getName().indexOf("(") - 1)))
 			{
 				return lot[i];
 			}
@@ -1228,7 +1222,7 @@ public class Driver {
 	{
 		for (int i = 0; i < lot.length; i++)
 		{
-			if (name.equals(lot[i].getName()))
+			if (name.equals(lot[i].getName().substring(0, lot[i].getName().indexOf("(") - 1)))
 			{
 				return lot[i];
 			}
@@ -1240,7 +1234,7 @@ public class Driver {
 	{
 		for (int i = 0; i < lot.length; i++)
 		{
-			if (name.equals(lot[i].getName()))
+			if (name.equals(lot[i].getName().substring(0, lot[i].getName().indexOf("(") - 1)))
 			{
 				return lot[i];
 			}

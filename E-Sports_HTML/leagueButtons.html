@@ -44,8 +44,8 @@
             Week {{4*rowIndex + ($index+1)}} {{week.dates}}
             <div class = "weekGame" ng-repeat = 'game in week.weeklyGames | filter : teamName'>
                 <div class = "homeTeam"> {{game.homeT}} </div>
-                <div class = "score" ng-if = "game.awayG!==-1"> {{game.homeG}} - {{game.awayG}}</div>
-                <div class = "vs" ng-if = "game.awayG===-1"> vs </div>
+                <div class = "score" ng-if = "game.score!=='-1 - -1'"> {{game.score}}</div>
+                <div class = "vs" ng-if = "game.score==='-1 - -1'"> vs </div>
                 <div class = "awayTeam"> {{game.awayT}} </div>
             </div>
         </div>
@@ -123,35 +123,35 @@
         <div class = "leagueStats">
         <table class = "cleanTable">
             <tr class = "standingsHeaderRow">
-                <th> Team </th>
-                <th> Clean Sheets </th>
+                <th class = "FIFAnameCol"> Team </th>
+                <th class = "FIFAdataCol"> Clean Sheets </th>
             </tr>
             <tr class = "teamInfo" ng-repeat = "team in $ctrl.lgs.fifaData[league].cleanList">
-                <td class = "statNameCol"> {{team.name}}</td>
-                <td class = "statDataCol"> {{team.clean}}</td>
+                <td class = "FIFAstatNameCol"> {{team.name}}</td>
+                <td class = "FIFAstatDataCol"> {{team.clean}}</td>
             </tr>
         </table>
 
         <table class = "scoredTable">
             <tr class = "standingsHeaderRow">
-                <th> Team </th>
-                <th> Goals Scored </th>
+                <th class = "FIFAnameCol"> Team </th>
+                <th class = "FIFAdataCol"> Goals Scored </th>
             </tr>
             <tr class = "teamInfo" class = "scoredInfo" ng-repeat = "team in $ctrl.lgs.fifaData[league].scoredList">
-                <td class = "statNameCol"> {{team.name}}</td>
-                <td class = "statDataCol"> {{team.scored}}</td>
+                <td class = "FIFAstatNameCol"> {{team.name}}</td>
+                <td class = "FIFAstatDataCol"> {{team.scored}}</td>
             </tr>
         </table>
 
 
         <table class = "concededTable">
             <tr class = "standingsHeaderRow">
-                <th> Team </th>
-                <th> Goals Conceded </th>
+                <th class = "FIFAnameCol"> Team </th>
+                <th class = "FIFAdataCol"> Goals Conceded </th>
             </tr>
             <tr class = "teamInfo" ng-repeat = "team in $ctrl.lgs.fifaData[league].concededList">
-                <td class = "statNameCol"> {{team.name}}</td>
-                <td class = "statDataCol"> {{team.conceded}}</td>
+                <td class = "FIFAstatNameCol"> {{team.name}}</td>
+                <td class = "FIFAstatDataCol"> {{team.conceded}}</td>
             </tr>
         </table>
         <div class = "singleInfo">

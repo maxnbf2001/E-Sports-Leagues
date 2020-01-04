@@ -11,15 +11,15 @@ nogame
 Week 1
 Rowan vs nogame
 nogame vs Rowan
-Wolpert vs Beef
-Beef vs Wolpert
+Wolpert 0-5 Beef
+Beef 3-3 Wolpert
 Haber vs Messer
 Messer vs Haber
 Dean vs Glazer
 Glazer vs Dean
 
 Week 2
-Rowan vs Beef
+Rowan 1-1 Beef
 Beef vs Rowan
 nogame vs Messer
 Messer vs nogame
@@ -79,13 +79,13 @@ Glazer vs Messer
 Messer vs Glazer
 
 fifagold
-Lippman
-Karasik
-Assaf
-Golbert
-Geller
-Zang
-Steinberg
+Lippman (Barcelona)
+Karasik (Man City)
+Assaf (Man United)
+Golbert (France)
+Geller (PSG)
+Zang (Juventus)
+Steinberg (Liverpool)
 nogame
 
 Week 1
