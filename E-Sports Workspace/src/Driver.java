@@ -71,7 +71,7 @@ public class Driver {
 				season[i] = new GameWeek();
 				JSONObject weeklyFixtures = new JSONObject();
 				JSONArray weeklyGames = new JSONArray();
-
+		
 				// reads in the games for each week
 				int numGames = 0;
 				if (teams.length%2 == 0)
@@ -81,12 +81,11 @@ public class Driver {
 
 				for (int j = 0; j < numGames; j++)
 				{
-
+					JSONObject gameObject = new JSONObject();
 					String g = scan.nextLine();
 					if (g.indexOf("nogame") == -1)
 					{
-						weeklyGames.add(g);
-
+					
 						if (g.indexOf("-") != -1) //if the game has been played
 						{
 							String homeT = g.substring(0, g.indexOf("-") -2);
@@ -100,7 +99,11 @@ public class Driver {
 							Team AT = findTeam (awayT, teams);
 
 							season[i].addGame(new Game(homeT, awayT, homeG, awayG));
-
+							gameObject.put("homeT", homeT);
+							gameObject.put("awayT", awayT);
+							gameObject.put("homeG", homeG);
+							gameObject.put("awayG", awayG);
+							weeklyGames.add(gameObject);
 							if (homeG > awayG)
 							{
 								HT.addWin(homeG, awayG);
@@ -117,6 +120,16 @@ public class Driver {
 								AT.addWin(awayG, homeG);
 							}
 
+						}
+						else
+						{
+							String homeT = g.substring(0, g.indexOf("vs") -1);
+							String awayT = g.substring(g.indexOf("vs") +2, g.length());
+							gameObject.put("homeT", homeT);
+							gameObject.put("awayT", awayT);
+							gameObject.put("homeG", -1);
+							gameObject.put("awayG", -1);
+							weeklyGames.add(gameObject);
 						}
 					}
 
@@ -302,9 +315,9 @@ public class Driver {
 				for (int j = 0; j < numGames; j++)
 				{
 					String game = scan.nextLine();
+					JSONObject gameObject = new JSONObject();
 					if (game.indexOf("nogame") == -1)
 					{
-						weeklyGames.add(game);
 
 						//handles the game if it has been played
 						if (game.indexOf("-") != -1)
@@ -342,6 +355,11 @@ public class Driver {
 
 							season[i].addGame(new Game (homeT, awayT, homePoints, awayPoints));
 
+							gameObject.put("homeT", homeT);
+							gameObject.put("awayT", awayT);
+							gameObject.put("homeP", homePoints);
+							gameObject.put("awayP", awayPoints);
+							weeklyGames.add(gameObject);
 							// find the team with the given name, and assigns them a win or loss
 							NBATeam HT = findNBATeam (homeT, NBAteams);
 							NBATeam AT = findNBATeam (awayT, NBAteams);
@@ -356,6 +374,16 @@ public class Driver {
 								AT.addWin(awayPoints, homePoints);
 							}
 
+						}
+						else
+						{
+							String homeT = game.substring(0, game.indexOf("vs")-1);
+							String awayT = game.substring(game.indexOf("vs")+2, game.length());
+							gameObject.put("homeT", homeT);
+							gameObject.put("awayT", awayT);
+							gameObject.put("homeP", -1);
+							gameObject.put("awayP", -1);
+							weeklyGames.add(gameObject);
 						}
 					}
 				}
@@ -511,8 +539,7 @@ public class Driver {
 			for (int j = 0; j < numNHLTeams; j++)
 			{
 				String game = scan.nextLine();
-				weeklyGames.add(game);
-
+				JSONObject gameObject = new JSONObject ();
 				//handles the game if it has been played
 				if (game.indexOf("-") != -1)
 				{
@@ -537,6 +564,12 @@ public class Driver {
 				
 					season[i].addGame(new Game (homeT, awayT, homeG, awayG));
 					
+
+					gameObject.put("homeT", homeT);
+					gameObject.put("awayT", awayT);
+					gameObject.put("homeG", homeG);
+					gameObject.put("awayG", awayG);
+					weeklyGames.add(gameObject);
 					
 					if (homeG > awayG)
 					{
@@ -548,6 +581,17 @@ public class Driver {
 						HT.addLoss(homeG, awayG, ot);
 						AT.addWin(awayG, homeG);
 					}
+				}
+				else
+				{
+					String homeT = game.substring(0, game.indexOf("vs")-1);
+					String awayT = game.substring(game.indexOf("vs")+2, game.length());
+					gameObject.put("homeT", homeT);
+					gameObject.put("awayT", awayT);
+					gameObject.put("homeG", -1);
+					gameObject.put("awayG", -1);
+					weeklyGames.add(gameObject);
+					
 				}
 			}
 

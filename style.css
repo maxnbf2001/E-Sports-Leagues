@@ -92,7 +92,70 @@ li.game-bottom {
 
 .weekGame{
     font-weight: normal;
+    display: flex;
+}
+
+
+.NBAhomeTeam, .NBAawayTeam{
     text-align: center;
+    width: 44%;
+}
+
+.NBAvs{
+    text-align: center;
+    width: 12%;
+}
+
+.NBAscore{
+    text-align:center;
+    width: 39%;
+}
+
+.homeTeam, .awayTeam{
+    text-align: center;
+    width: 44%;
+}
+
+.vs{
+    text-align: center;
+    width: 12%;
+}
+
+.score{
+    text-align:center;
+    width: 16%;
+}
+
+.vs, .score, .NBAvs, .NBAscore {
+    font: 15px "Josefin Sans", sans-serif;
+    font-weight: bold;
+    background: red;
+    padding: 2px;
+    color: #FFF;
+    border-radius: 3px;
+    margin: 0px 7px;
+    padding-bottom: 0;
+}
+
+.weekGame{
+    padding: 2px;
+}
+.score, .NBAscore{
+    background: transparent;
+    color: #000;
+    border: 1px #000 solid;
+    padding: 1px 2px;
+    font: 13px "Josefin Sans", sans-serif;
+}
+
+.weekGame:hover .score{
+    color: white;
+    border: 1px white solid;
+}
+
+.weekGame:hover .NBAscore{
+    color: white;
+    border: 1px white solid;
 }
 
 .weekGame:hover{
