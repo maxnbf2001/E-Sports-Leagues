@@ -395,7 +395,7 @@ li.game-bottom {
 }
 
 .cleanTable, .scoredTable, .concededTable{
-    width: 22%;
+    width: 26%;
 }
 
 .NBAscoredTable, .NBAconcededTable, .NHLconcededTable, .NHLscoredTable{
