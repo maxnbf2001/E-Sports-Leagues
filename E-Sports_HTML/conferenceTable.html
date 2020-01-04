@@ -161,13 +161,13 @@
                 </div>
                 <div ng-if = '$ctrl.cnfs.nbaData[league].highestScoring.length===0'></div>
                 <br>
-                Best Win Streak: {{$ctrl.cnfs.nbaData[league].winstreak.streak}}
+                Top Win Streak: {{$ctrl.cnfs.nbaData[league].winstreak.streak}}
                 <div class ="bvgames"ng-if = '$ctrl.cnfs.nbaData[league].winstreak.streak!==0' ng-repeat = 'team in $ctrl.cnfs.nbaData[league].winstreak.teams'>
                     {{team}}
                 </div>
                 <div ng-if = '$ctrl.cnfs.nbaData[league].winstreak.streak===0'></div>
                 <br>
-                Worst Losing Streak: {{$ctrl.cnfs.nbaData[league].lossstreak.streak}}
+                Top Losing Streak: {{$ctrl.cnfs.nbaData[league].lossstreak.streak}}
                 <div class ="bvgames" ng-if = '$ctrl.cnfs.nbaData[league].lossstreak.streak!==0' ng-repeat = 'team in $ctrl.cnfs.nbaData[league].lossstreak.teams'>
                     {{team}}
                 </div>
