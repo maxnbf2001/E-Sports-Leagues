@@ -399,7 +399,7 @@ li.game-bottom {
 }
 
 .NBAscoredTable, .NBAconcededTable, .NHLconcededTable, .NHLscoredTable{
-    width: 35%;
+    width: 38%;
 }
 
 .leagueHeader{
@@ -410,7 +410,7 @@ li.game-bottom {
 .singleInfo{
     padding: 10px;
     font-weight: bold;
-    font-size: x-large;
+    font-size: large;
 }
 
 .bvgames{
