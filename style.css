@@ -352,5 +352,14 @@ li.game-bottom {
 .bvgames{
     font-weight: normal;
     font-size: medium;
-    paddig: 15px;
+    padding: 15px;
 }
+
+.weekFixture {
+    display: inline-block;
+    padding: 15px;
+    border: 1px grey solid;
+    border-radius: 6px;
+    margin: 10px;
+    font: 18px "PT Sans", sans-serif;
+  }
