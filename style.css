@@ -395,7 +395,7 @@ li.game-bottom {
 }
 
 .cleanTable, .scoredTable, .concededTable{
-    width: 26%;
+    width: 33%;
 }
 
 .NBAscoredTable, .NBAconcededTable, .NHLconcededTable, .NHLscoredTable{
@@ -413,6 +413,18 @@ li.game-bottom {
     font-size: large;
 }
 
+
+.FIFAsingleInfo{
+    display: flex;
+    padding: 10px;
+    font-weight: bold;
+    font-size: x-large;
+}
+
+.bv, .hs, .tls, .tws{
+    width: 25%;
+}
+
 .bvgames{
     font-weight: normal;
     font-size: medium;
@@ -428,7 +440,3 @@ li.game-bottom {
     font: 16px "PT Sans", sans-serif;
     font-weight: bold;
   }
-
-.FIFAstatDataCol, .FIFAstatNameCol, .FIFAnameCol, .FIFAdataCol{
-    font-size: medium;
-}

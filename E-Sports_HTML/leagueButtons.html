@@ -154,30 +154,37 @@
                 <td class = "FIFAstatDataCol"> {{team.conceded}}</td>
             </tr>
         </table>
-        <div class = "singleInfo">
+
+        </div>
+        <div class = "FIFAsingleInfo">
+
+            <div class = "bv">
             Biggest Victory:
             <div class ="bvgames" ng-repeat = 'game in $ctrl.lgs.fifaData[league].biggestVictory'>
                 {{game}}
             </div>
-            <div ng-if = $ctrl.lgs.fifaData[league].biggestVictory.length===0> </div>
-            <br>
+            </div>
+
+            <div class = "hs">
             Highest Scoring:
             <div class ="bvgames" ng-repeat = 'game in $ctrl.lgs.fifaData[league].highestScoring'>
                 {{game}}
             </div>
-            <div ng-if = '$ctrl.lgs.fifaData[league].highestScoring.length===0'></div>
-            <br>
+            </div>
+
+            <div class = "tws">
             Top Win Streak: {{$ctrl.lgs.fifaData[league].winstreak.streak}}
             <div class ="bvgames"ng-if = '$ctrl.lgs.fifaData[league].winstreak.streak!==0' ng-repeat = 'team in $ctrl.lgs.fifaData[league].winstreak.teams'>
                 {{team}}
             </div>
-            <div ng-if = '$ctrl.lgs.fifaData[league].winstreak.streak===0'></div>
-            <br>
+            </div>
+
+            <div class = "tls">
             Top Losing Streak: {{$ctrl.lgs.fifaData[league].losingStreak.streak}}
             <div class ="bvgames" ng-if = '$ctrl.lgs.fifaData[league].losingStreak.streak!==0' ng-repeat = 'team in $ctrl.lgs.fifaData[league].losingStreak.teams'>
                 {{team}}
             </div>
-        </div>
+            </div>
         </div>
     </div>
 </div>
