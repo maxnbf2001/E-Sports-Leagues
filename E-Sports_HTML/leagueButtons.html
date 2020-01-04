@@ -41,7 +41,7 @@
     <p class = "filterNames"> Filter games by team or score: <input type = "text" ng-model = "teamName"></p>
     <div class = "rowFixture" ng-repeat = 'split in $ctrl.lgs.fifaData[$ctrl.getLeagueKeys()[$ctrl.selected]].fixtures' ng-init = "rowIndex = $index">
         <div class = "weekFixture" ng-repeat = 'week in split track by $index'>
-            Week {{5*rowIndex + ($index+1)}} {{week.dates}}
+            Week {{4*rowIndex + ($index+1)}} {{week.dates}}
             <div class = "weekGame" ng-repeat = 'game in week.weeklyGames | filter : teamName'>
                 {{game}}
             </div>
