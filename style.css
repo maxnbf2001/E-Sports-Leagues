@@ -92,6 +92,7 @@ li.game-bottom {
 
 .weekGame{
     font-weight: normal;
+    text-align: center;
 }
 
 .weekGame:hover{
@@ -101,6 +102,9 @@ li.game-bottom {
 
 .standingsTable{
     padding: 12px;
+    border: 1px solid grey;
+    border-radius: 5px;
+    display: inline-block;
 }
 
 .filterNames{
@@ -362,4 +366,6 @@ li.game-bottom {
     border-radius: 6px;
     margin: 10px;
     font: 18px "PT Sans", sans-serif;
+    font-weight: bold;
   }
+
