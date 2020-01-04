@@ -4,7 +4,7 @@ public class Build_Schedule {
 
 	public static void main(String[] args) throws IOException
 	{
-		String[] blue = {"Rowan", "Wolpert", "Haber", "Dean", "Glazer", "Messer", "Beef"};
+		String[] blue = {"Rowan (Liverpool)", "Wolpert (Juventus)", "Haber (PSG)", "Dean (Bayern)", "Glazer (Barcelona)", "Messer (Arsenal)", "Beef (Man City)"};
 		String[] gold = {"Lippman", "Karasik", "Assaf", "Golbert", "Geller", "Zang", "Steinberg"};
 		String[] nbablue = {"Dean", "Rasch", "Zang", "Haber", "Rowan", "Glazer", "Assaf"};
 		String[] nbagold = {"Novo", "Hassan", "Greenwald", "Lucier", "Wolpert", "Steinberg"};
@@ -42,12 +42,20 @@ public class Build_Schedule {
 			arr = arr2;
 		}
 		
+
 		for (int i = 0; i < arr.length; i++)
 		{
 			writer.println(arr[i]);
 		}
 		writer.println();
 
+		for (int i = 0; i < arr.length; i++)
+		{
+			if (arr[i].indexOf("(") != -1)
+			{
+				arr[i] = arr[i].substring(0, arr[i].indexOf("(") - 1);
+			}
+		}
 	
 		for (int i = 0; i < (arr.length-1); i++)
 		{

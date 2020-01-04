@@ -1,11 +1,11 @@
 fifablue
-Rowan
-Wolpert
-Haber
-Dean
-Glazer
-Messer
-Beef
+Rowan (Liverpool)
+Wolpert (Juventus)
+Haber (PSG)
+Dean (Bayern)
+Glazer (Barcelona)
+Messer (Arsenal)
+Beef (Man City)
 nogame
 
 Week 1
