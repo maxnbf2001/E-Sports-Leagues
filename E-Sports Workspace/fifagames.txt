@@ -11,15 +11,15 @@ nogame
 Week 1
 Rowan vs nogame
 nogame vs Rowan
-Wolpert 0-5 Beef
-Beef 3-3 Wolpert
+Wolpert vs Beef
+Beef vs Wolpert
 Haber vs Messer
 Messer vs Haber
 Dean vs Glazer
 Glazer vs Dean
 
 Week 2
-Rowan 1-1 Beef
+Rowan vs Beef
 Beef vs Rowan
 nogame vs Messer
 Messer vs nogame
