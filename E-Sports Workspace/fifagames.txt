@@ -79,8 +79,8 @@ Glazer vs Messer
 Messer vs Glazer
 
 fifagold
-Lippman (Barcelona)
 Karasik (Man City)
+Lippman (Barcelona)
 Assaf (Man United)
 Golbert (France)
 Geller (PSG)
@@ -89,68 +89,68 @@ Steinberg (Liverpool)
 nogame
 
 Week 1
-Lippman vs nogame
-nogame vs Lippman
-Karasik vs Steinberg
-Steinberg vs Karasik
+Karasik vs nogame
+nogame vs Karasik
+Lippman vs Steinberg
+Steinberg vs Lippman
 Assaf vs Zang
 Zang vs Assaf
 Golbert vs Geller
 Geller vs Golbert
 
 Week 2
-Lippman vs Steinberg
-Steinberg vs Lippman
+Karasik vs Steinberg
+Steinberg vs Karasik
 nogame vs Zang
 Zang vs nogame
-Karasik vs Geller
-Geller vs Karasik
+Lippman vs Geller
+Geller vs Lippman
 Assaf vs Golbert
 Golbert vs Assaf
 
 Week 3
-Lippman vs Zang
-Zang vs Lippman
+Karasik vs Zang
+Zang vs Karasik
 Steinberg vs Geller
 Geller vs Steinberg
 nogame vs Golbert
 Golbert vs nogame
-Karasik vs Assaf
-Assaf vs Karasik
+Lippman vs Assaf
+Assaf vs Lippman
 
 Week 4
-Lippman vs Geller
-Geller vs Lippman
+Karasik vs Geller
+Geller vs Karasik
 Zang vs Golbert
 Golbert vs Zang
 Steinberg vs Assaf
 Assaf vs Steinberg
-nogame vs Karasik
-Karasik vs nogame
+nogame vs Lippman
+Lippman vs nogame
 
 Week 5
-Lippman vs Golbert
-Golbert vs Lippman
+Karasik vs Golbert
+Golbert vs Karasik
 Geller vs Assaf
 Assaf vs Geller
-Zang vs Karasik
-Karasik vs Zang
+Zang vs Lippman
+Lippman vs Zang
 Steinberg vs nogame
 nogame vs Steinberg
 
 Week 6
-Lippman vs Assaf
-Assaf vs Lippman
-Golbert vs Karasik
-Karasik vs Golbert
+Karasik vs Assaf
+Assaf vs Karasik
+Golbert vs Lippman
+Lippman vs Golbert
 Geller vs nogame
 nogame vs Geller
 Zang vs Steinberg
 Steinberg vs Zang
 
 Week 7
-Lippman vs Karasik
 Karasik vs Lippman
+Lippman vs Karasik
 Assaf vs nogame
 nogame vs Assaf
 Golbert vs Steinberg
