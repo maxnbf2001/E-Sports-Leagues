@@ -88,12 +88,39 @@ public class Driver {
 					
 						if (g.indexOf("-") != -1) //if the game has been played
 						{
-							String homeT = g.substring(0, g.indexOf("-") -2);
-							String awayT = g.substring(g.indexOf("-") +3, g.length());
+			
+							String PhomeG = g.substring(g.indexOf("-")-2, g.indexOf("-"));
+							String PawayG = g.substring(g.indexOf("-")+1, g.indexOf("-")+3);
 
-							int homeG = Integer.parseInt(g.substring(g.indexOf("-")-1, g.indexOf("-")));
-							int awayG = Integer.parseInt(g.substring(g.indexOf("-")+1, g.indexOf("-")+2));
+							
+							int homeG = 0, awayG = 0;
 
+							// determines if the home/away points are 3 digits or 2 digits and assigns them accordingly
+							if (Character.isDigit(PhomeG.charAt(0)))
+								homeG = Integer.parseInt(PhomeG);
+							else
+								homeG = Integer.parseInt(PhomeG.substring(1));
+
+							if (Character.isDigit(PawayG.charAt(1)))
+								awayG = Integer.parseInt(PawayG);
+							else
+								awayG = Integer.parseInt(PawayG.charAt(0) + "");
+
+							String homeT = "";
+							String awayT = "";
+
+							// determines the name of the home and away team
+							if (homeG < 10)
+								homeT = g.substring(0, g.indexOf("-") - 2);
+							else
+								homeT = g.substring(0, g.indexOf("-") - 3);
+
+							if (awayG < 100)
+								awayT = g.substring(g.indexOf("-") +3, g.length());
+							else
+								awayT = g.substring(g.indexOf("-") +4, g.length());
+							
+							
 							//finds the team with the given name and assigns them a win, draw, or loss
 							Team HT = findTeam (homeT, teams);
 							Team AT = findTeam (awayT, teams);
