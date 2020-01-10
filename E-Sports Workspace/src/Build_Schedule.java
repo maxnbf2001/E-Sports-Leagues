@@ -7,7 +7,7 @@ public class Build_Schedule {
 		String[] blue = {"Rowan (Liverpool)", "Wolpert (Juventus)", "Haber (PSG)", "Dean (Bayern)", "Glazer (Barcelona)", "Messer (Arsenal)", "Beef (Man City)"};
 		String[] gold = {"Karasik (Man City)", "Lippman (Barcelona)", "Assaf (Man United)", "Golbert (France)", "Geller (PSG)", "Zang (Juventus)", "Steinberg (Liverpool)"};
 		String[] nbablue = {"Dean (Bucks)", "Rasch (Warriors)", "Zang (Lakers)", "Haber (Clippers)", "Rowan (Rockets)", "Glazer (Celtics)", "Assaf (Mavericks)"};
-		String[] nbagold = {"Novo (Celtics)", "Hassan (Bucks)", "Greenwald (Lakers)", "Lucier (Nets)", "Wolpert (Warriors)", "Steinberg (Clippers)"};
+		String[] nbagold = {"Weiss (Trailblazers)", "Novo (Celtics)", "Hassan (Bucks)", "Greenwald (Lakers)", "Lucier (Nets)", "Wolpert (Warriors)", "Steinberg (Clippers)"};
 		String[] nhl  = {"Hassan (Bruins)", "Dean (Canadiens)", "Lippman (Lightning)", "Zabib (Islanders)", "Kasimor (Capitals)", "Broder (Leafs)", "Rowan (Avalanche)", "Wolpert (Stars)"};
 		PrintWriter writer1 = new PrintWriter ("fifagames.txt", "UTF-8");
 		PrintWriter writer2 = new PrintWriter ("nbagames.txt", "UTF-8");

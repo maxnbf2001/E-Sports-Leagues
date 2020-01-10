@@ -79,14 +79,18 @@ Rowan vs Glazer
 Glazer vs Rowan
 
 nbagold
+Weiss (Trailblazers)
 Novo (Celtics)
 Hassan (Bucks)
 Greenwald (Lakers)
 Lucier (Nets)
 Wolpert (Warriors)
 Steinberg (Clippers)
+nogame
 
 Week 1
+Weiss vs nogame
+nogame vs Weiss
 Novo vs Steinberg
 Steinberg vs Novo
 Hassan vs Wolpert
@@ -95,32 +99,60 @@ Greenwald vs Lucier
 Lucier vs Greenwald
 
 Week 2
-Novo vs Wolpert
-Wolpert vs Novo
-Steinberg vs Lucier
-Lucier vs Steinberg
+Weiss vs Steinberg
+Steinberg vs Weiss
+nogame vs Wolpert
+Wolpert vs nogame
+Novo vs Lucier
+Lucier vs Novo
 Hassan vs Greenwald
 Greenwald vs Hassan
 
 Week 3
-Novo vs Lucier
-Lucier vs Novo
+Weiss vs Wolpert
+Wolpert vs Weiss
+Steinberg vs Lucier
+Lucier vs Steinberg
+nogame vs Greenwald
+Greenwald vs nogame
+Novo vs Hassan
+Hassan vs Novo
+
+Week 4
+Weiss vs Lucier
+Lucier vs Weiss
 Wolpert vs Greenwald
 Greenwald vs Wolpert
 Steinberg vs Hassan
 Hassan vs Steinberg
+nogame vs Novo
+Novo vs nogame
 
-Week 4
-Novo vs Greenwald
-Greenwald vs Novo
+Week 5
+Weiss vs Greenwald
+Greenwald vs Weiss
 Lucier vs Hassan
 Hassan vs Lucier
+Wolpert vs Novo
+Novo vs Wolpert
+Steinberg vs nogame
+nogame vs Steinberg
+
+Week 6
+Weiss vs Hassan
+Hassan vs Weiss
+Greenwald vs Novo
+Novo vs Greenwald
+Lucier vs nogame
+nogame vs Lucier
 Wolpert vs Steinberg
 Steinberg vs Wolpert
 
-Week 5
-Novo vs Hassan
-Hassan vs Novo
+Week 7
+Weiss vs Novo
+Novo vs Weiss
+Hassan vs nogame
+nogame vs Hassan
 Greenwald vs Steinberg
 Steinberg vs Greenwald
 Lucier vs Wolpert

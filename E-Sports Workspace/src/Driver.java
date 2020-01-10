@@ -525,7 +525,7 @@ public class Driver {
 			lginfo.put("fixtures", fixtures);
 			
 			NBAData.put(league, lginfo);
-			numNBATeams-=1; //this accounts for the fact that one league is of size 7, and the second is of size 6;
+			
 		}
 
 
