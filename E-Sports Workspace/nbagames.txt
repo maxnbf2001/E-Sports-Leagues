@@ -11,10 +11,10 @@ nogame
 Week 1
 Dean vs nogame
 nogame vs Dean
-Rasch vs Assaf
-Assaf vs Rasch
-Zang vs Glazer
-Glazer vs Zang
+Rasch 65-79 Assaf
+Assaf 83-68 Rasch
+Zang 60-104 Glazer
+Glazer 104-52 Zang
 Haber 61-47 Rowan
 Rowan 41-74 Haber
 

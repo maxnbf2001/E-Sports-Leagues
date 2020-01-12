@@ -13,8 +13,8 @@ Rowan vs nogame
 nogame vs Rowan
 Wolpert 0-9 Beef
 Beef 11-0 Wolpert
-Haber vs Messer
-Messer vs Haber
+Haber 1-2 Messer
+Messer 5-0 Haber
 Dean vs Glazer
 Glazer vs Dean
 
@@ -95,8 +95,8 @@ Lippman vs Steinberg
 Steinberg vs Lippman
 Assaf vs Zang
 Zang vs Assaf
-Golbert vs Geller
-Geller vs Golbert
+Golbert 3-1 Geller
+Geller 2-4 Golbert
 
 Week 2
 Karasik vs Steinberg
