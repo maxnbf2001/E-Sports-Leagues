@@ -15,8 +15,8 @@ Wolpert 0-9 Beef
 Beef 11-0 Wolpert
 Haber 1-2 Messer
 Messer 5-0 Haber
-Dean vs Glazer
-Glazer vs Dean
+Dean 2-0 Glazer
+Glazer 2-1 Dean
 
 Week 2
 Rowan vs Beef
