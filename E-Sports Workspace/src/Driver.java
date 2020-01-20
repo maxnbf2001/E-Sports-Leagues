@@ -18,7 +18,7 @@ public class Driver {
 
 	public static void main(String[] args) throws IOException
 	{
-		
+
 		int numFIFATeams = 7;
 		int numNBATeams = 7;
 		int numNHLTeams = 8;
@@ -54,7 +54,7 @@ public class Driver {
 			JSONArray fixtures = new JSONArray();
 			JSONArray splitFixtures = new JSONArray ();
 
-			
+
 			int seasonLength = 0;
 			if (teams.length%2 != 0)
 				seasonLength = teams.length;
@@ -71,7 +71,7 @@ public class Driver {
 				season[i] = new GameWeek();
 				JSONObject weeklyFixtures = new JSONObject();
 				JSONArray weeklyGames = new JSONArray();
-		
+
 				// reads in the games for each week
 				int numGames = 0;
 				if (teams.length%2 == 0)
@@ -85,14 +85,14 @@ public class Driver {
 					String g = scan.nextLine();
 					if (g.indexOf("nogame") == -1)
 					{
-					
+
 						if (g.indexOf("-") != -1) //if the game has been played
 						{
-			
+
 							String PhomeG = g.substring(g.indexOf("-")-2, g.indexOf("-"));
 							String PawayG = g.substring(g.indexOf("-")+1, g.indexOf("-")+3);
 
-							
+
 							int homeG = 0, awayG = 0;
 
 							// determines if the home/away points are 3 digits or 2 digits and assigns them accordingly
@@ -119,8 +119,8 @@ public class Driver {
 								awayT = g.substring(g.indexOf("-") +3, g.length());
 							else
 								awayT = g.substring(g.indexOf("-") +4, g.length());
-							
-							
+
+
 							//finds the team with the given name and assigns them a win, draw, or loss
 							Team HT = findTeam (homeT, teams);
 							Team AT = findTeam (awayT, teams);
@@ -150,11 +150,21 @@ public class Driver {
 						else
 						{
 							String homeT = g.substring(0, g.indexOf("vs") -1);
-							String awayT = g.substring(g.indexOf("vs") +2, g.length());
+							String awayT = g.substring(g.indexOf("vs") +3, g.length());
 							gameObject.put("homeT", homeT);
-							gameObject.put("awayT", awayT);
-							gameObject.put("score", "-1 - -1");
+				
+							if (g.indexOf("FF") != -1) {
+								awayT = awayT.substring(0, awayT.length()-3);
+								Team HT = findTeam (homeT, teams);
+								Team AT = findTeam (awayT, teams);
+								AT.addLoss(0, 0);
+								HT.addLoss(0, 0);
+								gameObject.put("score", "FF");
+							}
+							else
+								gameObject.put("score", "-1 - -1");
 							weeklyGames.add(gameObject);
+							gameObject.put("awayT", awayT);
 						}
 					}
 
@@ -297,7 +307,7 @@ public class Driver {
 		scan = new Scanner (new File ("nbagames.txt"));
 		for (int m = 0; m < 2; m++)
 		{
-	
+
 			String league = scan.nextLine();
 			startDate = new weekDate (8, 1, 2020);
 			NBATeam[] NBAteams = new NBATeam[numNBATeams];
@@ -325,7 +335,7 @@ public class Driver {
 			for (int i = 0; i < season.length; i++)
 			{
 				String week = scan.nextLine();
-				
+
 				JSONObject weeklyFixtures = new JSONObject();
 				JSONArray weeklyGames = new JSONArray();
 				season[i] = new GameWeek();
@@ -402,11 +412,24 @@ public class Driver {
 						else
 						{
 							String homeT = game.substring(0, game.indexOf("vs")-1);
-							String awayT = game.substring(game.indexOf("vs")+2, game.length());
+							String awayT = game.substring(game.indexOf("vs")+3, game.length());
 							gameObject.put("homeT", homeT);
-							gameObject.put("awayT", awayT);
-							gameObject.put("score", "-1 - -1");
+							
+							if (game.indexOf("FF") != -1) {
+								awayT = awayT.substring(0, awayT.length()-3);
+								System.out.println(awayT);
+								NBATeam HT = findNBATeam (homeT, NBAteams);
+								NBATeam AT = findNBATeam (awayT, NBAteams);
+								AT.addLoss(0, 0);
+								HT.addLoss(0, 0);
+								System.out.println(game);
+								gameObject.put("score", "FF");
+			
+							}
+							else
+								gameObject.put("score", "-1 - -1");
 							weeklyGames.add(gameObject);
+							gameObject.put("awayT", awayT);
 						}
 					}
 				}
@@ -523,9 +546,9 @@ public class Driver {
 
 			lginfo.put("teams", teamList);
 			lginfo.put("fixtures", fixtures);
-			
+
 			NBAData.put(league, lginfo);
-			
+
 		}
 
 
@@ -569,7 +592,7 @@ public class Driver {
 					boolean ot = false;
 					if (game.indexOf("OT") != -1)
 						ot = true;
-					
+
 					String homeT = game.substring(0, game.indexOf("-") -2);
 					String awayT = "";
 					if (ot)
@@ -584,15 +607,15 @@ public class Driver {
 					//finds the team with the given name and assigns them a win, draw, or loss
 					NHLTeam HT = findNHLTeam (homeT, NHLteams);
 					NHLTeam AT = findNHLTeam (awayT, NHLteams);
-				
+
 					season[i].addGame(new Game (homeT, awayT, homeG, awayG));
-					
+
 
 					gameObject.put("homeT", homeT);
 					gameObject.put("awayT", awayT);
 					gameObject.put("score", homeG + " - " + awayG);
 					weeklyGames.add(gameObject);
-					
+
 					if (homeG > awayG)
 					{
 						HT.addWin(homeG, awayG);
@@ -607,12 +630,22 @@ public class Driver {
 				else
 				{
 					String homeT = game.substring(0, game.indexOf("vs")-1);
-					String awayT = game.substring(game.indexOf("vs")+2, game.length());
+					String awayT = game.substring(game.indexOf("vs")+3, game.length());
 					gameObject.put("homeT", homeT);
-					gameObject.put("awayT", awayT);
-					gameObject.put("score", -1 + " - " + -1);
-					weeklyGames.add(gameObject);
 					
+					if (game.indexOf("FF") != -1) {
+						awayT = awayT.substring(0, awayT.length()-3);
+						NHLTeam HT = findNHLTeam (homeT, NHLteams);
+						NHLTeam AT = findNHLTeam (awayT, NHLteams);
+						AT.addLoss(0, 0, false);
+						HT.addLoss(0, 0, false);
+						gameObject.put("score", "FF");
+					}
+					else
+						gameObject.put("score", "-1 - -1");
+					weeklyGames.add(gameObject);
+					gameObject.put("awayT", awayT);
+
 				}
 			}
 
@@ -718,10 +751,10 @@ public class Driver {
 		JSONObject loss = new JSONObject();
 		loss.put("teams", lossStreakTeams);
 		loss.put("streak", Math.abs(lossStreak.get(0).getBL()));
-		
+
 		NHLData.put("lossstreak", loss);
-		
-		
+
+
 		NHLData.put("teams", teamList);
 		NHLData.put("fixtures", fixtures);
 
@@ -1049,7 +1082,7 @@ public class Driver {
 			array[i] = arrTemp.get(i);
 		}
 	}
-	
+
 	public static void mostScored (NHLTeam[] array)
 	{
 		ArrayList<NHLTeam> arrTemp = new ArrayList<NHLTeam>();
@@ -1163,22 +1196,15 @@ public class Driver {
 					return sComp;
 				} 
 
-
-				Integer x3 = ((NBATeam) o1).getLosses();
-				Integer x4 = ((NBATeam) o2).getLosses();
-				sComp =  x3.compareTo(x4);
-
-				if (sComp != 0) {
-					return sComp;
-				} 
-
 				Integer x5 = ((NBATeam) o1).getWins();
 				Integer x6 = ((NBATeam) o2).getWins();
+				sComp = x6.compareTo(x5);
 
 				if (sComp != 0) {
 					return sComp;
 				} 
 
+		
 				Integer x7 = ((NBATeam) o1).getPD();
 				Integer x8 = ((NBATeam) o2).getPD();
 
