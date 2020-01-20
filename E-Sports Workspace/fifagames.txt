@@ -105,8 +105,8 @@ nogame vs Zang
 Zang vs nogame
 Lippman 2-2 Geller
 Geller 3-1 Lippman
-Assaf vs Golbert
-Golbert vs Assaf
+Assaf 0-7 Golbert
+Golbert 2-1 Assaf
 
 Week 3
 Karasik vs Zang

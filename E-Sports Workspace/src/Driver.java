@@ -417,12 +417,10 @@ public class Driver {
 							
 							if (game.indexOf("FF") != -1) {
 								awayT = awayT.substring(0, awayT.length()-3);
-								System.out.println(awayT);
 								NBATeam HT = findNBATeam (homeT, NBAteams);
 								NBATeam AT = findNBATeam (awayT, NBAteams);
 								AT.addLoss(0, 0);
 								HT.addLoss(0, 0);
-								System.out.println(game);
 								gameObject.put("score", "FF");
 			
 							}
