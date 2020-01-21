@@ -23,8 +23,8 @@ Hassan 11-2 Rowan
 Rowan vs Hassan
 Wolpert 1-3 Broder
 Broder 9-0 Wolpert
-Dean 3-2 Kasimor
-Kasimor 3-2 Dean
+Dean 3-2 Kasimor OT
+Kasimor 3-2 Dean OT
 Lippman 9-2 Zabib
 Zabib 5-9 Lippman
 
