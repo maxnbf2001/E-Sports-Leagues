@@ -23,8 +23,8 @@ Rowan 1-4 Beef
 Beef 0-2 Rowan
 nogame vs Messer
 Messer vs nogame
-Wolpert vs Glazer
-Glazer vs Wolpert
+Wolpert 0-6 Glazer
+Glazer 5-1 Wolpert
 Haber 1-2 Dean
 Dean 2-2 Haber
 

@@ -19,12 +19,12 @@ Zabib 2-4 Kasimor
 Kasimor 1-8 Zabib
 
 Week 2
-Hassan vs Rowan
+Hassan 11-2 Rowan
 Rowan vs Hassan
 Wolpert 1-3 Broder
 Broder 9-0 Wolpert
-Dean vs Kasimor
-Kasimor vs Dean
+Dean 3-2 Kasimor
+Kasimor 3-2 Dean
 Lippman 9-2 Zabib
 Zabib 5-9 Lippman
 
