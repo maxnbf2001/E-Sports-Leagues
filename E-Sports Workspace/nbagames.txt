@@ -19,12 +19,12 @@ Haber 61-47 Rowan
 Rowan 41-74 Haber
 
 Week 2
-Dean vs Assaf
-Assaf vs Dean
+Dean 65-58 Assaf
+Assaf 62-63 Dean
 nogame vs Glazer
 Glazer vs nogame
-Rasch vs Rowan
-Rowan vs Rasch
+Rasch 65-70 Rowan
+Rowan 66-72 Rasch
 Zang 43-56 Haber
 Haber 62-45 Zang
 
@@ -105,8 +105,8 @@ nogame vs Wolpert
 Wolpert vs nogame
 Novo 46-54 Lucier
 Lucier 58-61 Novo
-Hassan vs Greenwald
-Greenwald vs Hassan
+Hassan vs Greenwald FF
+Greenwald vs Hassan FF
 
 Week 3
 Weiss vs Wolpert
