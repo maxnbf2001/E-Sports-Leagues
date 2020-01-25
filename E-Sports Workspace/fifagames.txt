@@ -29,10 +29,10 @@ Haber 1-2 Dean
 Dean 2-2 Haber
 
 Week 3
-Rowan vs Messer
-Messer vs Rowan
-Beef vs Glazer
-Glazer vs Beef
+Rowan 1-3 Messer
+Messer 4-0 Rowan
+Beef 7-0 Glazer
+Glazer 0-5 Beef
 nogame vs Dean
 Dean vs nogame
 Wolpert vs Haber
@@ -111,12 +111,12 @@ Golbert 2-1 Assaf
 Week 3
 Karasik vs Zang
 Zang vs Karasik
-Steinberg vs Geller
-Geller vs Steinberg
+Steinberg 0-4 Geller
+Geller 4-0 Steinberg
 nogame vs Golbert
 Golbert vs nogame
-Lippman vs Assaf
-Assaf vs Lippman
+Lippman 1-5 Assaf
+Assaf 5-1 Lippman
 
 Week 4
 Karasik vs Geller
