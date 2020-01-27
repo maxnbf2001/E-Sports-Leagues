@@ -35,8 +35,8 @@ Beef 7-0 Glazer
 Glazer 0-5 Beef
 nogame vs Dean
 Dean vs nogame
-Wolpert vs Haber
-Haber vs Wolpert
+Wolpert 0-10 Haber
+Haber 10-0 Wolpert
 
 Week 4
 Rowan vs Glazer
