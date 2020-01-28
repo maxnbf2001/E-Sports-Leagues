@@ -33,10 +33,10 @@ Hassan vs Broder
 Broder vs Hassan
 Rowan vs Kasimor
 Kasimor vs Rowan
-Wolpert vs Zabib
-Zabib vs Wolpert
-Dean vs Lippman
-Lippman vs Dean
+Wolpert 1-0 Zabib
+Zabib 3-0 Wolpert
+Dean 1-5 Lippman
+Lippman 6-4 Dean
 
 Week 4
 Hassan vs Kasimor
