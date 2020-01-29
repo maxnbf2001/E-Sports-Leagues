@@ -29,10 +29,10 @@ Lippman 9-2 Zabib
 Zabib 5-9 Lippman
 
 Week 3
-Hassan vs Broder
-Broder vs Hassan
-Rowan vs Kasimor
-Kasimor vs Rowan
+Hassan 0-6 Broder
+Broder 4-1 Hassan
+Rowan 5-4 Kasimor
+Kasimor 4-8 Rowan
 Wolpert 1-0 Zabib
 Zabib 3-0 Wolpert
 Dean 1-5 Lippman
