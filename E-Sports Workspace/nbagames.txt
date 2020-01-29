@@ -29,10 +29,10 @@ Zang 43-56 Haber
 Haber 62-45 Zang
 
 Week 3
-Dean vs Glazer
-Glazer vs Dean
-Assaf vs Rowan
-Rowan vs Assaf
+Dean vs Glazer FF
+Glazer vs Dean FF
+Assaf vs Rowan FF
+Rowan vs Assaf FF
 nogame vs Haber
 Haber vs nogame
 Rasch 88-76 Zang
@@ -115,8 +115,8 @@ Steinberg 58-66 Lucier
 Lucier 46-50 Steinberg
 nogame vs Greenwald
 Greenwald vs nogame
-Novo vs Hassan
-Hassan vs Novo
+Novo vs Hassan FF
+Hassan vs Novo FF
 
 Week 4
 Weiss vs Lucier
