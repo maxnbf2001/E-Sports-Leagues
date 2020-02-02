@@ -121,10 +121,10 @@ Assaf 4-1 Lippman
 Week 4
 Karasik 1-2 Geller
 Geller 1-5 Karasik
-Zang vs Golbert
-Golbert vs Zang
-Steinberg vs Assaf
-Assaf vs Steinberg
+Zang 0-6 Golbert
+Golbert 7-1 Zang
+Steinberg 1-6 Assaf
+Assaf 5-0 Steinberg
 nogame vs Lippman
 Lippman vs nogame
 
