@@ -39,8 +39,8 @@ Wolpert 0-10 Haber
 Haber 10-0 Wolpert
 
 Week 4
-Rowan vs Glazer
-Glazer vs Rowan
+Rowan vs Glazer FF
+Glazer vs Rowan FF
 Messer 4-0 Dean
 Dean 1-10 Messer
 Beef 1-2 Haber

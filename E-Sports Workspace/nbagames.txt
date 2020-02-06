@@ -39,12 +39,12 @@ Rasch 88-76 Zang
 Zang 65-116 Rasch
 
 Week 4
-Dean vs Rowan
-Rowan vs Dean
-Glazer vs Haber
-Haber vs Glazer
-Assaf vs Zang
-Zang vs Assaf
+Dean 73-62 Rowan
+Rowan 82-88 Dean
+Glazer 49-56 Haber
+Haber 55-44 Glazer
+Assaf 100-70 Zang
+Zang 70-100 Assaf
 nogame vs Rasch
 Rasch vs nogame
 
@@ -119,12 +119,12 @@ Novo vs Hassan FF
 Hassan vs Novo FF
 
 Week 4
-Weiss vs Lucier
-Lucier vs Weiss
-Wolpert vs Greenwald
-Greenwald vs Wolpert
-Steinberg vs Hassan
-Hassan vs Steinberg
+Weiss vs Lucier FF
+Lucier vs Weiss FF
+Wolpert vs Greenwald FF
+Greenwald vs Wolpert FF
+Steinberg vs Hassan FF
+Hassan vs Steinberg FF
 nogame vs Novo
 Novo vs nogame
 
