@@ -51,8 +51,8 @@ Dean 1-3 Wolpert
 Week 5
 Hassan vs Zabib
 Zabib vs Hassan
-Kasimor vs Lippman
-Lippman vs Kasimor
+Kasimor 1-4 Lippman
+Lippman 4-3 Kasimor
 Broder vs Dean
 Dean vs Broder
 Rowan vs Wolpert
