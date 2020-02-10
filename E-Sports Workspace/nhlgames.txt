@@ -41,8 +41,8 @@ Lippman 6-4 Dean
 Week 4
 Hassan vs Kasimor FF
 Kasimor vs Hassan FF
-Broder vs Zabib FF
-Zabib vs Broder FF
+Broder 10-2 Zabib
+Zabib 3-9 Broder
 Rowan 1-4 Lippman
 Lippman 5-0 Rowan
 Wolpert 0-1 Dean
