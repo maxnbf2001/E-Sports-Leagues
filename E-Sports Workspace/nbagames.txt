@@ -49,12 +49,12 @@ nogame vs Rasch
 Rasch vs nogame
 
 Week 5
-Dean vs Haber
-Haber vs Dean
-Rowan vs Zang
-Zang vs Rowan
-Glazer vs Rasch
-Rasch vs Glazer
+Dean 54-63 Haber
+Haber 51-62 Dean
+Rowan 98-84 Zang
+Zang 83-82 Rowan
+Glazer vs Rasch FF
+Rasch vs Glazer FF
 Assaf vs nogame
 nogame vs Assaf
 
@@ -95,8 +95,8 @@ Novo 65-53 Steinberg
 Steinberg 59-67 Novo
 Hassan 69-50 Wolpert
 Wolpert 50-80 Hassan
-Greenwald 80-100 Lucier
-Lucier 100-80 Greenwald
+Greenwald vs Lucier FF
+Lucier vs Greenwald FF
 
 Week 2
 Weiss 62-72 Steinberg
@@ -105,8 +105,8 @@ nogame vs Wolpert
 Wolpert vs nogame
 Novo 46-54 Lucier
 Lucier 58-61 Novo
-Hassan 100-80 Greenwald
-Greenwald 80-100 Hassan
+Hassan vs Greenwald FF
+Greenwald vs Hassan FF
 
 Week 3
 Weiss 34-56 Wolpert
@@ -121,18 +121,18 @@ Hassan vs Novo FF
 Week 4
 Weiss vs Lucier FF
 Lucier vs Weiss FF
-Wolpert 100-80 Greenwald
-Greenwald 80-100 Wolpert
+Wolpert vs Greenwald FF
+Greenwald vs Wolpert FF
 Steinberg vs Hassan FF
 Hassan vs Steinberg FF
 nogame vs Novo
 Novo vs nogame
 
 Week 5
-Weiss vs Greenwald
-Greenwald vs Weiss
-Lucier vs Hassan
-Hassan vs Lucier
+Weiss vs Greenwald FF
+Greenwald vs Weiss FF
+Lucier vs Hassan FF
+Hassan vs Lucier FF
 Wolpert 67-50 Novo
 Novo 78-79 Wolpert
 Steinberg vs nogame
