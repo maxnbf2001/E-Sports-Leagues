@@ -39,8 +39,8 @@ Wolpert 0-10 Haber
 Haber 10-0 Wolpert
 
 Week 4
-Rowan vs Glazer FF
-Glazer vs Rowan FF
+Rowan 2-0 Glazer
+Glazer 1-3 Rowan
 Messer 4-0 Dean
 Dean 1-10 Messer
 Beef 1-2 Haber
@@ -49,8 +49,8 @@ nogame vs Wolpert
 Wolpert vs nogame
 
 Week 5
-Rowan vs Dean
-Dean vs Rowan
+Rowan 1-3 Dean
+Dean 4-5 Rowan
 Glazer vs Haber
 Haber vs Glazer
 Messer 18-1 Wolpert
@@ -61,8 +61,8 @@ nogame vs Beef
 Week 6
 Rowan vs Haber
 Haber vs Rowan
-Dean vs Wolpert
-Wolpert vs Dean
+Dean 4-1 Wolpert
+Wolpert 0-3 Dean
 Glazer vs nogame
 nogame vs Glazer
 Messer vs Beef
@@ -129,8 +129,8 @@ nogame vs Lippman
 Lippman vs nogame
 
 Week 5
-Karasik vs Golbert
-Golbert vs Karasik
+Karasik 1-2 Golbert
+Golbert 1-2 Karasik
 Geller vs Assaf
 Assaf vs Geller
 Zang vs Lippman

@@ -55,8 +55,8 @@ Kasimor 1-4 Lippman
 Lippman 4-3 Kasimor
 Broder vs Dean
 Dean vs Broder
-Rowan vs Wolpert
-Wolpert vs Rowan
+Rowan 4-2 Wolpert
+Wolpert 2-5 Rowan
 
 Week 6
 Hassan vs Lippman
