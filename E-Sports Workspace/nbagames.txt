@@ -53,8 +53,8 @@ Dean 54-63 Haber
 Haber 51-62 Dean
 Rowan 98-84 Zang
 Zang 83-82 Rowan
-Glazer vs Rasch FF
-Rasch vs Glazer FF
+Glazer 76-67 Rasch
+Rasch 75-99 Glazer
 Assaf vs nogame
 nogame vs Assaf
 
