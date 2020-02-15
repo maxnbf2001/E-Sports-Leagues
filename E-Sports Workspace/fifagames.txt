@@ -59,14 +59,14 @@ Beef vs nogame
 nogame vs Beef
 
 Week 6
-Rowan vs Haber
-Haber vs Rowan
+Rowan 2-1 Haber
+Haber 3-3 Rowan
 Dean 4-1 Wolpert
 Wolpert 0-3 Dean
 Glazer vs nogame
 nogame vs Glazer
-Messer vs Beef
-Beef vs Messer
+Messer 1-1 Beef
+Beef 4-1 Messer
 
 Week 7
 Rowan vs Wolpert
@@ -145,8 +145,8 @@ Golbert vs Lippman
 Lippman vs Golbert
 Geller vs nogame
 nogame vs Geller
-Zang vs Steinberg
-Steinberg vs Zang
+Zang 3-1 Steinberg
+Steinberg 4-2 Zang
 
 Week 7
 Karasik vs Lippman
