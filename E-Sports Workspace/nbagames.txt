@@ -59,14 +59,14 @@ Assaf vs nogame
 nogame vs Assaf
 
 Week 6
-Dean vs Zang
-Zang vs Dean
-Haber vs Rasch
-Rasch vs Haber
+Dean vs Zang FF
+Zang vs Dean FF
+Haber 61-60 Rasch
+Rasch 42-54 Haber
 Rowan vs nogame
 nogame vs Rowan
-Glazer vs Assaf
-Assaf vs Glazer
+Glazer vs Assaf FF
+Assaf vs Glazer FF
 
 Week 7
 Dean vs Rasch
@@ -123,7 +123,7 @@ Weiss vs Lucier FF
 Lucier vs Weiss FF
 Wolpert vs Greenwald FF
 Greenwald vs Wolpert FF
-Steinberg vs Hassan FF
+Steinberg 55-68 Hassan
 Hassan vs Steinberg FF
 nogame vs Novo
 Novo vs nogame
@@ -139,10 +139,10 @@ Steinberg vs nogame
 nogame vs Steinberg
 
 Week 6
-Weiss vs Hassan
-Hassan vs Weiss
-Greenwald vs Novo
-Novo vs Greenwald
+Weiss vs Hassan FF
+Hassan vs Weiss FF
+Greenwald vs Novo FF
+Novo vs Greenwald FF
 Lucier vs nogame
 nogame vs Lucier
 Wolpert 88-72 Steinberg
