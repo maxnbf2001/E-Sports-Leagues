@@ -75,6 +75,6 @@ Lippman vs Wolpert
 Wolpert vs Lippman
 Zabib 3-4 Rowan OT
 Rowan 4-2 Zabib
-Kasimor vs Broder
-Broder vs Kasimor
+Kasimor 1-8 Broder
+Broder 8-0 Kasimor
 
