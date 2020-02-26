@@ -2,8 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="bd6a4850-6634-48b7-8ad3-7ee4086ba954" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/E-Sports_HTML/leagueButtons.html" beforeDir="false" afterPath="$PROJECT_DIR$/E-Sports_HTML/leagueButtons.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/E-Sports_HTML/nhlConferenceTable.html" beforeDir="false" afterPath="$PROJECT_DIR$/E-Sports_HTML/nhlConferenceTable.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/E-Sports Workspace/fifagames.txt" beforeDir="false" afterPath="$PROJECT_DIR$/E-Sports Workspace/fifagames.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/E-Sports Workspace/nbagames.txt" beforeDir="false" afterPath="$PROJECT_DIR$/E-Sports Workspace/nbagames.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/E-Sports_HTML/info.js" beforeDir="false" afterPath="$PROJECT_DIR$/E-Sports_HTML/info.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -77,7 +79,8 @@
       <workItem from="1581432300233" duration="409000" />
       <workItem from="1581617181792" duration="13000" />
       <workItem from="1582561870549" duration="77000" />
-      <workItem from="1582570936602" duration="162000" />
+      <workItem from="1582570936602" duration="208000" />
+      <workItem from="1582689269612" duration="605000" />
     </task>
     <servers />
   </component>

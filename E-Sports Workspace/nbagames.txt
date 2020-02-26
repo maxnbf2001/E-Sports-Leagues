@@ -69,12 +69,12 @@ Glazer 100-101 Assaf
 Assaf 61-91 Glazer
 
 Week 7
-Dean vs Rasch
-Rasch vs Dean
+Dean 71-64 Rasch
+Rasch 65-68 Dean
 Zang vs nogame
 nogame vs Zang
-Haber vs Assaf
-Assaf vs Haber
+Haber 39-69 Assaf
+Assaf 56-73 Haber
 Rowan 47-67 Glazer
 Glazer 75-63 Rowan
 
@@ -149,12 +149,12 @@ Wolpert 88-72 Steinberg
 Steinberg 75-72 Wolpert
 
 Week 7
-Weiss vs Novo
-Novo vs Weiss
+Weiss 45-85 Novo
+Novo 68-67 Weiss
 Hassan vs nogame
 nogame vs Hassan
 Greenwald vs Steinberg
 Steinberg vs Greenwald
-Lucier vs Wolpert
-Wolpert vs Lucier
+Lucier 62-80 Wolpert
+Wolpert 80-81 Lucier
 
