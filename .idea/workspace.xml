@@ -5,7 +5,10 @@
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/E-Sports Workspace/fifagames.txt" beforeDir="false" afterPath="$PROJECT_DIR$/E-Sports Workspace/fifagames.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/E-Sports Workspace/nbagames.txt" beforeDir="false" afterPath="$PROJECT_DIR$/E-Sports Workspace/nbagames.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/E-Sports Workspace/nhlgames.txt" beforeDir="false" afterPath="$PROJECT_DIR$/E-Sports Workspace/nhlgames.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/E-Sports_HTML/conferenceTable.html" beforeDir="false" afterPath="$PROJECT_DIR$/E-Sports_HTML/conferenceTable.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/E-Sports_HTML/info.js" beforeDir="false" afterPath="$PROJECT_DIR$/E-Sports_HTML/info.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/E-Sports_HTML/leagueButtons.html" beforeDir="false" afterPath="$PROJECT_DIR$/E-Sports_HTML/leagueButtons.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -80,7 +83,7 @@
       <workItem from="1581617181792" duration="13000" />
       <workItem from="1582561870549" duration="77000" />
       <workItem from="1582570936602" duration="208000" />
-      <workItem from="1582689269612" duration="605000" />
+      <workItem from="1582689269612" duration="1425000" />
     </task>
     <servers />
   </component>

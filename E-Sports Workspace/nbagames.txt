@@ -153,8 +153,8 @@ Weiss 45-85 Novo
 Novo 68-67 Weiss
 Hassan vs nogame
 nogame vs Hassan
-Greenwald vs Steinberg
-Steinberg vs Greenwald
+Greenwald vs Steinberg FF
+Steinberg vs Greenwald FF
 Lucier 62-80 Wolpert
 Wolpert 80-81 Lucier
 
