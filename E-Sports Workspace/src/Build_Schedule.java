@@ -10,9 +10,9 @@ public class Build_Schedule {
 		PrintWriter writer1 = new PrintWriter ("fifagames.txt", "UTF-8");
 		PrintWriter writer2 = new PrintWriter ("nbagames.txt", "UTF-8");
 		PrintWriter writer3 = new PrintWriter ("nhlgames.txt", "UTF-8");
-		writer1.println("fifa");
+		writer1.println("fifablue");
 		makeSched (fifa, writer1);
-		writer2.println("nba");
+		writer2.println("nbablue");
 		makeSched (nba, writer2);
 		writer3.println("nhl");
 		makeSched (nhl, writer3);
