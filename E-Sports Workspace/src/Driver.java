@@ -19,9 +19,9 @@ public class Driver {
 	public static void main(String[] args) throws IOException
 	{
 
-		int numFIFATeams = 7;
-		int numNBATeams = 7;
-		int numNHLTeams = 8;
+		int numFIFATeams = 9;
+		int numNBATeams = 11;
+		int numNHLTeams = 5;
 
 		JSONObject FIFAData = new JSONObject();
 		JSONObject NBAData = new JSONObject();
@@ -36,9 +36,9 @@ public class Driver {
 
 		//bulds the data for both the gold and blue league
 		Scanner scan = new Scanner (new File ("fifagames.txt"));
-		for (int l = 0; l < 2; l++)
+		for (int l = 0; l < 1; l++)
 		{
-			startDate = new weekDate (8, 1, 2020);
+			startDate = new weekDate (26, 1, 2021);
 			String league = scan.nextLine();
 
 			Team[] teams = new Team[numFIFATeams];
@@ -303,13 +303,13 @@ public class Driver {
 		//  READS IN THE NBA DATA
 		// -------------------------------------------------------------------------
 
-		startDate = new weekDate (8, 1, 2020);
+		startDate = new weekDate (26, 1, 2021);
 		scan = new Scanner (new File ("nbagames.txt"));
-		for (int m = 0; m < 2; m++)
+		for (int m = 0; m < 1; m++)
 		{
 
 			String league = scan.nextLine();
-			startDate = new weekDate (8, 1, 2020);
+			startDate = new weekDate (26, 1, 2021);
 			NBATeam[] NBAteams = new NBATeam[numNBATeams];
 			for (int i = 0; i < NBAteams.length; i++)
 			{
@@ -555,7 +555,7 @@ public class Driver {
 		// -------------------------------------------------------------------------
 
 		scan = new Scanner (new File ("nhlgames.txt"));
-		startDate = new weekDate (8, 1, 2020);
+		startDate = new weekDate (26, 1, 2021);
 		String league = scan.nextLine();
 		// creates a list of NUM_TEAMS teams with no information
 		NHLTeam[] NHLteams = new NHLTeam[numNHLTeams];
@@ -566,10 +566,13 @@ public class Driver {
 			NHLteams[i] = new NHLTeam(teamName);
 		}
 		scan.nextLine();
+		if (NHLteams.length % 2 != 0) {
+			scan.nextLine();
+		}
 		JSONArray fixtures = new JSONArray();
 		JSONArray splitFixtures = new JSONArray ();
 
-		int numWeeks = (numNHLTeams-1);
+		int numWeeks = numNHLTeams;
 		GameWeek[] season = new GameWeek[numWeeks];
 		//loops through all of the weeks
 		for (int i = 0; i < numWeeks; i++)
@@ -578,9 +581,9 @@ public class Driver {
 			String week = scan.nextLine();
 			JSONObject weeklyFixtures = new JSONObject();
 			JSONArray weeklyGames = new JSONArray();
-
+			//System.out.println(week);
 			//loops through all of the games in a week
-			for (int j = 0; j < numNHLTeams; j++)
+			for (int j = 0; j < numNHLTeams + 1; j++)
 			{
 				String game = scan.nextLine();
 				JSONObject gameObject = new JSONObject ();
@@ -651,6 +654,7 @@ public class Driver {
 				}
 				else
 				{
+					//System.out.print(game);
 					String homeT = game.substring(0, game.indexOf("vs")-1);
 					String awayT = game.substring(game.indexOf("vs")+3, game.length());
 					gameObject.put("homeT", homeT);

@@ -1,80 +1,48 @@
 nhl
-Hassan (Bruins)
-Dean (Canadiens)
-Lippman (Lightning)
-Zabib (Islanders)
-Kasimor (Capitals)
-Broder (Leafs)
-Rowan (Avalanche)
-Wolpert (Stars)
+Zabib ()
+Lippman ()
+Kasimor ()
+Broder ()
+Rubin ()
+nogame
 
 Week 1
-Hassan 2-0 Wolpert
-Wolpert 1-5 Hassan
-Dean 1-2 Rowan
-Rowan 2-1 Dean
-Lippman 5-2 Broder
-Broder 2-3 Lippman
-Zabib 2-4 Kasimor
-Kasimor 1-8 Zabib
+Zabib vs nogame
+nogame vs Zabib
+Lippman vs Rubin
+Rubin vs Lippman
+Kasimor vs Broder
+Broder vs Kasimor
 
 Week 2
-Hassan 11-2 Rowan
-Rowan vs Hassan FF
-Wolpert 1-3 Broder
-Broder 9-0 Wolpert
-Dean 3-2 Kasimor OT
-Kasimor 3-2 Dean OT
-Lippman 9-2 Zabib
-Zabib 5-9 Lippman
+Zabib vs Rubin
+Rubin vs Zabib
+nogame vs Broder
+Broder vs nogame
+Lippman vs Kasimor
+Kasimor vs Lippman
 
 Week 3
-Hassan 0-6 Broder
-Broder 4-1 Hassan
-Rowan 5-4 Kasimor
-Kasimor 4-8 Rowan
-Wolpert 1-0 Zabib
-Zabib 3-0 Wolpert
-Dean 1-5 Lippman
-Lippman 6-4 Dean
+Zabib vs Broder
+Broder vs Zabib
+Rubin vs Kasimor
+Kasimor vs Rubin
+nogame vs Lippman
+Lippman vs nogame
 
 Week 4
-Hassan vs Kasimor FF
-Kasimor vs Hassan FF
-Broder 10-2 Zabib
-Zabib vs Broder FF
-Rowan 1-4 Lippman
-Lippman 5-0 Rowan
-Wolpert 0-1 Dean
-Dean 1-3 Wolpert
+Zabib vs Kasimor
+Kasimor vs Zabib
+Broder vs Lippman
+Lippman vs Broder
+Rubin vs nogame
+nogame vs Rubin
 
 Week 5
-Hassan vs Zabib FF
-Zabib vs Hassan FF
-Kasimor 1-4 Lippman
-Lippman 4-3 Kasimor
-Broder 4-1 Dean
-Dean 2-3 Broder
-Rowan 4-2 Wolpert
-Wolpert 2-5 Rowan
-
-Week 6
-Hassan 3-2 Lippman
-Lippman 1-3 Hassan
-Zabib vs Dean FF
-Dean vs Zabib FF
-Kasimor 2-0 Wolpert
-Wolpert 2-0 Kasimor
-Broder 3-2 Rowan OT
-Rowan 1-5 Broder
-
-Week 7
-Hassan vs Dean FF
-Dean vs Hassan FF
-Lippman 8-2 Wolpert
-Wolpert 0-5 Lippman
-Zabib 3-4 Rowan OT
-Rowan 4-2 Zabib
-Kasimor 1-8 Broder
-Broder 8-0 Kasimor
+Zabib vs Lippman
+Lippman vs Zabib
+Kasimor vs nogame
+nogame vs Kasimor
+Broder vs Rubin
+Rubin vs Broder
 

@@ -1,160 +1,120 @@
-fifablue
-Rowan (Liverpool)
-Wolpert (Juventus)
-Haber (PSG)
-Dean (Bayern)
-Glazer (Barcelona)
-Messer (Arsenal)
-Beef (Man City)
+fifa
+Golbert ()
+Beef ()
+Zabib ()
+Lippman ()
+Mitnick ()
+Assaf ()
+Antar ()
+Omri ()
+Seb ()
 nogame
 
 Week 1
-Rowan vs nogame
-nogame vs Rowan
-Wolpert 0-9 Beef
-Beef 11-0 Wolpert
-Haber 1-2 Messer
-Messer 5-0 Haber
-Dean 2-0 Glazer
-Glazer 2-1 Dean
-
-Week 2
-Rowan 1-4 Beef
-Beef 0-2 Rowan
-nogame vs Messer
-Messer vs nogame
-Wolpert 0-6 Glazer
-Glazer 5-1 Wolpert
-Haber 1-2 Dean
-Dean 2-2 Haber
-
-Week 3
-Rowan 1-3 Messer
-Messer 4-0 Rowan
-Beef 7-0 Glazer
-Glazer 0-5 Beef
-nogame vs Dean
-Dean vs nogame
-Wolpert 0-10 Haber
-Haber 10-0 Wolpert
-
-Week 4
-Rowan 2-0 Glazer
-Glazer 1-3 Rowan
-Messer 4-0 Dean
-Dean 1-10 Messer
-Beef 1-2 Haber
-Haber 1-4 Beef
-nogame vs Wolpert
-Wolpert vs nogame
-
-Week 5
-Rowan 1-3 Dean
-Dean 4-5 Rowan
-Glazer 1-4 Haber
-Haber 2-1 Glazer
-Messer 18-1 Wolpert
-Wolpert 0-15 Messer
-Beef vs nogame
-nogame vs Beef
-
-Week 6
-Rowan 1-2 Haber
-Haber 3-3 Rowan
-Dean 4-1 Wolpert
-Wolpert 0-3 Dean
-Glazer vs nogame
-nogame vs Glazer
-Messer 1-1 Beef
-Beef 4-1 Messer
-
-Week 7
-Rowan 4-0 Wolpert
-Wolpert 0-7 Rowan
-Haber vs nogame
-nogame vs Haber
-Dean 1-4 Beef
-Beef 2-5 Dean
-Glazer 0-5 Messer
-Messer 4-0 Glazer
-
-fifagold
-Karasik (Man City)
-Lippman (Barcelona)
-Assaf (Man United)
-Golbert (France)
-Geller (PSG)
-Zang (Juventus)
-Steinberg (Liverpool)
-nogame
-
-Week 1
-Karasik vs nogame
-nogame vs Karasik
-Lippman 2-1 Steinberg
-Steinberg 0-6 Lippman
-Assaf 2-0 Zang
-Zang 0-6 Assaf
-Golbert 3-1 Geller
-Geller 2-4 Golbert
-
-Week 2
-Karasik 5-0 Steinberg
-Steinberg 1-7 Karasik
-nogame vs Zang
-Zang vs nogame
-Lippman 2-2 Geller
-Geller 3-1 Lippman
-Assaf 0-7 Golbert
-Golbert 2-1 Assaf
-
-Week 3
-Karasik 4-0 Zang
-Zang 1-6 Karasik
-Steinberg 0-4 Geller
-Geller 4-0 Steinberg
-nogame vs Golbert
 Golbert vs nogame
-Lippman 1-5 Assaf
-Assaf 4-1 Lippman
+nogame vs Golbert
+Beef vs Seb
+Seb vs Beef
+Zabib vs Omri
+Omri vs Zabib
+Lippman vs Antar
+Antar vs Lippman
+Mitnick vs Assaf
+Assaf vs Mitnick
+
+Week 2
+Golbert vs Seb
+Seb vs Golbert
+nogame vs Omri
+Omri vs nogame
+Beef vs Antar
+Antar vs Beef
+Zabib vs Assaf
+Assaf vs Zabib
+Lippman vs Mitnick
+Mitnick vs Lippman
+
+Week 3
+Golbert vs Omri
+Omri vs Golbert
+Seb vs Antar
+Antar vs Seb
+nogame vs Assaf
+Assaf vs nogame
+Beef vs Mitnick
+Mitnick vs Beef
+Zabib vs Lippman
+Lippman vs Zabib
 
 Week 4
-Karasik 1-2 Geller
-Geller 1-5 Karasik
-Zang 0-6 Golbert
-Golbert 7-1 Zang
-Steinberg 1-6 Assaf
-Assaf 5-0 Steinberg
+Golbert vs Antar
+Antar vs Golbert
+Omri vs Assaf
+Assaf vs Omri
+Seb vs Mitnick
+Mitnick vs Seb
 nogame vs Lippman
 Lippman vs nogame
+Beef vs Zabib
+Zabib vs Beef
 
 Week 5
-Karasik 1-2 Golbert
-Golbert 1-2 Karasik
-Geller 3-2 Assaf
-Assaf 2-1 Geller
-Zang 2-3 Lippman
-Lippman 3-1 Zang
-Steinberg vs nogame
-nogame vs Steinberg
+Golbert vs Assaf
+Assaf vs Golbert
+Antar vs Mitnick
+Mitnick vs Antar
+Omri vs Lippman
+Lippman vs Omri
+Seb vs Zabib
+Zabib vs Seb
+nogame vs Beef
+Beef vs nogame
 
 Week 6
-Karasik 0-2 Assaf
-Assaf 5-4 Karasik
-Golbert 4-0 Lippman
-Lippman 1-3 Golbert
-Geller vs nogame
-nogame vs Geller
-Zang 3-1 Steinberg
-Steinberg 2-4 Zang
+Golbert vs Mitnick
+Mitnick vs Golbert
+Assaf vs Lippman
+Lippman vs Assaf
+Antar vs Zabib
+Zabib vs Antar
+Omri vs Beef
+Beef vs Omri
+Seb vs nogame
+nogame vs Seb
 
 Week 7
-Karasik 4-0 Lippman
-Lippman 1-5 Karasik
-Assaf vs nogame
-nogame vs Assaf
-Golbert 5-2 Steinberg
-Steinberg 1-4 Golbert
-Geller vs Zang FF
-Zang vs Geller FF
+Golbert vs Lippman
+Lippman vs Golbert
+Mitnick vs Zabib
+Zabib vs Mitnick
+Assaf vs Beef
+Beef vs Assaf
+Antar vs nogame
+nogame vs Antar
+Omri vs Seb
+Seb vs Omri
+
+Week 8
+Golbert vs Zabib
+Zabib vs Golbert
+Lippman vs Beef
+Beef vs Lippman
+Mitnick vs nogame
+nogame vs Mitnick
+Assaf vs Seb
+Seb vs Assaf
+Antar vs Omri
+Omri vs Antar
+
+Week 9
+Golbert vs Beef
+Beef vs Golbert
+Zabib vs nogame
+nogame vs Zabib
+Lippman vs Seb
+Seb vs Lippman
+Mitnick vs Omri
+Omri vs Mitnick
+Assaf vs Antar
+Antar vs Assaf
 

@@ -4,22 +4,16 @@ public class Build_Schedule {
 
 	public static void main(String[] args) throws IOException
 	{
-		String[] blue = {"Rowan (Liverpool)", "Wolpert (Juventus)", "Haber (PSG)", "Dean (Bayern)", "Glazer (Barcelona)", "Messer (Arsenal)", "Beef (Man City)"};
-		String[] gold = {"Karasik (Man City)", "Lippman (Barcelona)", "Assaf (Man United)", "Golbert (France)", "Geller (PSG)", "Zang (Juventus)", "Steinberg (Liverpool)"};
-		String[] nbablue = {"Dean (Bucks)", "Rasch (Warriors)", "Zang (Lakers)", "Haber (Clippers)", "Rowan (Rockets)", "Glazer (Celtics)", "Assaf (Mavericks)"};
-		String[] nbagold = {"Weiss (Trailblazers)", "Novo (Celtics)", "Hassan (Bucks)", "Greenwald (Lakers)", "Lucier (Nets)", "Wolpert (Warriors)", "Steinberg (Clippers)"};
-		String[] nhl  = {"Hassan (Bruins)", "Dean (Canadiens)", "Lippman (Lightning)", "Zabib (Islanders)", "Kasimor (Capitals)", "Broder (Leafs)", "Rowan (Avalanche)", "Wolpert (Stars)"};
+		String[] fifa = {"Golbert ()", "Beef ()", "Zabib ()", "Lippman ()", "Mitnick ()", "Assaf ()", "Antar ()", "Omri ()", "Seb ()"};
+		String[] nba = {"Dean ()", "Zang ()", "Shane ()", "Assaf ()", "Beef ()", "Golbert ()", "Wheeler ()", "Hassan ()", "Wolpert ()", "Haber ()", "Weiss ()"};
+		String[] nhl  = {"Zabib ()", "Lippman ()", "Kasimor ()", "Broder ()", "Rubin ()"};
 		PrintWriter writer1 = new PrintWriter ("fifagames.txt", "UTF-8");
 		PrintWriter writer2 = new PrintWriter ("nbagames.txt", "UTF-8");
 		PrintWriter writer3 = new PrintWriter ("nhlgames.txt", "UTF-8");
-		writer1.println("fifablue");
-		makeSched (blue, writer1);
-		writer1.println("fifagold");
-		makeSched (gold, writer1);
-		writer2.println("nbablue");
-		makeSched (nbablue, writer2);
-		writer2.println("nbagold");
-		makeSched (nbagold, writer2);
+		writer1.println("fifa");
+		makeSched (fifa, writer1);
+		writer2.println("nba");
+		makeSched (nba, writer2);
 		writer3.println("nhl");
 		makeSched (nhl, writer3);
 
