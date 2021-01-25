@@ -1,13 +1,13 @@
 fifablue
-Golbert ()
-Beef ()
-Zabib ()
-Lippman ()
-Mitnick ()
-Assaf ()
-Antar ()
-Omri ()
-Seb ()
+Golbert (Real Madrid)
+Beef (Liverpool)
+Zabib (Barcelona)
+Lippman (Man City)
+Mitnick (Italy)
+Assaf (France)
+Antar (PSG)
+Omri (Bayern)
+Seb (Man United)
 nogame
 
 Week 1
