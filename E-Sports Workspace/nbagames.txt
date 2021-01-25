@@ -1,15 +1,15 @@
 nbablue
-Dean ()
-Zang ()
-Shane ()
-Assaf ()
-Beef ()
-Golbert ()
-Wheeler ()
-Hassan ()
-Wolpert ()
-Haber ()
-Weiss ()
+Dean (Celtics)
+Zang (Bucks)
+Shane (Clippers)
+Assaf (Lakers)
+Beef (Nets)
+Golbert (Knicks)
+Wheeler (Nets)
+Hassan (Lakers)
+Wolpert (Trailblazers)
+Haber (Bucks)
+Weiss (Celtics)
 nogame
 
 Week 1

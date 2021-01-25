@@ -5,7 +5,7 @@ public class Build_Schedule {
 	public static void main(String[] args) throws IOException
 	{
 		String[] fifa = {"Golbert ()", "Beef ()", "Zabib ()", "Lippman ()", "Mitnick ()", "Assaf ()", "Antar ()", "Omri ()", "Seb ()"};
-		String[] nba = {"Dean ()", "Zang ()", "Shane ()", "Assaf ()", "Beef ()", "Golbert ()", "Wheeler ()", "Hassan ()", "Wolpert ()", "Haber ()", "Weiss ()"};
+		String[] nba = {"Dean (Celtics)", "Zang (Bucks)", "Shane (Clippers)", "Assaf (Lakers)", "Beef (Nets)", "Golbert (Knicks)", "Wheeler (Nets)", "Hassan (Lakers)", "Wolpert (Trailblazers)", "Haber (Bucks)", "Weiss (Celtics)"};
 		String[] nhl  = {"Zabib ()", "Lippman ()", "Kasimor ()", "Broder ()", "Rubin ()"};
 		PrintWriter writer1 = new PrintWriter ("fifagames.txt", "UTF-8");
 		PrintWriter writer2 = new PrintWriter ("nbagames.txt", "UTF-8");
