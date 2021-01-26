@@ -1,10 +1,50 @@
 nhl
-Zabib ()
-Lippman ()
-Kasimor ()
-Broder ()
-Rubin ()
+Zabib (Lightning)
+Lippman (Stars)
+Kasimor (Avalanche)
+Broder (Knights)
+Rubin (Sharks)
 nogame
+
+Week 1
+Zabib vs nogame
+nogame vs Zabib
+Lippman vs Rubin
+Rubin vs Lippman
+Kasimor vs Broder
+Broder vs Kasimor
+
+Week 2
+Zabib vs Rubin
+Rubin vs Zabib
+nogame vs Broder
+Broder vs nogame
+Lippman vs Kasimor
+Kasimor vs Lippman
+
+Week 3
+Zabib vs Broder
+Broder vs Zabib
+Rubin vs Kasimor
+Kasimor vs Rubin
+nogame vs Lippman
+Lippman vs nogame
+
+Week 4
+Zabib vs Kasimor
+Kasimor vs Zabib
+Broder vs Lippman
+Lippman vs Broder
+Rubin vs nogame
+nogame vs Rubin
+
+Week 5
+Zabib vs Lippman
+Lippman vs Zabib
+Kasimor vs nogame
+nogame vs Kasimor
+Broder vs Rubin
+Rubin vs Broder
 
 Week 1
 Zabib vs nogame

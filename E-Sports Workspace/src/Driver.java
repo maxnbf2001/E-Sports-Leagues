@@ -572,7 +572,7 @@ public class Driver {
 		JSONArray fixtures = new JSONArray();
 		JSONArray splitFixtures = new JSONArray ();
 
-		int numWeeks = numNHLTeams;
+		int numWeeks = numNHLTeams * 2;
 		GameWeek[] season = new GameWeek[numWeeks];
 		//loops through all of the weeks
 		for (int i = 0; i < numWeeks; i++)
@@ -654,7 +654,7 @@ public class Driver {
 				}
 				else
 				{
-					//System.out.print(game);
+					//System.out.println(game);
 					String homeT = game.substring(0, game.indexOf("vs")-1);
 					String awayT = game.substring(game.indexOf("vs")+3, game.length());
 					gameObject.put("homeT", homeT);
