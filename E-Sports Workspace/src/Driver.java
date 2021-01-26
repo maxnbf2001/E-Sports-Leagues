@@ -152,7 +152,7 @@ public class Driver {
 							String homeT = g.substring(0, g.indexOf("vs") -1);
 							String awayT = g.substring(g.indexOf("vs") +3, g.length());
 							gameObject.put("homeT", homeT);
-				
+
 							if (g.indexOf("FF") != -1) {
 								awayT = awayT.substring(0, awayT.length()-3);
 								Team HT = findTeam (homeT, teams);
@@ -414,7 +414,7 @@ public class Driver {
 							String homeT = game.substring(0, game.indexOf("vs")-1);
 							String awayT = game.substring(game.indexOf("vs")+3, game.length());
 							gameObject.put("homeT", homeT);
-							
+
 							if (game.indexOf("FF") != -1) {
 								awayT = awayT.substring(0, awayT.length()-3);
 								NBATeam HT = findNBATeam (homeT, NBAteams);
@@ -422,7 +422,7 @@ public class Driver {
 								AT.addLoss(0, 0);
 								HT.addLoss(0, 0);
 								gameObject.put("score", "FF");
-			
+
 							}
 							else
 								gameObject.put("score", "-1 - -1");
@@ -588,90 +588,92 @@ public class Driver {
 				String game = scan.nextLine();
 				JSONObject gameObject = new JSONObject ();
 				//handles the game if it has been played
-				if (game.indexOf("-") != -1)
-				{
-					String PhomeG = game.substring(game.indexOf("-")-2, game.indexOf("-"));
-					String PawayG = game.substring(game.indexOf("-")+1, game.indexOf("-")+3);
-
-
-					int homeG = 0, awayG = 0;
-
-					// determines if the home/away points are 3 digits or 2 digits and assigns them accordingly
-					if (Character.isDigit(PhomeG.charAt(0)))
-						homeG = Integer.parseInt(PhomeG);
-					else
-						homeG = Integer.parseInt(PhomeG.substring(1));
-
-					if (Character.isDigit(PawayG.charAt(1)))
-						awayG = Integer.parseInt(PawayG);
-					else
-						awayG = Integer.parseInt(PawayG.charAt(0) + "");
-
-					String homeT = "";
-					String awayT = "";
-					
-					boolean ot = false;
-					if (game.indexOf("OT") != -1)
-						ot = true;
-
-					// determines the name of the home and away team
-					if (homeG < 10)
-						homeT = game.substring(0, game.indexOf("-") - 2);
-					else
-						homeT = game.substring(0, game.indexOf("-") - 3);
-
-					if (awayG < 10)
-						awayT = game.substring(game.indexOf("-") +3, game.length());
-					else
-						awayT = game.substring(game.indexOf("-") +4, game.length());
-
-					if (ot)
-						awayT = awayT.substring(0, awayT.length()-3);
-					
-
-					//finds the team with the given name and assigns them a win, draw, or loss
-					NHLTeam HT = findNHLTeam (homeT, NHLteams);
-					NHLTeam AT = findNHLTeam (awayT, NHLteams);
-
-					season[i].addGame(new Game (homeT, awayT, homeG, awayG));
-
-
-					gameObject.put("homeT", homeT);
-					gameObject.put("awayT", awayT);
-					gameObject.put("score", homeG + " - " + awayG);
-					weeklyGames.add(gameObject);
-
-					if (homeG > awayG)
+				if (game.indexOf("nogame") == -1) {
+					if (game.indexOf("-") != -1)
 					{
-						HT.addWin(homeG, awayG);
-						AT.addLoss(awayG, homeG, ot);
-					}
-					else if (awayG > homeG)
-					{
-						HT.addLoss(homeG, awayG, ot);
-						AT.addWin(awayG, homeG);
-					}
-				}
-				else
-				{
-					//System.out.println(game);
-					String homeT = game.substring(0, game.indexOf("vs")-1);
-					String awayT = game.substring(game.indexOf("vs")+3, game.length());
-					gameObject.put("homeT", homeT);
-					
-					if (game.indexOf("FF") != -1) {
-						awayT = awayT.substring(0, awayT.length()-3);
+						String PhomeG = game.substring(game.indexOf("-")-2, game.indexOf("-"));
+						String PawayG = game.substring(game.indexOf("-")+1, game.indexOf("-")+3);
+
+
+						int homeG = 0, awayG = 0;
+
+						// determines if the home/away points are 3 digits or 2 digits and assigns them accordingly
+						if (Character.isDigit(PhomeG.charAt(0)))
+							homeG = Integer.parseInt(PhomeG);
+						else
+							homeG = Integer.parseInt(PhomeG.substring(1));
+
+						if (Character.isDigit(PawayG.charAt(1)))
+							awayG = Integer.parseInt(PawayG);
+						else
+							awayG = Integer.parseInt(PawayG.charAt(0) + "");
+
+						String homeT = "";
+						String awayT = "";
+
+						boolean ot = false;
+						if (game.indexOf("OT") != -1)
+							ot = true;
+
+						// determines the name of the home and away team
+						if (homeG < 10)
+							homeT = game.substring(0, game.indexOf("-") - 2);
+						else
+							homeT = game.substring(0, game.indexOf("-") - 3);
+
+						if (awayG < 10)
+							awayT = game.substring(game.indexOf("-") +3, game.length());
+						else
+							awayT = game.substring(game.indexOf("-") +4, game.length());
+
+						if (ot)
+							awayT = awayT.substring(0, awayT.length()-3);
+
+
+						//finds the team with the given name and assigns them a win, draw, or loss
 						NHLTeam HT = findNHLTeam (homeT, NHLteams);
 						NHLTeam AT = findNHLTeam (awayT, NHLteams);
-						AT.addLoss(0, 0, false);
-						HT.addLoss(0, 0, false);
-						gameObject.put("score", "FF");
+
+						season[i].addGame(new Game (homeT, awayT, homeG, awayG));
+
+
+						gameObject.put("homeT", homeT);
+						gameObject.put("awayT", awayT);
+						gameObject.put("score", homeG + " - " + awayG);
+						weeklyGames.add(gameObject);
+
+						if (homeG > awayG)
+						{
+							HT.addWin(homeG, awayG);
+							AT.addLoss(awayG, homeG, ot);
+						}
+						else if (awayG > homeG)
+						{
+							HT.addLoss(homeG, awayG, ot);
+							AT.addWin(awayG, homeG);
+						}
 					}
 					else
-						gameObject.put("score", "-1 - -1");
-					weeklyGames.add(gameObject);
-					gameObject.put("awayT", awayT);
+					{
+						//System.out.println(game);
+						String homeT = game.substring(0, game.indexOf("vs")-1);
+						String awayT = game.substring(game.indexOf("vs")+3, game.length());
+						gameObject.put("homeT", homeT);
 
+						if (game.indexOf("FF") != -1) {
+							awayT = awayT.substring(0, awayT.length()-3);
+							NHLTeam HT = findNHLTeam (homeT, NHLteams);
+							NHLTeam AT = findNHLTeam (awayT, NHLteams);
+							AT.addLoss(0, 0, false);
+							HT.addLoss(0, 0, false);
+							gameObject.put("score", "FF");
+						}
+						else
+							gameObject.put("score", "-1 - -1");
+						weeklyGames.add(gameObject);
+						gameObject.put("awayT", awayT);
+
+					}
 				}
 			}
 
@@ -1230,7 +1232,7 @@ public class Driver {
 					return sComp;
 				} 
 
-		
+
 				Integer x7 = ((NBATeam) o1).getPD();
 				Integer x8 = ((NBATeam) o2).getPD();
 
