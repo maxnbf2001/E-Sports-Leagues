@@ -3,6 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="bd6a4850-6634-48b7-8ad3-7ee4086ba954" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/style.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -25,14 +27,15 @@
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
-    <option name="showExcludedFiles" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../nfl-forecast.github.io" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
   </component>
   <component name="RecentsManager">
@@ -40,18 +43,6 @@
       <recent name="C:\Users\maxnb\OneDrive\Documents\GitHub\E-Sports-Leagues\E-Sports_HTML" />
       <recent name="C:\Users\maxnb\OneDrive\Documents\GitHub\E-Sports-Leagues" />
     </key>
-  </component>
-  <component name="ServiceViewManager">
-    <option name="viewStates">
-      <list>
-        <serviceView>
-          <treeState>
-            <expand />
-            <select />
-          </treeState>
-        </serviceView>
-      </list>
-    </option>
   </component>
   <component name="SvnConfiguration">
     <configuration />
@@ -87,16 +78,17 @@
       <workItem from="1586725156926" duration="18000" />
       <workItem from="1596848355782" duration="670000" />
       <workItem from="1597800870626" duration="1770000" />
+      <workItem from="1612046522302" duration="735000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
-    <option name="version" value="1" />
+    <option name="version" value="2" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="550" y="154" key="FileChooserDialogImpl" timestamp="1597802971546">
+    <state x="550" y="168" key="FileChooserDialogImpl" timestamp="1612046552183">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="550" y="154" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1597802971546" />
+    <state x="550" y="168" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1612046552183" />
   </component>
 </project>

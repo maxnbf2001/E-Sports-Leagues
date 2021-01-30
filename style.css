@@ -445,3 +445,22 @@ li.game-bottom {
 .FIFAstatDataCol, .FIFAstatNameCol, .FIFAnameCol, .FIFAdataCol{
     font-size: medium;
 }
+
+.nav-items {
+    display:flex;
+}
+
+.nav-item {
+    padding: 20px;
+}
+
+.nav-link {
+    font-size: 20px;
+}
+
+.navbar {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    z-index: 3;
+}
