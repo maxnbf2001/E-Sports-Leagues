@@ -9,8 +9,8 @@ nogame
 Week 1
 Zabib vs nogame
 nogame vs Zabib
-Lippman vs Rubin
-Rubin vs Lippman
+Lippman 5-2 Rubin
+Rubin 1-5 Lippman
 Kasimor vs Broder
 Broder vs Kasimor
 
