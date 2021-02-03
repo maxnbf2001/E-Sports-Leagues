@@ -13,14 +13,14 @@ nogame
 Week 1
 Golbert vs nogame
 nogame vs Golbert
-Beef vs Seb
-Seb vs Beef
-Zabib vs Omri
-Omri vs Zabib
+Beef 2-4 Seb
+Seb 3-1 Beef
+Zabib 2-3 Omri
+Omri 4-0 Zabib
 Lippman 0-4 Antar
 Antar 5-2 Lippman
-Mitnick vs Assaf
-Assaf vs Mitnick
+Mitnick 2-8 Assaf
+Assaf 4-1 Mitnick
 
 Week 2
 Golbert vs Seb
