@@ -15,16 +15,16 @@ nogame
 Week 1
 Dean vs nogame
 nogame vs Dean
-Zang vs Weiss
-Weiss vs Zang
+Zang 50-57 Weiss
+Weiss 53-50 Zang
 Shane 29-59 Haber
 Haber 57-55 Shane
 Assaf 64-51 Wolpert
 Wolpert 42-55 Assaf
 Beef 50-84 Hassan
 Hassan 89-49 Beef
-Golbert vs Wheeler
-Wheeler vs Golbert
+Golbert 55-62 Wheeler
+Wheeler 67-56 Golbert
 
 Week 2
 Dean vs Weiss
@@ -37,8 +37,8 @@ Shane vs Hassan
 Hassan vs Shane
 Assaf vs Wheeler
 Wheeler vs Assaf
-Beef vs Golbert
-Golbert vs Beef
+Beef 55-50 Golbert
+Golbert 63-74 Beef
 
 Week 3
 Dean vs Haber
