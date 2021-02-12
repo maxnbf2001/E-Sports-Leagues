@@ -33,8 +33,8 @@ nogame vs Haber
 Haber vs nogame
 Zang vs Wolpert
 Wolpert vs Zang
-Shane vs Hassan
-Hassan vs Shane
+Shane 48-68 Hassan
+Hassan 51-31 Shane
 Assaf 77-64 Wheeler
 Wheeler 68-64 Assaf
 Beef 55-50 Golbert
@@ -51,8 +51,8 @@ Zang vs Wheeler
 Wheeler vs Zang
 Shane vs Golbert
 Golbert vs Shane
-Assaf vs Beef
-Beef vs Assaf
+Assaf 59-63 Beef
+Beef 54-70 Assaf
 
 Week 4
 Dean vs Wolpert
