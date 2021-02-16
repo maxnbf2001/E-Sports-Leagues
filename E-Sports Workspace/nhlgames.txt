@@ -11,7 +11,7 @@ Zabib vs nogame
 nogame vs Zabib
 Lippman 5-2 Rubin
 Rubin 1-5 Lippman
-Kasimor 2-3 Broder
+Kasimor 2-3 Broder OT
 Broder 4-0 Kasimor
 
 Week 2
@@ -23,8 +23,8 @@ Lippman 2-0 Kasimor
 Kasimor 2-6 Lippman
 
 Week 3
-Zabib vs Broder
-Broder vs Zabib
+Zabib 2-5 Broder
+Broder 9-0 Zabib
 Rubin vs Kasimor
 Kasimor vs Rubin
 nogame vs Lippman

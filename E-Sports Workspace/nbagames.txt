@@ -31,8 +31,8 @@ Dean 57-51 Weiss
 Weiss 54-58 Dean
 nogame vs Haber
 Haber vs nogame
-Zang vs Wolpert
-Wolpert vs Zang
+Zang 57-50 Wolpert
+Wolpert 82-86 Zang
 Shane 48-68 Hassan
 Hassan 51-31 Shane
 Assaf 77-64 Wheeler
@@ -49,8 +49,8 @@ nogame vs Hassan
 Hassan vs nogame
 Zang vs Wheeler
 Wheeler vs Zang
-Shane vs Golbert
-Golbert vs Shane
+Shane 52-58 Golbert
+Golbert 49-61 Shane
 Assaf 59-63 Beef
 Beef 54-70 Assaf
 
