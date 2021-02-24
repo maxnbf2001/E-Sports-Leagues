@@ -41,14 +41,14 @@ Beef 55-50 Golbert
 Golbert 63-74 Beef
 
 Week 3
-Dean vs Haber
-Haber vs Dean
-Weiss vs Wolpert
-Wolpert vs Weiss
+Dean 39-48 Haber
+Haber 50-47 Dean
+Weiss vs Wolpert FF
+Wolpert vs Weiss FF
 nogame vs Hassan
 Hassan vs nogame
-Zang vs Wheeler
-Wheeler vs Zang
+Zang vs Wheeler FF
+Wheeler vs Zang FF
 Shane 52-58 Golbert
 Golbert 49-61 Shane
 Assaf 59-63 Beef
@@ -57,8 +57,8 @@ Beef 54-70 Assaf
 Week 4
 Dean vs Wolpert
 Wolpert vs Dean
-Haber vs Hassan
-Hassan vs Haber
+Haber 38-42 Hassan
+Hassan 64-26 Haber
 Weiss vs Wheeler
 Wheeler vs Weiss
 nogame vs Golbert

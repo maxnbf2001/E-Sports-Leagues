@@ -25,22 +25,22 @@ Kasimor 2-6 Lippman
 Week 3
 Zabib 2-5 Broder
 Broder 9-0 Zabib
-Rubin vs Kasimor
-Kasimor vs Rubin
+Rubin vs Kasimor FF
+Kasimor vs Rubin FF
 nogame vs Lippman
 Lippman vs nogame
 
 Week 4
 Zabib vs Kasimor
 Kasimor vs Zabib
-Broder vs Lippman
-Lippman vs Broder
+Broder 4-2 Lippman
+Lippman 3-5 Broder
 Rubin vs nogame
 nogame vs Rubin
 
 Week 5
-Zabib vs Lippman
-Lippman vs Zabib
+Zabib 2-10 Lippman
+Lippman 10-2 Zabib
 Kasimor vs nogame
 nogame vs Kasimor
 Broder vs Rubin
