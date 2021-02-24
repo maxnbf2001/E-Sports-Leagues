@@ -40,7 +40,7 @@ nogame vs Rubin
 
 Week 5
 Zabib 2-10 Lippman
-Lippman 10-2 Zabib
+Lippman vs Zabib
 Kasimor vs nogame
 nogame vs Kasimor
 Broder vs Rubin
