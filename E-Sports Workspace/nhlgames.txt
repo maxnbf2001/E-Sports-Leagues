@@ -31,8 +31,8 @@ nogame vs Lippman
 Lippman vs nogame
 
 Week 4
-Zabib vs Kasimor
-Kasimor vs Zabib
+Zabib 2-3 Kasimor
+Kasimor 4-1 Zabib
 Broder 4-2 Lippman
 Lippman 3-5 Broder
 Rubin vs nogame
@@ -43,8 +43,8 @@ Zabib 2-10 Lippman
 Lippman vs Zabib
 Kasimor vs nogame
 nogame vs Kasimor
-Broder vs Rubin
-Rubin vs Broder
+Broder 4-1 Rubin
+Rubin 1-4 Broder
 
 Week 1
 Zabib vs nogame

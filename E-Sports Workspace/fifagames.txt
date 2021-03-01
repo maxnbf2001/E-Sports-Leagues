@@ -48,7 +48,7 @@ Lippman 2-1 Zabib
 
 Week 4
 Golbert 4-1 Antar
-Antar 0-4 Golbert
+Antar 4-0 Golbert
 Omri vs Assaf
 Assaf vs Omri
 Seb vs Mitnick
@@ -61,8 +61,8 @@ Zabib 1-11 Beef
 Week 5
 Golbert vs Assaf
 Assaf vs Golbert
-Antar vs Mitnick
-Mitnick vs Antar
+Antar 4-0 Mitnick
+Mitnick 0-5 Antar
 Omri vs Lippman
 Lippman vs Omri
 Seb vs Zabib
