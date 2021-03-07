@@ -63,16 +63,16 @@ Golbert 1-2 Assaf
 Assaf 4-2 Golbert
 Antar 4-0 Mitnick
 Mitnick 0-5 Antar
-Omri vs Lippman
-Lippman vs Omri
+Omri 3-1 Lippman
+Lippman 1-2 Omri
 Seb vs Zabib
 Zabib vs Seb
 nogame vs Beef
 Beef vs nogame
 
 Week 6
-Golbert vs Mitnick
-Mitnick vs Golbert
+Golbert 5-0 Mitnick
+Mitnick 0-5 Golbert
 Assaf vs Lippman
 Lippman vs Assaf
 Antar vs Zabib
