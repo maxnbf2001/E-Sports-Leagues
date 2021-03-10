@@ -65,8 +65,8 @@ Antar 4-0 Mitnick
 Mitnick 0-5 Antar
 Omri 3-1 Lippman
 Lippman 1-2 Omri
-Seb vs Zabib
-Zabib vs Seb
+Seb 4-1 Zabib
+Zabib 1-8 Seb
 nogame vs Beef
 Beef vs nogame
 
@@ -75,10 +75,10 @@ Golbert 5-0 Mitnick
 Mitnick 0-5 Golbert
 Assaf vs Lippman
 Lippman vs Assaf
-Antar vs Zabib
-Zabib vs Antar
-Omri vs Beef
-Beef vs Omri
+Antar 4-1 Zabib
+Zabib 2-9 Antar
+Omri 3-1 Beef
+Beef 2-3 Omri
 Seb vs nogame
 nogame vs Seb
 
